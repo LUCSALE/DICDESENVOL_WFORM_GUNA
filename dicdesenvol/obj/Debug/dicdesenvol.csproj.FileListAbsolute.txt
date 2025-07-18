@@ -1,0 +1,10 @@
+E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\bin\Debug\dicdesenvol.exe.config
+E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\bin\Debug\dicdesenvol.exe
+E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\bin\Debug\dicdesenvol.pdb
+E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.csproj.AssemblyReference.cache
+E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.FrmPrincipal.resources
+E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.Properties.Resources.resources
+E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.csproj.GenerateResource.cache
+E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.csproj.CoreCompileInputs.cache
+E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.exe
+E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.pdb
