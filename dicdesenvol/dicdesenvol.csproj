@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>dicdesenvol</RootNamespace>
     <AssemblyName>dicdesenvol</AssemblyName>
-    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -86,6 +87,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="db_ab2460_CTRL_VERSAO.xsc">
       <DependentUpon>db_ab2460_CTRL_VERSAO.xsd</DependentUpon>
@@ -133,6 +135,66 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\4213447_arrow_load_loading_refresh_reload_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\4213475_arrow_back_left_return_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Blue and White Illustrated Login Page Mobile Prototype.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Caminho_Foto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\DICDESENVOL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\LUCSALE System 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\LUCSALE System.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\LUCSALE_Icone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\LUCSALE_logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\LUCSALE_logo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\MSG_Princ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Pesquisa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pinguim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\RAIO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Titulo_Principal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Titulo_Principal_C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Titulo_Principal_D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Titulo_Principal_E.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Titulo_Principal_F.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Titulo_Principal_G.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
