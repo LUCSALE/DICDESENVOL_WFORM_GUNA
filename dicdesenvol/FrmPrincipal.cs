@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -21,5 +22,59 @@ namespace dicdesenvol
         {
 
         }
+        private void AtualizaVersao()
+        {
+            //define a string de conexao com provedor caminho e nome do banco de dados
+            string strProvider = "Data Source=SQL1001.site4now.net;Initial Catalog=db_ab2460_cadastrodb;Persist Security Info=True;User ID=db_ab2460_cadastrodb_admin;PassWord=Mag160163@";
+
+            //define a instrução SQL
+            string strSql = "SELECT VERSAO FROM CTRL_VERSAO WHERE SISTEMA = 'DICDESENVOL_WFORM_GUNA' ";
+
+            try
+            {
+                // Estabelecer a conexão com o banco de dados
+                using (SqlConnection connection = new SqlConnection(strProvider))
+                {
+                    connection.Open();
+
+                    // Criar o comando SQL
+                    using (SqlCommand command = new SqlCommand(strSql, connection))
+                    {
+                        // Criar o objeto de leitura
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            // Verificar se existem resultados
+                            if (reader.HasRows)
+                            {
+                                // Percorrer os resultados
+                                while (reader.Read())
+                                {
+                                    // Acessar o campo "nome_campo" e exibir na tela
+                                    string nomeCampo = reader["VERSAO"].ToString(); // Ou reader.GetString(0)
+                                    lblVersao.Text = "Versão: " + nomeCampo;
+
+
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Nenhum resultado encontrado.");
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message);
+            }
+        }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+            AtualizaVersao();
+        }
     }
+
+
 }
