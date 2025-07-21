@@ -196,5 +196,11 @@
   <ItemGroup>
     <None Include="images\Titulo_Principal_G.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="images\hydro-energy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\leave_13087965.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -113,6 +113,26 @@ namespace dicdesenvol.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hydro_energy {
+            get {
+                object obj = ResourceManager.GetObject("hydro-energy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap leave_13087965 {
+            get {
+                object obj = ResourceManager.GetObject("leave_13087965", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LUCSALE_Icone {
             get {
                 object obj = ResourceManager.GetObject("LUCSALE_Icone", resourceCulture);
