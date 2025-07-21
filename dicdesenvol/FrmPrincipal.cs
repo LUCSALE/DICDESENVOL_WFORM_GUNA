@@ -18,6 +18,15 @@ namespace dicdesenvol
             InitializeComponent();
         }
 
+        private void FormShow(Form frm)
+        {
+
+            frm.TopLevel = false;
+            pnlForm.Controls.Add(frm);
+            frm.BringToFront();
+            frm.Show();
+        }
+
         private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -73,6 +82,11 @@ namespace dicdesenvol
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
             AtualizaVersao();
+        }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            FormShow(new FrmCTRL_Versao());
         }
     }
 

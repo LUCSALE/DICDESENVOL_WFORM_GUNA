@@ -16,5 +16,12 @@ namespace dicdesenvol
         {
             InitializeComponent();
         }
+
+        private void FrmCTRL_Versao_Load(object sender, EventArgs e)
+        {
+            // TODO: esta linha de código carrega dados na tabela 'db_ab2460_cadastrodbDataSet.CTRL_VERSAO'. Você pode movê-la ou removê-la conforme necessário.
+            this.cTRL_VERSAOTableAdapter.Fill(this.db_ab2460_cadastrodbDataSet.CTRL_VERSAO);
+
+        }
     }
 }
