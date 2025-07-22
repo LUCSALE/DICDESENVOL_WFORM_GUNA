@@ -44,6 +44,7 @@
             this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.picLogo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.pnlLateral.SuspendLayout();
@@ -140,6 +141,7 @@
             // 
             // pnlLateral
             // 
+            this.pnlLateral.Controls.Add(this.guna2CircleButton1);
             this.pnlLateral.Controls.Add(this.lblCopy);
             this.pnlLateral.Controls.Add(this.lblVersao);
             this.pnlLateral.Controls.Add(this.picIcone);
@@ -173,7 +175,7 @@
             this.lblVersao.BackColor = System.Drawing.Color.Transparent;
             this.lblVersao.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVersao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.lblVersao.Location = new System.Drawing.Point(103, 518);
+            this.lblVersao.Location = new System.Drawing.Point(104, 515);
             this.lblVersao.Name = "lblVersao";
             this.lblVersao.Size = new System.Drawing.Size(75, 15);
             this.lblVersao.TabIndex = 7;
@@ -215,6 +217,7 @@
             this.guna2GradientButton5.Size = new System.Drawing.Size(283, 33);
             this.guna2GradientButton5.TabIndex = 5;
             this.guna2GradientButton5.Text = "Sair";
+            this.guna2GradientButton5.Click += new System.EventHandler(this.guna2GradientButton5_Click);
             // 
             // guna2GradientButton4
             // 
@@ -301,6 +304,25 @@
             this.picLogo.TabIndex = 0;
             this.picLogo.TabStop = false;
             // 
+            // guna2CircleButton1
+            // 
+            this.guna2CircleButton1.Animated = true;
+            this.guna2CircleButton1.BackColor = System.Drawing.Color.Blue;
+            this.guna2CircleButton1.BorderColor = System.Drawing.Color.BlanchedAlmond;
+            this.guna2CircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2CircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2CircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2CircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleButton1.Image = global::dicdesenvol.Properties.Resources._4213447_arrow_load_loading_refresh_reload_icon;
+            this.guna2CircleButton1.Location = new System.Drawing.Point(185, 510);
+            this.guna2CircleButton1.Name = "guna2CircleButton1";
+            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleButton1.Size = new System.Drawing.Size(30, 25);
+            this.guna2CircleButton1.TabIndex = 9;
+            this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -316,6 +338,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DICDESENVOL_WFORM_GUNA";
             this.Load += new System.EventHandler(this.FrmPrincipal_Load);
+            this.Shown += new System.EventHandler(this.FrmPrincipal_Shown);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.FrmPrincipal_Paint);
             this.pnlHeader.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.pnlLateral.ResumeLayout(false);
@@ -343,6 +367,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox picIcone;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCopy;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblVersao;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
     }
 }
 

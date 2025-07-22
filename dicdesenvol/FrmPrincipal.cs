@@ -31,7 +31,7 @@ namespace dicdesenvol
         {
 
         }
-        private void AtualizaVersao()
+        public void AtualizaVersao()
         {
             //define a string de conexao com provedor caminho e nome do banco de dados
             string strProvider = "Data Source=SQL1001.site4now.net;Initial Catalog=db_ab2460_cadastrodb;Persist Security Info=True;User ID=db_ab2460_cadastrodb_admin;PassWord=Mag160163@";
@@ -87,6 +87,26 @@ namespace dicdesenvol
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
             FormShow(new FrmCTRL_Versao());
+        }
+
+        private void guna2GradientButton5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FrmPrincipal_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void FrmPrincipal_Shown(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            AtualizaVersao();
         }
     }
 
