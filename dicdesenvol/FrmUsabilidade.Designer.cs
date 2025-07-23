@@ -1,6 +1,6 @@
 ﻿namespace dicdesenvol
 {
-    partial class FrmCTRL_Versao
+    partial class FrmUsabilidade
     {
         /// <summary>
         /// Required designer variable.
@@ -29,27 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUsabilidade));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCTRL_Versao));
             this.pnlHeader = new Guna.UI2.WinForms.Guna2Panel();
             this.lblTitulo = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlGrid = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dATADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hORADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SISTEMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VERSAO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cTRLVERSAOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.db_ab2460_cadastrodbDataSet = new dicdesenvol.db_ab2460_cadastrodbDataSet();
             this.pnlDados = new Guna.UI2.WinForms.Guna2Panel();
-            this.txtSistema = new MetroFramework.Controls.MetroTextBox();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtVersao = new MetroFramework.Controls.MetroTextBox();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.txtData = new MetroFramework.Controls.MetroTextBox();
             this.txtHora = new MetroFramework.Controls.MetroTextBox();
@@ -74,16 +61,24 @@
             this.salvarToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.cTRL_VERSAOTableAdapter = new dicdesenvol.db_ab2460_cadastrodbDataSetTableAdapters.CTRL_VERSAOTableAdapter();
+            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.db_ab2460_Usabilidade_DataSet = new dicdesenvol.db_ab2460_Usabilidade_DataSet();
+            this.hTMLCSSUSABILIDADEBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hTML_CSS_USABILIDADETableAdapter = new dicdesenvol.db_ab2460_Usabilidade_DataSetTableAdapters.HTML_CSS_USABILIDADETableAdapter();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dATADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hORADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.uSABILIDADEOBJETIV0DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.oBSGERALDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlHeader.SuspendLayout();
             this.pnlGrid.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cTRLVERSAOBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.db_ab2460_cadastrodbDataSet)).BeginInit();
             this.pnlDados.SuspendLayout();
             this.pnlFooter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.db_ab2460_Usabilidade_DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hTMLCSSUSABILIDADEBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlHeader
@@ -101,12 +96,12 @@
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblTitulo.Location = new System.Drawing.Point(199, 3);
+            this.lblTitulo.Location = new System.Drawing.Point(226, 3);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(319, 57);
+            this.lblTitulo.Size = new System.Drawing.Size(265, 57);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.TabStop = false;
-            this.lblTitulo.Text = "CTRL_Versão";
+            this.lblTitulo.Text = "Usabilidade";
             // 
             // pnlGrid
             // 
@@ -118,154 +113,10 @@
             this.pnlGrid.Size = new System.Drawing.Size(717, 139);
             this.pnlGrid.TabIndex = 1;
             // 
-            // guna2DataGridView1
-            // 
-            this.guna2DataGridView1.AllowUserToAddRows = false;
-            this.guna2DataGridView1.AllowUserToDeleteRows = false;
-            this.guna2DataGridView1.AllowUserToOrderColumns = true;
-            this.guna2DataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.guna2DataGridView1.AutoGenerateColumns = false;
-            this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.AliceBlue;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeight = 15;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDDataGridViewTextBoxColumn,
-            this.dATADataGridViewTextBoxColumn,
-            this.hORADataGridViewTextBoxColumn,
-            this.SISTEMA,
-            this.VERSAO});
-            this.guna2DataGridView1.DataSource = this.cTRLVERSAOBindingSource;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.ReadOnly = true;
-            this.guna2DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(717, 139);
-            this.guna2DataGridView1.TabIndex = 0;
-            this.guna2DataGridView1.TabStop = false;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.AliceBlue;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 15;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = true;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
-            this.guna2DataGridView1.Click += new System.EventHandler(this.guna2DataGridView1_Click_1);
-            // 
-            // iDDataGridViewTextBoxColumn
-            // 
-            this.iDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.FillWeight = 50.76143F;
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.iDDataGridViewTextBoxColumn.Width = 20;
-            // 
-            // dATADataGridViewTextBoxColumn
-            // 
-            this.dATADataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dATADataGridViewTextBoxColumn.DataPropertyName = "DATA";
-            this.dATADataGridViewTextBoxColumn.FillWeight = 42.1921F;
-            this.dATADataGridViewTextBoxColumn.HeaderText = "DATA";
-            this.dATADataGridViewTextBoxColumn.Name = "dATADataGridViewTextBoxColumn";
-            this.dATADataGridViewTextBoxColumn.ReadOnly = true;
-            this.dATADataGridViewTextBoxColumn.Width = 90;
-            // 
-            // hORADataGridViewTextBoxColumn
-            // 
-            this.hORADataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.hORADataGridViewTextBoxColumn.DataPropertyName = "HORA";
-            this.hORADataGridViewTextBoxColumn.FillWeight = 115.3972F;
-            this.hORADataGridViewTextBoxColumn.HeaderText = "HORA";
-            this.hORADataGridViewTextBoxColumn.Name = "hORADataGridViewTextBoxColumn";
-            this.hORADataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // SISTEMA
-            // 
-            this.SISTEMA.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.SISTEMA.DataPropertyName = "SISTEMA";
-            this.SISTEMA.FillWeight = 249.4572F;
-            this.SISTEMA.HeaderText = "SISTEMA";
-            this.SISTEMA.Name = "SISTEMA";
-            this.SISTEMA.ReadOnly = true;
-            this.SISTEMA.Width = 350;
-            // 
-            // VERSAO
-            // 
-            this.VERSAO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.VERSAO.DataPropertyName = "VERSAO";
-            this.VERSAO.FillWeight = 42.1921F;
-            this.VERSAO.HeaderText = "VERSÃO";
-            this.VERSAO.Name = "VERSAO";
-            this.VERSAO.ReadOnly = true;
-            this.VERSAO.Width = 75;
-            // 
-            // cTRLVERSAOBindingSource
-            // 
-            this.cTRLVERSAOBindingSource.DataMember = "CTRL_VERSAO";
-            this.cTRLVERSAOBindingSource.DataSource = this.db_ab2460_cadastrodbDataSet;
-            // 
-            // db_ab2460_cadastrodbDataSet
-            // 
-            this.db_ab2460_cadastrodbDataSet.DataSetName = "db_ab2460_cadastrodbDataSet";
-            this.db_ab2460_cadastrodbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // pnlDados
             // 
             this.pnlDados.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.pnlDados.BorderThickness = 2;
-            this.pnlDados.Controls.Add(this.txtSistema);
-            this.pnlDados.Controls.Add(this.guna2HtmlLabel3);
-            this.pnlDados.Controls.Add(this.txtVersao);
-            this.pnlDados.Controls.Add(this.guna2HtmlLabel2);
             this.pnlDados.Controls.Add(this.guna2Separator1);
             this.pnlDados.Controls.Add(this.txtData);
             this.pnlDados.Controls.Add(this.txtHora);
@@ -279,94 +130,6 @@
             this.pnlDados.Name = "pnlDados";
             this.pnlDados.Size = new System.Drawing.Size(717, 292);
             this.pnlDados.TabIndex = 1;
-            // 
-            // txtSistema
-            // 
-            // 
-            // 
-            // 
-            this.txtSistema.CustomButton.Image = null;
-            this.txtSistema.CustomButton.Location = new System.Drawing.Point(296, 1);
-            this.txtSistema.CustomButton.Name = "";
-            this.txtSistema.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtSistema.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtSistema.CustomButton.TabIndex = 1;
-            this.txtSistema.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtSistema.CustomButton.UseSelectable = true;
-            this.txtSistema.CustomButton.Visible = false;
-            this.txtSistema.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cTRLVERSAOBindingSource, "SISTEMA", true));
-            this.txtSistema.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.txtSistema.Lines = new string[0];
-            this.txtSistema.Location = new System.Drawing.Point(12, 175);
-            this.txtSistema.MaxLength = 32767;
-            this.txtSistema.Name = "txtSistema";
-            this.txtSistema.PasswordChar = '\0';
-            this.txtSistema.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtSistema.SelectedText = "";
-            this.txtSistema.SelectionLength = 0;
-            this.txtSistema.SelectionStart = 0;
-            this.txtSistema.ShortcutsEnabled = true;
-            this.txtSistema.Size = new System.Drawing.Size(318, 23);
-            this.txtSistema.TabIndex = 8;
-            this.txtSistema.UseSelectable = true;
-            this.txtSistema.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtSistema.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(12, 157);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(47, 15);
-            this.guna2HtmlLabel3.TabIndex = 7;
-            this.guna2HtmlLabel3.TabStop = false;
-            this.guna2HtmlLabel3.Text = "Sistema";
-            // 
-            // txtVersao
-            // 
-            // 
-            // 
-            // 
-            this.txtVersao.CustomButton.Image = null;
-            this.txtVersao.CustomButton.Location = new System.Drawing.Point(45, 1);
-            this.txtVersao.CustomButton.Name = "";
-            this.txtVersao.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtVersao.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtVersao.CustomButton.TabIndex = 1;
-            this.txtVersao.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtVersao.CustomButton.UseSelectable = true;
-            this.txtVersao.CustomButton.Visible = false;
-            this.txtVersao.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cTRLVERSAOBindingSource, "VERSAO", true));
-            this.txtVersao.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.txtVersao.Lines = new string[0];
-            this.txtVersao.Location = new System.Drawing.Point(12, 222);
-            this.txtVersao.MaxLength = 32767;
-            this.txtVersao.Name = "txtVersao";
-            this.txtVersao.PasswordChar = '\0';
-            this.txtVersao.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtVersao.SelectedText = "";
-            this.txtVersao.SelectionLength = 0;
-            this.txtVersao.SelectionStart = 0;
-            this.txtVersao.ShortcutsEnabled = true;
-            this.txtVersao.Size = new System.Drawing.Size(67, 23);
-            this.txtVersao.TabIndex = 10;
-            this.txtVersao.UseSelectable = true;
-            this.txtVersao.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtVersao.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(12, 204);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(42, 15);
-            this.guna2HtmlLabel2.TabIndex = 9;
-            this.guna2HtmlLabel2.TabStop = false;
-            this.guna2HtmlLabel2.Text = "Versão";
             // 
             // guna2Separator1
             // 
@@ -390,7 +153,7 @@
             this.txtData.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtData.CustomButton.UseSelectable = true;
             this.txtData.CustomButton.Visible = false;
-            this.txtData.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cTRLVERSAOBindingSource, "DATA", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "d"));
+            this.txtData.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hTMLCSSUSABILIDADEBindingSource, "DATA", true));
             this.txtData.Enabled = false;
             this.txtData.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.txtData.Lines = new string[0];
@@ -424,7 +187,7 @@
             this.txtHora.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtHora.CustomButton.UseSelectable = true;
             this.txtHora.CustomButton.Visible = false;
-            this.txtHora.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cTRLVERSAOBindingSource, "HORA", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "T"));
+            this.txtHora.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hTMLCSSUSABILIDADEBindingSource, "HORA", true));
             this.txtHora.Enabled = false;
             this.txtHora.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.txtHora.Lines = new string[0];
@@ -458,7 +221,7 @@
             this.txtID.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtID.CustomButton.UseSelectable = true;
             this.txtID.CustomButton.Visible = false;
-            this.txtID.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cTRLVERSAOBindingSource, "ID", true));
+            this.txtID.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hTMLCSSUSABILIDADEBindingSource, "ID", true));
             this.txtID.Enabled = false;
             this.txtID.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.txtID.Lines = new string[0];
@@ -537,7 +300,7 @@
             // bindingNavigator1
             // 
             this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.bindingNavigator1.BindingSource = this.cTRLVERSAOBindingSource;
+            this.bindingNavigator1.BindingSource = this.hTMLCSSUSABILIDADEBindingSource;
             this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
             this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
             this.bindingNavigator1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -679,11 +442,128 @@
             this.toolStripButton1.ToolTipText = "Voltar ...";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
-            // cTRL_VERSAOTableAdapter
+            // guna2DataGridView1
             // 
-            this.cTRL_VERSAOTableAdapter.ClearBeforeFill = true;
+            this.guna2DataGridView1.AllowUserToAddRows = false;
+            this.guna2DataGridView1.AllowUserToDeleteRows = false;
+            this.guna2DataGridView1.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.guna2DataGridView1.AutoGenerateColumns = false;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn,
+            this.dATADataGridViewTextBoxColumn,
+            this.hORADataGridViewTextBoxColumn,
+            this.uSABILIDADEOBJETIV0DataGridViewTextBoxColumn,
+            this.oBSGERALDataGridViewTextBoxColumn});
+            this.guna2DataGridView1.DataSource = this.hTMLCSSUSABILIDADEBindingSource;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.guna2DataGridView1.Name = "guna2DataGridView1";
+            this.guna2DataGridView1.ReadOnly = true;
+            this.guna2DataGridView1.RowHeadersVisible = false;
+            this.guna2DataGridView1.Size = new System.Drawing.Size(717, 139);
+            this.guna2DataGridView1.TabIndex = 0;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 15;
+            this.guna2DataGridView1.ThemeStyle.ReadOnly = true;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // FrmCTRL_Versao
+            // db_ab2460_Usabilidade_DataSet
+            // 
+            this.db_ab2460_Usabilidade_DataSet.DataSetName = "db_ab2460_Usabilidade_DataSet";
+            this.db_ab2460_Usabilidade_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // hTMLCSSUSABILIDADEBindingSource
+            // 
+            this.hTMLCSSUSABILIDADEBindingSource.DataMember = "HTML_CSS_USABILIDADE";
+            this.hTMLCSSUSABILIDADEBindingSource.DataSource = this.db_ab2460_Usabilidade_DataSet;
+            // 
+            // hTML_CSS_USABILIDADETableAdapter
+            // 
+            this.hTML_CSS_USABILIDADETableAdapter.ClearBeforeFill = true;
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDDataGridViewTextBoxColumn.Width = 30;
+            // 
+            // dATADataGridViewTextBoxColumn
+            // 
+            this.dATADataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dATADataGridViewTextBoxColumn.DataPropertyName = "DATA";
+            this.dATADataGridViewTextBoxColumn.FillWeight = 191.6168F;
+            this.dATADataGridViewTextBoxColumn.HeaderText = "DATA";
+            this.dATADataGridViewTextBoxColumn.Name = "dATADataGridViewTextBoxColumn";
+            this.dATADataGridViewTextBoxColumn.ReadOnly = true;
+            this.dATADataGridViewTextBoxColumn.Width = 80;
+            // 
+            // hORADataGridViewTextBoxColumn
+            // 
+            this.hORADataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.hORADataGridViewTextBoxColumn.DataPropertyName = "HORA";
+            this.hORADataGridViewTextBoxColumn.FillWeight = 69.46108F;
+            this.hORADataGridViewTextBoxColumn.HeaderText = "HORA";
+            this.hORADataGridViewTextBoxColumn.Name = "hORADataGridViewTextBoxColumn";
+            this.hORADataGridViewTextBoxColumn.ReadOnly = true;
+            this.hORADataGridViewTextBoxColumn.Width = 80;
+            // 
+            // uSABILIDADEOBJETIV0DataGridViewTextBoxColumn
+            // 
+            this.uSABILIDADEOBJETIV0DataGridViewTextBoxColumn.DataPropertyName = "USABILIDADE_OBJETIV0";
+            this.uSABILIDADEOBJETIV0DataGridViewTextBoxColumn.FillWeight = 69.46108F;
+            this.uSABILIDADEOBJETIV0DataGridViewTextBoxColumn.HeaderText = "USABILIDADE / OBJETIV0";
+            this.uSABILIDADEOBJETIV0DataGridViewTextBoxColumn.Name = "uSABILIDADEOBJETIV0DataGridViewTextBoxColumn";
+            this.uSABILIDADEOBJETIV0DataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // oBSGERALDataGridViewTextBoxColumn
+            // 
+            this.oBSGERALDataGridViewTextBoxColumn.DataPropertyName = "OBS_GERAL";
+            this.oBSGERALDataGridViewTextBoxColumn.FillWeight = 69.46108F;
+            this.oBSGERALDataGridViewTextBoxColumn.HeaderText = "OBS_GERAL";
+            this.oBSGERALDataGridViewTextBoxColumn.Name = "oBSGERALDataGridViewTextBoxColumn";
+            this.oBSGERALDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // FrmUsabilidade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -694,16 +574,13 @@
             this.Controls.Add(this.pnlGrid);
             this.Controls.Add(this.pnlHeader);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmCTRL_Versao";
-            this.Text = "FrmCTRL_Versao";
-            this.Load += new System.EventHandler(this.FrmCTRL_Versao_Load);
-            this.Shown += new System.EventHandler(this.FrmCTRL_Versao_Shown);
+            this.Name = "FrmUsabilidade";
+            this.Text = "FrmPadrao";
+            this.Load += new System.EventHandler(this.FrmPadrao_Load);
+            this.Shown += new System.EventHandler(this.FrmPadrao_Shown);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.pnlGrid.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cTRLVERSAOBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.db_ab2460_cadastrodbDataSet)).EndInit();
             this.pnlDados.ResumeLayout(false);
             this.pnlDados.PerformLayout();
             this.pnlFooter.ResumeLayout(false);
@@ -711,6 +588,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.db_ab2460_Usabilidade_DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hTMLCSSUSABILIDADEBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -722,9 +602,6 @@
         private Guna.UI2.WinForms.Guna2Panel pnlGrid;
         private Guna.UI2.WinForms.Guna2Panel pnlDados;
         private Guna.UI2.WinForms.Guna2Panel pnlFooter;
-        private db_ab2460_cadastrodbDataSet db_ab2460_cadastrodbDataSet;
-        private System.Windows.Forms.BindingSource cTRLVERSAOBindingSource;
-        private db_ab2460_cadastrodbDataSetTableAdapters.CTRL_VERSAOTableAdapter cTRL_VERSAOTableAdapter;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
@@ -738,12 +615,6 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton salvarToolStripButton;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dATADataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn hORADataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SISTEMA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn VERSAO;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private MetroFramework.Controls.MetroTextBox txtID;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
@@ -752,11 +623,16 @@
         private MetroFramework.Controls.MetroTextBox txtData;
         private MetroFramework.Controls.MetroTextBox txtHora;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
-        private MetroFramework.Controls.MetroTextBox txtSistema;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private MetroFramework.Controls.MetroTextBox txtVersao;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private db_ab2460_Usabilidade_DataSet db_ab2460_Usabilidade_DataSet;
+        private System.Windows.Forms.BindingSource hTMLCSSUSABILIDADEBindingSource;
+        private db_ab2460_Usabilidade_DataSetTableAdapters.HTML_CSS_USABILIDADETableAdapter hTML_CSS_USABILIDADETableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dATADataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hORADataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn uSABILIDADEOBJETIV0DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn oBSGERALDataGridViewTextBoxColumn;
     }
 }

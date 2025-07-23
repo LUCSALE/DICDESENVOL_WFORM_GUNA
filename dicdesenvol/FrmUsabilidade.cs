@@ -10,25 +10,27 @@ using System.Windows.Forms;
 
 namespace dicdesenvol
 {
-    public partial class FrmCTRL_Versao : Form
+    public partial class FrmUsabilidade : Form
     {
-        public FrmCTRL_Versao()
+        public FrmUsabilidade()
         {
             InitializeComponent();
         }
 
-        private void FrmCTRL_Versao_Load(object sender, EventArgs e)
+        private void FrmPadrao_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'db_ab2460_Usabilidade_DataSet.HTML_CSS_USABILIDADE'. Você pode movê-la ou removê-la conforme necessário.
+            this.hTML_CSS_USABILIDADETableAdapter.Fill(this.db_ab2460_Usabilidade_DataSet.HTML_CSS_USABILIDADE);
 
             try
             {
-                // TODO: esta linha de código carrega dados na tabela 'db_ab2460_cadastrodbDataSet.CTRL_VERSAO'. Você pode movê-la ou removê-la conforme necessário.
-                this.cTRL_VERSAOTableAdapter.Fill(this.db_ab2460_cadastrodbDataSet.CTRL_VERSAO);
-                txtSistema.Focus();
+                // TODO: esta linha de código carrega dados na tabela 'db_ab2460_cadastrodbDataSet.Padrao'. Você pode movê-la ou removê-la conforme necessário.
+                //this.PadraoTableAdapter.Fill(this.db_ab2460_cadastrodbDataSet.Padrao);
+                
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao Consultar tabela: CTRL_Versao - " + ex.Message);
+                MessageBox.Show("Erro ao Consultar tabela: Padrao - " + ex.Message);
             }
 
             
@@ -64,9 +66,9 @@ namespace dicdesenvol
 
             try
             {
-                this.Validate();
-                this.cTRLVERSAOBindingSource.EndEdit();
-                this.cTRL_VERSAOTableAdapter.Update(this.db_ab2460_cadastrodbDataSet);
+                //this.Validate();
+                //this.cTRLVERSAOBindingSource.EndEdit();
+                //this.PadraoTableAdapter.Update(this.db_ab2460_cadastrodbDataSet);
                 MessageBox.Show("Dados salvos com sucesso!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
@@ -96,7 +98,7 @@ namespace dicdesenvol
             txtHora.Text = HoraFormat;
         }
 
-        private void FrmCTRL_Versao_Shown(object sender, EventArgs e)
+        private void FrmPadrao_Shown(object sender, EventArgs e)
         {
             
         }

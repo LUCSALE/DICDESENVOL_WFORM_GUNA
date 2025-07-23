@@ -108,6 +108,11 @@ namespace dicdesenvol
         {
             AtualizaVersao();
         }
+
+        private void guna2GradientButton2_Click(object sender, EventArgs e)
+        {
+            FormShow(new FrmUsabilidade());
+        }
     }
 
 
