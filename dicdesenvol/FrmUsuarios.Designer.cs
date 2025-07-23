@@ -1,6 +1,6 @@
 ﻿namespace dicdesenvol
 {
-    partial class FrmPrincipal
+    partial class FrmUsuarios
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -283,6 +283,7 @@
             this.guna2GradientButton3.Size = new System.Drawing.Size(283, 33);
             this.guna2GradientButton3.TabIndex = 3;
             this.guna2GradientButton3.Text = "Pesquisa";
+            this.guna2GradientButton3.Click += new System.EventHandler(this.guna2GradientButton3_Click);
             // 
             // guna2GradientButton2
             // 

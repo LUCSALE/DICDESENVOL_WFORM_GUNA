@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace dicdesenvol
 {
-    public partial class FrmPrincipal : Form
+    public partial class FrmUsuarios : Form
     {
-        public FrmPrincipal()
+        public FrmUsuarios()
         {
             InitializeComponent();
         }
@@ -112,6 +112,11 @@ namespace dicdesenvol
         private void guna2GradientButton2_Click(object sender, EventArgs e)
         {
             FormShow(new FrmUsabilidade());
+        }
+
+        private void guna2GradientButton3_Click(object sender, EventArgs e)
+        {
+            FormShow(new FrmPadrao());
         }
     }
 
