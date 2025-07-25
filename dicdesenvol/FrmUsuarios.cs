@@ -19,23 +19,21 @@ namespace dicdesenvol
 
         private void FrmPadrao_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'db_ab2460_USUARIOS_dbDataSet.USUARIOS'. Você pode movê-la ou removê-la conforme necessário.
-            this.uSUARIOSTableAdapter.Fill(this.db_ab2460_USUARIOS_dbDataSet.USUARIOS);
-            // TODO: esta linha de código carrega dados na tabela 'db_ab2460_Padrao_DataSet.HTML_CSS_Padrao'. Você pode movê-la ou removê-la conforme necessário.
-            //this.hTML_CSS_PadraoTableAdapter.Fill(this.db_ab2460_Padrao_DataSet.HTML_CSS_Padrao);
-
             try
             {
-                // TODO: esta linha de código carrega dados na tabela 'db_ab2460_cadastrodbDataSet.Padrao'. Você pode movê-la ou removê-la conforme necessário.
-                //this.PadraoTableAdapter.Fill(this.db_ab2460_cadastrodbDataSet.Padrao);
-                
+                // TODO: esta linha de código carrega dados na tabela 'db_ab2460_USUARIOS_dbDataSet.USUARIOS'. Você pode movê-la ou removê-la conforme necessário.
+                this.uSUARIOSTableAdapter.Fill(this.db_ab2460_USUARIOS_dbDataSet.USUARIOS);
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao Consultar tabela: Padrao - " + ex.Message);
             }
 
-            
+            // Exemplo de como acessar um campo específico de uma linha do DataSet  
+            //String nomeDoCampo = this.db_ab2460_USUARIOS_dbDataSet.USUARIOS[0].PRI_NOME;
+            //MessageBox.Show(nomeDoCampo);
+
 
         }
 
@@ -97,6 +95,11 @@ namespace dicdesenvol
         }
 
         private void FrmPadrao_Shown(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
         {
             
         }

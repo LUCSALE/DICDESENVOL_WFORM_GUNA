@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\",
+  "WorkspaceRootPath": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|c:\\desenvol_web\\dicdesenvol_wform_guna\\dicdesenvol\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|e:\\desenvol_web\\dicdesenvol_wform_guna\\dicdesenvol\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|solutionrelative:frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|c:\\desenvol_web\\dicdesenvol_wform_guna\\dicdesenvol\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|e:\\desenvol_web\\dicdesenvol_wform_guna\\dicdesenvol\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|solutionrelative:frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -18,15 +18,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
@@ -35,10 +35,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
             },
             {
               "$type": "Bookmark",
@@ -56,25 +52,25 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "FrmUsuarios.cs",
-              "DocumentMoniker": "C:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmUsuarios.cs",
+              "DocumentMoniker": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmUsuarios.cs",
               "RelativeDocumentMoniker": "FrmUsuarios.cs",
-              "ToolTip": "C:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmUsuarios.cs",
+              "ToolTip": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmUsuarios.cs",
               "RelativeToolTip": "FrmUsuarios.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAzwF8AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T22:47:09.438Z",
+              "WhenOpened": "2025-07-25T17:01:27.914Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "FrmUsuarios.cs [Design]",
-              "DocumentMoniker": "C:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmUsuarios.cs",
+              "DocumentMoniker": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmUsuarios.cs",
               "RelativeDocumentMoniker": "FrmUsuarios.cs",
-              "ToolTip": "C:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmUsuarios.cs [Design]",
+              "ToolTip": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmUsuarios.cs [Design]",
               "RelativeToolTip": "FrmUsuarios.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T22:42:38.247Z",
+              "WhenOpened": "2025-07-25T17:01:21.838Z",
               "EditorCaption": " [Design]"
             }
           ]
