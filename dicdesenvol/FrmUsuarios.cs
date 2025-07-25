@@ -1,8 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -18,107 +17,88 @@ namespace dicdesenvol
             InitializeComponent();
         }
 
-        private void FormShow(Form frm)
+        private void FrmPadrao_Load(object sender, EventArgs e)
         {
-
-            frm.TopLevel = false;
-            pnlForm.Controls.Add(frm);
-            frm.BringToFront();
-            frm.Show();
-        }
-
-        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-        public void AtualizaVersao()
-        {
-            //define a string de conexao com provedor caminho e nome do banco de dados
-            string strProvider = "Data Source=SQL1001.site4now.net;Initial Catalog=db_ab2460_cadastrodb;Persist Security Info=True;User ID=db_ab2460_cadastrodb_admin;PassWord=Mag160163@";
-
-            //define a instrução SQL
-            string strSql = "SELECT VERSAO FROM CTRL_VERSAO WHERE SISTEMA = 'DICDESENVOL_WFORM_GUNA' ";
+            // TODO: esta linha de código carrega dados na tabela 'db_ab2460_USUARIOS_dbDataSet.USUARIOS'. Você pode movê-la ou removê-la conforme necessário.
+            this.uSUARIOSTableAdapter.Fill(this.db_ab2460_USUARIOS_dbDataSet.USUARIOS);
+            // TODO: esta linha de código carrega dados na tabela 'db_ab2460_Padrao_DataSet.HTML_CSS_Padrao'. Você pode movê-la ou removê-la conforme necessário.
+            //this.hTML_CSS_PadraoTableAdapter.Fill(this.db_ab2460_Padrao_DataSet.HTML_CSS_Padrao);
 
             try
             {
-                // Estabelecer a conexão com o banco de dados
-                using (SqlConnection connection = new SqlConnection(strProvider))
-                {
-                    connection.Open();
-
-                    // Criar o comando SQL
-                    using (SqlCommand command = new SqlCommand(strSql, connection))
-                    {
-                        // Criar o objeto de leitura
-                        using (SqlDataReader reader = command.ExecuteReader())
-                        {
-                            // Verificar se existem resultados
-                            if (reader.HasRows)
-                            {
-                                // Percorrer os resultados
-                                while (reader.Read())
-                                {
-                                    // Acessar o campo "nome_campo" e exibir na tela
-                                    string nomeCampo = reader["VERSAO"].ToString(); // Ou reader.GetString(0)
-                                    lblVersao.Text = "Versão: " + nomeCampo;
-
-
-                                }
-                            }
-                            else
-                            {
-                                MessageBox.Show("Nenhum resultado encontrado.");
-                            }
-                        }
-                    }
-                }
+                // TODO: esta linha de código carrega dados na tabela 'db_ab2460_cadastrodbDataSet.Padrao'. Você pode movê-la ou removê-la conforme necessário.
+                //this.PadraoTableAdapter.Fill(this.db_ab2460_cadastrodbDataSet.Padrao);
+                
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro: " + ex.Message);
+                MessageBox.Show("Erro ao Consultar tabela: Padrao - " + ex.Message);
             }
+
+            
+
         }
 
-        private void FrmPrincipal_Load(object sender, EventArgs e)
+        private void guna2DataGridView1_Click(object sender, EventArgs e)
         {
-            AtualizaVersao();
+            //MessageBox.Show("Versão: " + guna2DataGridView1.CurrentRow.Cells[0].Value.ToString() + "\n" +
+            //                "Data: " + guna2DataGridView1.CurrentRow.Cells[1].Value.ToString() + "\n" +
+            //                "Descrição: " + guna2DataGridView1.CurrentRow.Cells[2].Value.ToString());           
+            
+            //txtID.Text = guna2DataGridView1.CurrentRow.Cells[1].Value.ToString();
         }
 
-        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        private void guna2DataGridView1_Click_1(object sender, EventArgs e)
         {
-            FormShow(new FrmCTRL_Versao());
+            //txtID.Text = guna2DataGridView1.CurrentRow.Cells[0].Value.ToString();
+            //txtData.Text = guna2DataGridView1.CurrentRow.Cells[1].Value.ToString();
+            //txtHora.Text = guna2DataGridView1.CurrentRow.Cells[2].Value.ToString();
+
+
+            
         }
 
-        private void guna2GradientButton5_Click(object sender, EventArgs e)
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void salvarToolStripButton_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                //this.Validate();
+                //this.cTRLVERSAOBindingSource.EndEdit();
+                //this.PadraoTableAdapter.Update(this.db_ab2460_cadastrodbDataSet);
+                MessageBox.Show("Dados salvos com sucesso!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao Salvar: " + ex.Message);
+            }
+                
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void FrmPrincipal_Paint(object sender, PaintEventArgs e)
+        private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
         {
             
         }
 
-        private void FrmPrincipal_Shown(object sender, EventArgs e)
+        private void FrmPadrao_Shown(object sender, EventArgs e)
         {
             
-        }
-
-        private void guna2CircleButton1_Click(object sender, EventArgs e)
-        {
-            AtualizaVersao();
-        }
-
-        private void guna2GradientButton2_Click(object sender, EventArgs e)
-        {
-            FormShow(new FrmUsabilidade());
-        }
-
-        private void guna2GradientButton3_Click(object sender, EventArgs e)
-        {
-            FormShow(new FrmPadrao());
         }
     }
-
-
 }

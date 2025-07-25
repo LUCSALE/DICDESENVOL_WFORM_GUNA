@@ -118,23 +118,28 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>db_ab2460_USUARIOS.xsd</DependentUpon>
     </Compile>
+    <Compile Include="db_ab2460_USUARIOS_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_ab2460_USUARIOS_dbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FrmCTRL_Versao.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmCTRL_Versao.Designer.cs">
       <DependentUpon>FrmCTRL_Versao.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPadrao.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmPadrao.Designer.cs">
-      <DependentUpon>FrmPadrao.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmUsuarios.Designer.cs">
       <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmUsabilidade.cs">
       <SubType>Form</SubType>
@@ -147,11 +152,11 @@
     <EmbeddedResource Include="FrmCTRL_Versao.resx">
       <DependentUpon>FrmCTRL_Versao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPadrao.resx">
-      <DependentUpon>FrmPadrao.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmUsuarios.resx">
       <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUsabilidade.resx">
       <DependentUpon>FrmUsabilidade.cs</DependentUpon>
@@ -220,6 +225,17 @@
     </None>
     <None Include="db_ab2460_USUARIOS.xss">
       <DependentUpon>db_ab2460_USUARIOS.xsd</DependentUpon>
+    </None>
+    <None Include="db_ab2460_USUARIOS_dbDataSet.xsc">
+      <DependentUpon>db_ab2460_USUARIOS_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_ab2460_USUARIOS_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_ab2460_USUARIOS_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_ab2460_USUARIOS_dbDataSet.xss">
+      <DependentUpon>db_ab2460_USUARIOS_dbDataSet.xsd</DependentUpon>
     </None>
     <None Include="dicdesenvol_TemporaryKey.pfx" />
     <None Include="packages.config" />
