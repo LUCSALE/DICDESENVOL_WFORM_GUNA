@@ -33,5 +33,29 @@ namespace dicdesenvol.Properties {
                 return ((string)(this["db_ab2460_cadastrodbConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("12")]
+        public int Shadown {
+            get {
+                return ((int)(this["Shadown"]));
+            }
+            set {
+                this["Shadown"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Red")]
+        public global::System.Drawing.Color Shadown2 {
+            get {
+                return ((global::System.Drawing.Color)(this["Shadown2"]));
+            }
+            set {
+                this["Shadown2"] = value;
+            }
+        }
     }
 }

@@ -30,9 +30,7 @@ namespace dicdesenvol
                 MessageBox.Show("Erro ao Consultar tabela: Padrao - " + ex.Message);
             }
 
-            // Exemplo de como acessar um campo específico de uma linha do DataSet  
-            //String nomeDoCampo = this.db_ab2460_USUARIOS_dbDataSet.USUARIOS[0].PRI_NOME;
-            //MessageBox.Show(nomeDoCampo);
+            
 
 
         }
@@ -101,7 +99,8 @@ namespace dicdesenvol
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            
+            FrmSenha Senha = new FrmSenha();
+            Senha.ShowDialog();
         }
     }
 }

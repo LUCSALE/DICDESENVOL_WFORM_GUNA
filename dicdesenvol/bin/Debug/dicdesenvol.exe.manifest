@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="dicdesenvol.exe" size="615880">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="dicdesenvol.exe" size="618952">
       <assemblyIdentity name="dicdesenvol" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>MhEZy0feILJbcUC3dtkh94KGv5BZv+RYxXQlz3ZU4o4=</dsig:DigestValue>
+        <dsig:DigestValue>704WfyHuiEM1WVToDtI70hxMtmCFYeTdZ1wYgcemSEE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -102,13 +102,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="dicdesenvol.exe.config" size="580">
+  <file name="dicdesenvol.exe.config" size="1419">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>oEMHULmgwS8s5MS/3gnc7HJAeFDGDD/fT+MmbGp5st0=</dsig:DigestValue>
+      <dsig:DigestValue>EVshfbJ7IzknHmdByFu0IwwEPcJTNG/YexzmL5/LGqg=</dsig:DigestValue>
     </hash>
   </file>
   <file name="LUCSALE_Icone.ico" size="9662">

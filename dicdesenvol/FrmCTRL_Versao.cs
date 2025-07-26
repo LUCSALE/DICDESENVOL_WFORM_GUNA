@@ -12,6 +12,8 @@ namespace dicdesenvol
 {
     public partial class FrmCTRL_Versao : Form
     {
+        
+
         public FrmCTRL_Versao()
         {
             InitializeComponent();
@@ -31,7 +33,16 @@ namespace dicdesenvol
                 MessageBox.Show("Erro ao Consultar tabela: CTRL_Versao - " + ex.Message);
             }
 
-            
+            // Exemplo de como acessar um campo específico de uma linha do DataSet  
+            //String nomeDoCampo = this.db_ab2460_cadastrodbDataSet.CTRL_VERSAO[0].VERSAO;
+            //MessageBox.Show(nomeDoCampo);
+
+            // Exemplo de como acessar um campo específico em uma leitura sequencial do DataSet  
+            //foreach (DataRow row in this.db_ab2460_cadastrodbDataSet.CTRL_VERSAO.Rows)
+            //{
+            //    string work = row["VERSAO"].ToString();
+            //    MessageBox.Show(work);
+            //}
 
         }
 
