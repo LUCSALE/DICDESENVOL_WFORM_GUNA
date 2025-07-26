@@ -328,6 +328,7 @@
     <None Include="images\leave_13087965.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="images\8679871_lock_password_fill_icon.png" />
     <Content Include="LUCSALE_Icone.ico" />
   </ItemGroup>
   <ItemGroup>

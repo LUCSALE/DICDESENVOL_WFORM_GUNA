@@ -26,5 +26,15 @@ namespace dicdesenvol
         {
             this.Close();   
         }
+
+        private void FrmSenha_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            usuariosTableAdapter1.UpdateSenha(txtSenha.Text, txtUsuario.Text);  
+        }
     }
 }
