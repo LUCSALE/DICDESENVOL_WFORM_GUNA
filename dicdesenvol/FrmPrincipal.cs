@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,7 +21,7 @@ namespace dicdesenvol
 
         private void FormShow(Form frm)
         {
-
+            
             frm.TopLevel = false;
             pnlForm.Controls.Add(frm);
             frm.BringToFront();
@@ -81,6 +82,22 @@ namespace dicdesenvol
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
+            //Lê definição do APP para definição dos parâmetros
+            StreamReader csv = new StreamReader(@"C:\dicdesenvol.cfg");
+            string linha = "";
+            string[] campos;
+
+            linha = csv.ReadLine();
+            campos = linha.Split(';');
+
+            // Atualiza DADOS da aplicação
+            InfoApp.sistema = campos[1];
+            InfoApp.local = campos[0];
+            InfoApp.dirfoto = campos[2];
+            lblLocal.Text = "Local: " + InfoApp.local;
+            lblSistema.Text = "Sistema: " + InfoApp.sistema;
+            lblDir_Foto.Text = "Dir_Foto: " + InfoApp.dirfoto;
+
             AtualizaVersao();
         }
 

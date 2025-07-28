@@ -46,10 +46,11 @@
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.picLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblLocal = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblSistema = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblDir_Foto = new System.Windows.Forms.ToolStripStatusLabel();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            this.pnlForm.SuspendLayout();
             this.pnlLateral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIcone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -113,7 +114,6 @@
             // pnlForm
             // 
             this.pnlForm.BackColor = System.Drawing.Color.AliceBlue;
-            this.pnlForm.Controls.Add(this.statusStrip1);
             this.pnlForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlForm.Location = new System.Drawing.Point(283, 73);
             this.pnlForm.Name = "pnlForm";
@@ -335,25 +335,52 @@
             // 
             this.statusStrip1.BackColor = System.Drawing.Color.MidnightBlue;
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 470);
+            this.lblLocal,
+            this.lblSistema,
+            this.lblDir_Foto});
+            this.statusStrip1.Location = new System.Drawing.Point(283, 543);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(717, 22);
-            this.statusStrip1.TabIndex = 0;
+            this.statusStrip1.TabIndex = 4;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // toolStripStatusLabel1
+            // lblLocal
             // 
-            this.toolStripStatusLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(44, 17);
-            this.toolStripStatusLabel1.Text = "Versão:";
+            this.lblLocal.AutoSize = false;
+            this.lblLocal.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLocal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.lblLocal.Name = "lblLocal";
+            this.lblLocal.Size = new System.Drawing.Size(111, 17);
+            this.lblLocal.Text = "Local: ";
+            this.lblLocal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblSistema
+            // 
+            this.lblSistema.AutoSize = false;
+            this.lblSistema.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSistema.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.lblSistema.Name = "lblSistema";
+            this.lblSistema.Size = new System.Drawing.Size(238, 17);
+            this.lblSistema.Text = "Sistema: ";
+            this.lblSistema.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblDir_Foto
+            // 
+            this.lblDir_Foto.AutoSize = false;
+            this.lblDir_Foto.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDir_Foto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.lblDir_Foto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDir_Foto.Name = "lblDir_Foto";
+            this.lblDir_Foto.Size = new System.Drawing.Size(350, 17);
+            this.lblDir_Foto.Text = "Dir. Foto:";
+            this.lblDir_Foto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1000, 565);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.pnlForm);
             this.Controls.Add(this.pnlHeader);
             this.Controls.Add(this.pnlLateral);
@@ -368,8 +395,6 @@
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.FrmPrincipal_Paint);
             this.pnlHeader.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            this.pnlForm.ResumeLayout(false);
-            this.pnlForm.PerformLayout();
             this.pnlLateral.ResumeLayout(false);
             this.pnlLateral.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIcone)).EndInit();
@@ -377,6 +402,7 @@
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -399,7 +425,9 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblVersao;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel lblLocal;
+        private System.Windows.Forms.ToolStripStatusLabel lblSistema;
+        private System.Windows.Forms.ToolStripStatusLabel lblDir_Foto;
     }
 }
 
