@@ -45,11 +45,15 @@
             this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.picLogo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.pnlForm.SuspendLayout();
             this.pnlLateral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIcone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -109,6 +113,7 @@
             // pnlForm
             // 
             this.pnlForm.BackColor = System.Drawing.Color.AliceBlue;
+            this.pnlForm.Controls.Add(this.statusStrip1);
             this.pnlForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlForm.Location = new System.Drawing.Point(283, 73);
             this.pnlForm.Name = "pnlForm";
@@ -326,6 +331,24 @@
             this.picLogo.TabIndex = 0;
             this.picLogo.TabStop = false;
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 470);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(717, 22);
+            this.statusStrip1.TabIndex = 0;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(44, 17);
+            this.toolStripStatusLabel1.Text = "Versão:";
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -345,10 +368,14 @@
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.FrmPrincipal_Paint);
             this.pnlHeader.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.pnlForm.ResumeLayout(false);
+            this.pnlForm.PerformLayout();
             this.pnlLateral.ResumeLayout(false);
             this.pnlLateral.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIcone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -371,6 +398,8 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCopy;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblVersao;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }
 

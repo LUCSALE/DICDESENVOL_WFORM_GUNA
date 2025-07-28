@@ -34,7 +34,7 @@ namespace dicdesenvol
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            usuariosTableAdapter1.UpdateSenha(txtSenha.Text, txtUsuario.Text);  
+            //usuariosTableAdapter1.UpdateSenha(txtSenha.Text, txtUsuario.Text);  
         }
     }
 }
