@@ -66,16 +66,16 @@ namespace dicdesenvol
 
             try
             {
-                //this.Validate();
-                //this.cTRLVERSAOBindingSource.EndEdit();
-                //this.PadraoTableAdapter.Update(this.db_ab2460_cadastrodbDataSet);
+                this.Validate();
+                this.hTMLCSSUSABILIDADEBindingSource.EndEdit();
+                this.hTML_CSS_USABILIDADETableAdapter.Update(this.db_ab2460_Usabilidade_DataSet);
                 MessageBox.Show("Dados salvos com sucesso!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao Salvar: " + ex.Message);
             }
-                
+            this.Close();        
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
@@ -91,16 +91,49 @@ namespace dicdesenvol
 
         private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
         {
-            DateTime DataAtual = DateTime.Now;
-            string DataFormat = DataAtual.ToString("dd/MM/yyyy");
-            string HoraFormat = DataAtual.ToString("HH:mm:ss");
-            txtData.Text = DataFormat;
-            txtHora.Text = HoraFormat;
+            
         }
 
         private void FrmPadrao_Shown(object sender, EventArgs e)
         {
             
+        }
+
+        private void toolStripButton1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();   
+        }
+
+        private void salvarToolStripButton_Click_1(object sender, EventArgs e)
+        {
+            DateTime DataAtual = DateTime.Now;
+            string DataFormat = DataAtual.ToString("dd/MM/yyyy");
+            string HoraFormat = DataAtual.ToString("HH:mm:ss");
+            txtData.Text = DataFormat;
+            txtHora.Text = HoraFormat;
+
+            try
+            {
+                this.Validate();
+                this.hTMLCSSUSABILIDADEBindingSource.EndEdit();
+                this.hTML_CSS_USABILIDADETableAdapter.Update(this.db_ab2460_Usabilidade_DataSet);
+                MessageBox.Show("Dados salvos com sucesso!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao Salvar: " + ex.Message);
+            }
+            this.Close();
+        }
+
+        private void guna2DataGridView1_Click_2(object sender, EventArgs e)
+        {
+            txtUsabilidade_Objetivo.Focus();
+        }
+
+        private void guna2DataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="dicdesenvol.exe" size="630216">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="dicdesenvol.exe" size="632776">
       <assemblyIdentity name="dicdesenvol" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>nb0qeiYEy6BQmMpwqtHJ4JYlw4Fcpx4OHA4toUuIHLs=</dsig:DigestValue>
+        <dsig:DigestValue>bjn2Z2Y0wTHwzCQq48RtnOdWVG5SauHTtYCAUzI++js=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
