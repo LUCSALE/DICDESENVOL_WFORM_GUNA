@@ -130,6 +130,12 @@
     <Compile Include="FrmCTRL_Versao.Designer.cs">
       <DependentUpon>FrmCTRL_Versao.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPadraoClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPadraoClient.Designer.cs">
+      <DependentUpon>FrmPadraoClient.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSenha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,8 +162,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="USUARIOS_cadastrodbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>USUARIOS_cadastrodbDataSet1.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmCTRL_Versao.resx">
       <DependentUpon>FrmCTRL_Versao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPadraoClient.resx">
+      <DependentUpon>FrmPadraoClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSenha.resx">
       <DependentUpon>FrmSenha.cs</DependentUpon>
@@ -258,6 +272,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="USUARIOS_cadastrodbDataSet1.xsc">
+      <DependentUpon>USUARIOS_cadastrodbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="USUARIOS_cadastrodbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>USUARIOS_cadastrodbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="USUARIOS_cadastrodbDataSet1.xss">
+      <DependentUpon>USUARIOS_cadastrodbDataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

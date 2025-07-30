@@ -138,7 +138,7 @@ namespace dicdesenvol
 
         private void guna2GradientButton4_Click(object sender, EventArgs e)
         {
-            FormShow(new FrmUsuarios());
+            FormShow(new FrmPadraoClient());
         }
     }
 

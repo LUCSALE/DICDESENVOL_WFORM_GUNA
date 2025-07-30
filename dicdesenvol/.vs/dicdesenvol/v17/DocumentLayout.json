@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|e:\\desenvol_web\\dicdesenvol_wform_guna\\dicdesenvol\\frmusabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|solutionrelative:frmusabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|e:\\desenvol_web\\dicdesenvol_wform_guna\\dicdesenvol\\frmpadraoclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|solutionrelative:frmpadraoclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|e:\\desenvol_web\\dicdesenvol_wform_guna\\dicdesenvol\\frmusabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|solutionrelative:frmusabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\frmpadraoclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|solutionrelative:frmpadraoclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|e:\\desenvol_web\\dicdesenvol_wform_guna\\dicdesenvol\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|solutionrelative:frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|solutionrelative:frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|solutionrelative:frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmUsuarios.cs",
+              "DocumentMoniker": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmUsuarios.cs",
+              "RelativeDocumentMoniker": "FrmUsuarios.cs",
+              "ToolTip": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmUsuarios.cs",
+              "RelativeToolTip": "FrmUsuarios.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAqwEsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T12:20:59.895Z",
+              "IsPinned": true
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
@@ -55,38 +72,37 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FrmUsabilidade.cs",
-              "DocumentMoniker": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmUsabilidade.cs",
-              "RelativeDocumentMoniker": "FrmUsabilidade.cs",
-              "ToolTip": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmUsabilidade.cs",
-              "RelativeToolTip": "FrmUsabilidade.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAqwIIAAAAsAAAAAAAAAA==",
+              "Title": "FrmPadraoClient.cs",
+              "DocumentMoniker": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmPadraoClient.cs",
+              "RelativeDocumentMoniker": "FrmPadraoClient.cs",
+              "ToolTip": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmPadraoClient.cs",
+              "RelativeToolTip": "FrmPadraoClient.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAIwB8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T14:09:35.432Z",
+              "WhenOpened": "2025-07-30T12:21:37.563Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmUsabilidade.cs [Design]",
-              "DocumentMoniker": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmUsabilidade.cs",
-              "RelativeDocumentMoniker": "FrmUsabilidade.cs",
-              "ToolTip": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmUsabilidade.cs [Design]",
-              "RelativeToolTip": "FrmUsabilidade.cs [Design]",
+              "DocumentIndex": 3,
+              "Title": "FrmUsuarios.cs [Design]",
+              "DocumentMoniker": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmUsuarios.cs",
+              "RelativeDocumentMoniker": "FrmUsuarios.cs",
+              "ToolTip": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmUsuarios.cs [Design]",
+              "RelativeToolTip": "FrmUsuarios.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T14:07:03.752Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-07-30T11:44:54.844Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmPrincipal.cs [Design]",
-              "DocumentMoniker": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmPrincipal.cs",
-              "RelativeDocumentMoniker": "FrmPrincipal.cs",
-              "ToolTip": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmPrincipal.cs [Design]",
-              "RelativeToolTip": "FrmPrincipal.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "FrmPadraoClient.cs [Design]",
+              "DocumentMoniker": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmPadraoClient.cs",
+              "RelativeDocumentMoniker": "FrmPadraoClient.cs",
+              "ToolTip": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmPadraoClient.cs [Design]",
+              "RelativeToolTip": "FrmPadraoClient.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T14:04:41.055Z",
+              "WhenOpened": "2025-07-30T11:23:30.38Z",
               "EditorCaption": " [Design]"
             }
           ]
