@@ -93,6 +93,16 @@ namespace dicdesenvol.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _9069503_pull_door_icon {
+            get {
+                object obj = ResourceManager.GetObject("9069503_pull_door_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Blue_and_White_Illustrated_Login_Page_Mobile_Prototype {
             get {
                 object obj = ResourceManager.GetObject("Blue and White Illustrated Login Page Mobile Prototype", resourceCulture);

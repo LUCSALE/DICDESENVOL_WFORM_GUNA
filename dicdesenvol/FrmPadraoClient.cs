@@ -19,21 +19,23 @@ namespace dicdesenvol
 
         private void FrmPadrao_Load(object sender, EventArgs e)
         {
-            
-            try
-            {
+            // TODO: esta linha de código carrega dados na tabela 'cTRL_VERSAO_cadastrodbDataSet.CTRL_VERSAO'. Você pode movê-la ou removê-la conforme necessário.
+            this.cTRL_VERSAOTableAdapter.Fill(this.cTRL_VERSAO_cadastrodbDataSet.CTRL_VERSAO);
 
-                this.uSUARIOSTableAdapter.Fill(this.uSUARIOS_cadastrodbDataSet1.USUARIOS);
+            //try
+            //{
+            //    // TODO: esta linha de código carrega dados na tabela 'db_ab2460_cadastrodbDataSet.Padrao'. Você pode movê-la ou removê-la conforme necessário.
+            //    //this.PadraoTableAdapter.Fill(this.db_ab2460_cadastrodbDataSet.Padrao);
 
-            }
-            catch (Exception ex)
-            {
-               MessageBox.Show("Erro ao Consultar tabela: Padrao - " + ex.Message);
-            }
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("Erro ao Consultar tabela: Padrao - " + ex.Message);
+            //}
 
 
 
-            }
+        }
 
         private void guna2DataGridView1_Click(object sender, EventArgs e)
         {
@@ -104,19 +106,24 @@ namespace dicdesenvol
 
         private void salvarToolStripButton_Click_1(object sender, EventArgs e)
         {
-            
-            try
-            {
-                this.Validate();
-                this.uSUARIOSBindingSource.EndEdit();
-                this.uSUARIOSTableAdapter.Update(this.uSUARIOS_cadastrodbDataSet1);
-                MessageBox.Show("Dados salvos com sucesso!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro ao Salvar: " + ex.Message);
-            }
-            this.Close();
+            //DateTime DataAtual = DateTime.Now;
+            //string DataFormat = DataAtual.ToString("dd/MM/yyyy");
+            //string HoraFormat = DataAtual.ToString("HH:mm:ss");
+            //txtData.Text = DataFormat;
+            //txtHora.Text = HoraFormat;
+
+            //try
+            //{
+            //    this.Validate();
+            //    this.hTMLCSSUSABILIDADEBindingSource.EndEdit();
+            //    this.hTML_CSS_USABILIDADETableAdapter.Update(this.db_ab2460_Usabilidade_DataSet);
+            //    MessageBox.Show("Dados salvos com sucesso!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("Erro ao Salvar: " + ex.Message);
+            //}
+            //this.Close();
         }
 
         private void guna2DataGridView1_Click_2(object sender, EventArgs e)
@@ -132,6 +139,11 @@ namespace dicdesenvol
         private void bindingNavigatorAddNewItem_Click_1(object sender, EventArgs e)
         {
             //txtUsabilidade_Objetivo.Focus();
+        }
+
+        private void guna2DataGridView1_Click_3(object sender, EventArgs e)
+        {
+            txtSistema.Focus();
         }
     }
 }

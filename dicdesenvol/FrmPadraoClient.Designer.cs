@@ -29,16 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPadraoClient));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlHeader = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblTitulo = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlGrid = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.uSUARIOSBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.uSUARIOS_cadastrodbDataSet1 = new dicdesenvol.USUARIOS_cadastrodbDataSet1();
             this.pnlFooter = new Guna.UI2.WinForms.Guna2Panel();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
@@ -56,32 +52,36 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.pnlDados = new Guna.UI2.WinForms.Guna2Panel();
-            this.metroTextBox3 = new MetroFramework.Controls.MetroTextBox();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.metroTextBox2 = new MetroFramework.Controls.MetroTextBox();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtData = new MetroFramework.Controls.MetroTextBox();
+            this.txtHora = new MetroFramework.Controls.MetroTextBox();
             this.txtID = new MetroFramework.Controls.MetroTextBox();
+            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.uSUARIOSTableAdapter = new dicdesenvol.USUARIOS_cadastrodbDataSet1TableAdapters.USUARIOSTableAdapter();
+            this.lblTitulo = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtSistema = new MetroFramework.Controls.MetroTextBox();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtVersao = new MetroFramework.Controls.MetroTextBox();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.cTRL_VERSAO_cadastrodbDataSet = new dicdesenvol.CTRL_VERSAO_cadastrodbDataSet();
+            this.cTRLVERSAOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cTRL_VERSAOTableAdapter = new dicdesenvol.CTRL_VERSAO_cadastrodbDataSetTableAdapters.CTRL_VERSAOTableAdapter();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pRINOMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uLTNOMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.eMAILDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sENHADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.dATADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hORADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sISTEMADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vERSAODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlHeader.SuspendLayout();
             this.pnlGrid.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uSUARIOSBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uSUARIOS_cadastrodbDataSet1)).BeginInit();
             this.pnlFooter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             this.pnlDados.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cTRL_VERSAO_cadastrodbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cTRLVERSAOBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlHeader
@@ -94,18 +94,6 @@
             this.pnlHeader.Size = new System.Drawing.Size(717, 61);
             this.pnlHeader.TabIndex = 0;
             // 
-            // lblTitulo
-            // 
-            this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblTitulo.Location = new System.Drawing.Point(258, 2);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(201, 57);
-            this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.TabStop = false;
-            this.lblTitulo.Text = "Usuários";
-            // 
             // pnlGrid
             // 
             this.pnlGrid.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -115,80 +103,6 @@
             this.pnlGrid.Name = "pnlGrid";
             this.pnlGrid.Size = new System.Drawing.Size(717, 119);
             this.pnlGrid.TabIndex = 1;
-            // 
-            // guna2DataGridView1
-            // 
-            this.guna2DataGridView1.AllowUserToAddRows = false;
-            this.guna2DataGridView1.AllowUserToDeleteRows = false;
-            this.guna2DataGridView1.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.guna2DataGridView1.AutoGenerateColumns = false;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeight = 15;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDDataGridViewTextBoxColumn,
-            this.pRINOMEDataGridViewTextBoxColumn,
-            this.uLTNOMEDataGridViewTextBoxColumn,
-            this.eMAILDataGridViewTextBoxColumn,
-            this.sENHADataGridViewTextBoxColumn});
-            this.guna2DataGridView1.DataSource = this.uSUARIOSBindingSource;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.ReadOnly = true;
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(717, 119);
-            this.guna2DataGridView1.TabIndex = 0;
-            this.guna2DataGridView1.TabStop = false;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 15;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = true;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // uSUARIOSBindingSource
-            // 
-            this.uSUARIOSBindingSource.DataMember = "USUARIOS";
-            this.uSUARIOSBindingSource.DataSource = this.uSUARIOS_cadastrodbDataSet1;
-            // 
-            // uSUARIOS_cadastrodbDataSet1
-            // 
-            this.uSUARIOS_cadastrodbDataSet1.DataSetName = "USUARIOS_cadastrodbDataSet1";
-            this.uSUARIOS_cadastrodbDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // pnlFooter
             // 
@@ -202,7 +116,7 @@
             // bindingNavigator1
             // 
             this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.bindingNavigator1.BindingSource = this.uSUARIOSBindingSource;
+            this.bindingNavigator1.BindingSource = this.cTRLVERSAOBindingSource;
             this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
             this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
             this.bindingNavigator1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -220,8 +134,6 @@
             this.bindingNavigatorDeleteItem,
             this.salvarToolStripButton,
             this.toolStripSeparator1,
-            this.toolStripButton2,
-            this.toolStripSeparator2,
             this.toolStripButton1});
             this.bindingNavigator1.Location = new System.Drawing.Point(0, 1);
             this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
@@ -232,7 +144,7 @@
             this.bindingNavigator1.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
             this.bindingNavigator1.Size = new System.Drawing.Size(717, 29);
-            this.bindingNavigator1.TabIndex = 0;
+            this.bindingNavigator1.TabIndex = 2;
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -350,155 +262,90 @@
             // 
             this.pnlDados.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.pnlDados.BorderThickness = 4;
-            this.pnlDados.Controls.Add(this.metroTextBox3);
-            this.pnlDados.Controls.Add(this.guna2HtmlLabel5);
-            this.pnlDados.Controls.Add(this.metroTextBox2);
+            this.pnlDados.Controls.Add(this.txtSistema);
             this.pnlDados.Controls.Add(this.guna2HtmlLabel3);
-            this.pnlDados.Controls.Add(this.metroTextBox1);
+            this.pnlDados.Controls.Add(this.txtVersao);
             this.pnlDados.Controls.Add(this.guna2HtmlLabel2);
+            this.pnlDados.Controls.Add(this.txtData);
+            this.pnlDados.Controls.Add(this.txtHora);
             this.pnlDados.Controls.Add(this.txtID);
+            this.pnlDados.Controls.Add(this.guna2HtmlLabel6);
+            this.pnlDados.Controls.Add(this.guna2HtmlLabel5);
             this.pnlDados.Controls.Add(this.guna2HtmlLabel4);
             this.pnlDados.Controls.Add(this.guna2HtmlLabel1);
             this.pnlDados.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlDados.Location = new System.Drawing.Point(0, 180);
             this.pnlDados.Name = "pnlDados";
             this.pnlDados.Size = new System.Drawing.Size(717, 261);
-            this.pnlDados.TabIndex = 1;
+            this.pnlDados.TabIndex = 2;
             // 
-            // metroTextBox3
-            // 
-            // 
-            // 
-            // 
-            this.metroTextBox3.CustomButton.Image = null;
-            this.metroTextBox3.CustomButton.Location = new System.Drawing.Point(205, 1);
-            this.metroTextBox3.CustomButton.Name = "";
-            this.metroTextBox3.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox3.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox3.CustomButton.TabIndex = 1;
-            this.metroTextBox3.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox3.CustomButton.UseSelectable = true;
-            this.metroTextBox3.CustomButton.Visible = false;
-            this.metroTextBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.uSUARIOSBindingSource, "EMAIL", true));
-            this.metroTextBox3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.metroTextBox3.Lines = new string[0];
-            this.metroTextBox3.Location = new System.Drawing.Point(12, 171);
-            this.metroTextBox3.MaxLength = 32767;
-            this.metroTextBox3.Name = "metroTextBox3";
-            this.metroTextBox3.PasswordChar = '\0';
-            this.metroTextBox3.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox3.SelectedText = "";
-            this.metroTextBox3.SelectionLength = 0;
-            this.metroTextBox3.SelectionStart = 0;
-            this.metroTextBox3.ShortcutsEnabled = true;
-            this.metroTextBox3.Size = new System.Drawing.Size(227, 23);
-            this.metroTextBox3.TabIndex = 0;
-            this.metroTextBox3.TabStop = false;
-            this.metroTextBox3.UseSelectable = true;
-            this.metroTextBox3.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox3.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // guna2HtmlLabel5
-            // 
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(12, 152);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(38, 15);
-            this.guna2HtmlLabel5.TabIndex = 8;
-            this.guna2HtmlLabel5.TabStop = false;
-            this.guna2HtmlLabel5.Text = "E-Mail";
-            // 
-            // metroTextBox2
+            // txtData
             // 
             // 
             // 
             // 
-            this.metroTextBox2.CustomButton.Image = null;
-            this.metroTextBox2.CustomButton.Location = new System.Drawing.Point(425, 1);
-            this.metroTextBox2.CustomButton.Name = "";
-            this.metroTextBox2.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox2.CustomButton.TabIndex = 1;
-            this.metroTextBox2.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox2.CustomButton.UseSelectable = true;
-            this.metroTextBox2.CustomButton.Visible = false;
-            this.metroTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.uSUARIOSBindingSource, "ULT_NOME", true));
-            this.metroTextBox2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.metroTextBox2.Lines = new string[0];
-            this.metroTextBox2.Location = new System.Drawing.Point(12, 124);
-            this.metroTextBox2.MaxLength = 32767;
-            this.metroTextBox2.Name = "metroTextBox2";
-            this.metroTextBox2.PasswordChar = '\0';
-            this.metroTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox2.SelectedText = "";
-            this.metroTextBox2.SelectionLength = 0;
-            this.metroTextBox2.SelectionStart = 0;
-            this.metroTextBox2.ShortcutsEnabled = true;
-            this.metroTextBox2.Size = new System.Drawing.Size(447, 23);
-            this.metroTextBox2.TabIndex = 7;
-            this.metroTextBox2.TabStop = false;
-            this.metroTextBox2.UseSelectable = true;
-            this.metroTextBox2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox2.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtData.CustomButton.Image = null;
+            this.txtData.CustomButton.Location = new System.Drawing.Point(45, 1);
+            this.txtData.CustomButton.Name = "";
+            this.txtData.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtData.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtData.CustomButton.TabIndex = 1;
+            this.txtData.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtData.CustomButton.UseSelectable = true;
+            this.txtData.CustomButton.Visible = false;
+            this.txtData.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cTRLVERSAOBindingSource, "DATA", true));
+            this.txtData.Enabled = false;
+            this.txtData.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.txtData.Lines = new string[0];
+            this.txtData.Location = new System.Drawing.Point(12, 78);
+            this.txtData.MaxLength = 32767;
+            this.txtData.Name = "txtData";
+            this.txtData.PasswordChar = '\0';
+            this.txtData.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtData.SelectedText = "";
+            this.txtData.SelectionLength = 0;
+            this.txtData.SelectionStart = 0;
+            this.txtData.ShortcutsEnabled = true;
+            this.txtData.Size = new System.Drawing.Size(67, 23);
+            this.txtData.TabIndex = 4;
+            this.txtData.TabStop = false;
+            this.txtData.UseSelectable = true;
+            this.txtData.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtData.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(12, 107);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(74, 15);
-            this.guna2HtmlLabel3.TabIndex = 6;
-            this.guna2HtmlLabel3.TabStop = false;
-            this.guna2HtmlLabel3.Text = "Último Nome";
-            // 
-            // metroTextBox1
+            // txtHora
             // 
             // 
             // 
             // 
-            this.metroTextBox1.CustomButton.Image = null;
-            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(425, 1);
-            this.metroTextBox1.CustomButton.Name = "";
-            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox1.CustomButton.TabIndex = 1;
-            this.metroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox1.CustomButton.UseSelectable = true;
-            this.metroTextBox1.CustomButton.Visible = false;
-            this.metroTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.uSUARIOSBindingSource, "PRI_NOME", true));
-            this.metroTextBox1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.metroTextBox1.Lines = new string[0];
-            this.metroTextBox1.Location = new System.Drawing.Point(12, 78);
-            this.metroTextBox1.MaxLength = 32767;
-            this.metroTextBox1.Name = "metroTextBox1";
-            this.metroTextBox1.PasswordChar = '\0';
-            this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox1.SelectedText = "";
-            this.metroTextBox1.SelectionLength = 0;
-            this.metroTextBox1.SelectionStart = 0;
-            this.metroTextBox1.ShortcutsEnabled = true;
-            this.metroTextBox1.Size = new System.Drawing.Size(447, 23);
-            this.metroTextBox1.TabIndex = 4;
-            this.metroTextBox1.TabStop = false;
-            this.metroTextBox1.UseSelectable = true;
-            this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(12, 61);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(84, 15);
-            this.guna2HtmlLabel2.TabIndex = 3;
-            this.guna2HtmlLabel2.TabStop = false;
-            this.guna2HtmlLabel2.Text = "Primeiro Nome";
+            this.txtHora.CustomButton.Image = null;
+            this.txtHora.CustomButton.Location = new System.Drawing.Point(32, 1);
+            this.txtHora.CustomButton.Name = "";
+            this.txtHora.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtHora.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtHora.CustomButton.TabIndex = 1;
+            this.txtHora.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtHora.CustomButton.UseSelectable = true;
+            this.txtHora.CustomButton.Visible = false;
+            this.txtHora.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cTRLVERSAOBindingSource, "HORA", true));
+            this.txtHora.Enabled = false;
+            this.txtHora.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.txtHora.Lines = new string[0];
+            this.txtHora.Location = new System.Drawing.Point(12, 126);
+            this.txtHora.MaxLength = 32767;
+            this.txtHora.Name = "txtHora";
+            this.txtHora.PasswordChar = '\0';
+            this.txtHora.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtHora.SelectedText = "";
+            this.txtHora.SelectionLength = 0;
+            this.txtHora.SelectionStart = 0;
+            this.txtHora.ShortcutsEnabled = true;
+            this.txtHora.Size = new System.Drawing.Size(54, 23);
+            this.txtHora.TabIndex = 6;
+            this.txtHora.TabStop = false;
+            this.txtHora.UseSelectable = true;
+            this.txtHora.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtHora.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // txtID
             // 
@@ -514,11 +361,11 @@
             this.txtID.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtID.CustomButton.UseSelectable = true;
             this.txtID.CustomButton.Visible = false;
-            this.txtID.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.uSUARIOSBindingSource, "ID", true));
+            this.txtID.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cTRLVERSAOBindingSource, "ID", true));
             this.txtID.Enabled = false;
             this.txtID.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.txtID.Lines = new string[0];
-            this.txtID.Location = new System.Drawing.Point(12, 32);
+            this.txtID.Location = new System.Drawing.Point(12, 27);
             this.txtID.MaxLength = 32767;
             this.txtID.Name = "txtID";
             this.txtID.PasswordChar = '\0';
@@ -534,15 +381,39 @@
             this.txtID.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtID.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
+            // guna2HtmlLabel6
+            // 
+            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(12, 109);
+            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(30, 15);
+            this.guna2HtmlLabel6.TabIndex = 5;
+            this.guna2HtmlLabel6.TabStop = false;
+            this.guna2HtmlLabel6.Text = "Hora";
+            // 
+            // guna2HtmlLabel5
+            // 
+            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(12, 60);
+            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(30, 15);
+            this.guna2HtmlLabel5.TabIndex = 3;
+            this.guna2HtmlLabel5.TabStop = false;
+            this.guna2HtmlLabel5.Text = "Data";
+            // 
             // guna2HtmlLabel4
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(12, 15);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(12, 10);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(16, 15);
-            this.guna2HtmlLabel4.TabIndex = 0;
+            this.guna2HtmlLabel4.TabIndex = 1;
             this.guna2HtmlLabel4.TabStop = false;
             this.guna2HtmlLabel4.Text = "ID";
             // 
@@ -551,67 +422,223 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(12, 12);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(12, 6);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(18, 18);
-            this.guna2HtmlLabel1.TabIndex = 1;
+            this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "ID";
             // 
-            // uSUARIOSTableAdapter
+            // lblTitulo
             // 
-            this.uSUARIOSTableAdapter.ClearBeforeFill = true;
+            this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.lblTitulo.Location = new System.Drawing.Point(199, 2);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(319, 57);
+            this.lblTitulo.TabIndex = 1;
+            this.lblTitulo.TabStop = false;
+            this.lblTitulo.Text = "CTRL_Versão";
+            // 
+            // txtSistema
+            // 
+            // 
+            // 
+            // 
+            this.txtSistema.CustomButton.Image = null;
+            this.txtSistema.CustomButton.Location = new System.Drawing.Point(296, 1);
+            this.txtSistema.CustomButton.Name = "";
+            this.txtSistema.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtSistema.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtSistema.CustomButton.TabIndex = 1;
+            this.txtSistema.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtSistema.CustomButton.UseSelectable = true;
+            this.txtSistema.CustomButton.Visible = false;
+            this.txtSistema.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cTRLVERSAOBindingSource, "SISTEMA", true));
+            this.txtSistema.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.txtSistema.Lines = new string[0];
+            this.txtSistema.Location = new System.Drawing.Point(12, 173);
+            this.txtSistema.MaxLength = 32767;
+            this.txtSistema.Name = "txtSistema";
+            this.txtSistema.PasswordChar = '\0';
+            this.txtSistema.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtSistema.SelectedText = "";
+            this.txtSistema.SelectionLength = 0;
+            this.txtSistema.SelectionStart = 0;
+            this.txtSistema.ShortcutsEnabled = true;
+            this.txtSistema.Size = new System.Drawing.Size(318, 23);
+            this.txtSistema.TabIndex = 12;
+            this.txtSistema.UseSelectable = true;
+            this.txtSistema.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtSistema.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(12, 155);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(47, 15);
+            this.guna2HtmlLabel3.TabIndex = 11;
+            this.guna2HtmlLabel3.TabStop = false;
+            this.guna2HtmlLabel3.Text = "Sistema";
+            // 
+            // txtVersao
+            // 
+            // 
+            // 
+            // 
+            this.txtVersao.CustomButton.Image = null;
+            this.txtVersao.CustomButton.Location = new System.Drawing.Point(45, 1);
+            this.txtVersao.CustomButton.Name = "";
+            this.txtVersao.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtVersao.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtVersao.CustomButton.TabIndex = 1;
+            this.txtVersao.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtVersao.CustomButton.UseSelectable = true;
+            this.txtVersao.CustomButton.Visible = false;
+            this.txtVersao.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cTRLVERSAOBindingSource, "VERSAO", true));
+            this.txtVersao.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.txtVersao.Lines = new string[0];
+            this.txtVersao.Location = new System.Drawing.Point(12, 220);
+            this.txtVersao.MaxLength = 32767;
+            this.txtVersao.Name = "txtVersao";
+            this.txtVersao.PasswordChar = '\0';
+            this.txtVersao.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtVersao.SelectedText = "";
+            this.txtVersao.SelectionLength = 0;
+            this.txtVersao.SelectionStart = 0;
+            this.txtVersao.ShortcutsEnabled = true;
+            this.txtVersao.Size = new System.Drawing.Size(67, 23);
+            this.txtVersao.TabIndex = 14;
+            this.txtVersao.UseSelectable = true;
+            this.txtVersao.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtVersao.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(12, 202);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(42, 15);
+            this.guna2HtmlLabel2.TabIndex = 13;
+            this.guna2HtmlLabel2.TabStop = false;
+            this.guna2HtmlLabel2.Text = "Versão";
+            // 
+            // guna2DataGridView1
+            // 
+            this.guna2DataGridView1.AllowUserToAddRows = false;
+            this.guna2DataGridView1.AllowUserToDeleteRows = false;
+            this.guna2DataGridView1.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.guna2DataGridView1.AutoGenerateColumns = false;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn,
+            this.dATADataGridViewTextBoxColumn,
+            this.hORADataGridViewTextBoxColumn,
+            this.sISTEMADataGridViewTextBoxColumn,
+            this.vERSAODataGridViewTextBoxColumn});
+            this.guna2DataGridView1.DataSource = this.cTRLVERSAOBindingSource;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            this.guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.guna2DataGridView1.Name = "guna2DataGridView1";
+            this.guna2DataGridView1.ReadOnly = true;
+            this.guna2DataGridView1.RowHeadersVisible = false;
+            this.guna2DataGridView1.Size = new System.Drawing.Size(717, 119);
+            this.guna2DataGridView1.TabIndex = 0;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 15;
+            this.guna2DataGridView1.ThemeStyle.ReadOnly = true;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridView1.Click += new System.EventHandler(this.guna2DataGridView1_Click_3);
+            // 
+            // cTRL_VERSAO_cadastrodbDataSet
+            // 
+            this.cTRL_VERSAO_cadastrodbDataSet.DataSetName = "CTRL_VERSAO_cadastrodbDataSet";
+            this.cTRL_VERSAO_cadastrodbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cTRLVERSAOBindingSource
+            // 
+            this.cTRLVERSAOBindingSource.DataMember = "CTRL_VERSAO";
+            this.cTRLVERSAOBindingSource.DataSource = this.cTRL_VERSAO_cadastrodbDataSet;
+            // 
+            // cTRL_VERSAOTableAdapter
+            // 
+            this.cTRL_VERSAOTableAdapter.ClearBeforeFill = true;
             // 
             // iDDataGridViewTextBoxColumn
             // 
-            this.iDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
             this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
             this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
             this.iDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.iDDataGridViewTextBoxColumn.Width = 30;
             // 
-            // pRINOMEDataGridViewTextBoxColumn
+            // dATADataGridViewTextBoxColumn
             // 
-            this.pRINOMEDataGridViewTextBoxColumn.DataPropertyName = "PRI_NOME";
-            this.pRINOMEDataGridViewTextBoxColumn.HeaderText = "Primeiro Nome";
-            this.pRINOMEDataGridViewTextBoxColumn.Name = "pRINOMEDataGridViewTextBoxColumn";
-            this.pRINOMEDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dATADataGridViewTextBoxColumn.DataPropertyName = "DATA";
+            this.dATADataGridViewTextBoxColumn.HeaderText = "DATA";
+            this.dATADataGridViewTextBoxColumn.Name = "dATADataGridViewTextBoxColumn";
+            this.dATADataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // uLTNOMEDataGridViewTextBoxColumn
+            // hORADataGridViewTextBoxColumn
             // 
-            this.uLTNOMEDataGridViewTextBoxColumn.DataPropertyName = "ULT_NOME";
-            this.uLTNOMEDataGridViewTextBoxColumn.HeaderText = "Último Nome";
-            this.uLTNOMEDataGridViewTextBoxColumn.Name = "uLTNOMEDataGridViewTextBoxColumn";
-            this.uLTNOMEDataGridViewTextBoxColumn.ReadOnly = true;
+            this.hORADataGridViewTextBoxColumn.DataPropertyName = "HORA";
+            this.hORADataGridViewTextBoxColumn.HeaderText = "HORA";
+            this.hORADataGridViewTextBoxColumn.Name = "hORADataGridViewTextBoxColumn";
+            this.hORADataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // eMAILDataGridViewTextBoxColumn
+            // sISTEMADataGridViewTextBoxColumn
             // 
-            this.eMAILDataGridViewTextBoxColumn.DataPropertyName = "EMAIL";
-            this.eMAILDataGridViewTextBoxColumn.HeaderText = "E-Mail";
-            this.eMAILDataGridViewTextBoxColumn.Name = "eMAILDataGridViewTextBoxColumn";
-            this.eMAILDataGridViewTextBoxColumn.ReadOnly = true;
+            this.sISTEMADataGridViewTextBoxColumn.DataPropertyName = "SISTEMA";
+            this.sISTEMADataGridViewTextBoxColumn.HeaderText = "SISTEMA";
+            this.sISTEMADataGridViewTextBoxColumn.Name = "sISTEMADataGridViewTextBoxColumn";
+            this.sISTEMADataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // sENHADataGridViewTextBoxColumn
+            // vERSAODataGridViewTextBoxColumn
             // 
-            this.sENHADataGridViewTextBoxColumn.DataPropertyName = "SENHA";
-            this.sENHADataGridViewTextBoxColumn.HeaderText = "SENHA";
-            this.sENHADataGridViewTextBoxColumn.Name = "sENHADataGridViewTextBoxColumn";
-            this.sENHADataGridViewTextBoxColumn.ReadOnly = true;
-            this.sENHADataGridViewTextBoxColumn.Visible = false;
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 23);
-            // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.toolStripButton2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(87, 20);
-            this.toolStripButton2.Text = "Definir SENHA";
+            this.vERSAODataGridViewTextBoxColumn.DataPropertyName = "VERSAO";
+            this.vERSAODataGridViewTextBoxColumn.HeaderText = "VERSAO";
+            this.vERSAODataGridViewTextBoxColumn.Name = "vERSAODataGridViewTextBoxColumn";
+            this.vERSAODataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // FrmPadraoClient
             // 
@@ -631,9 +658,6 @@
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.pnlGrid.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uSUARIOSBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uSUARIOS_cadastrodbDataSet1)).EndInit();
             this.pnlFooter.ResumeLayout(false);
             this.pnlFooter.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
@@ -641,6 +665,9 @@
             this.bindingNavigator1.PerformLayout();
             this.pnlDados.ResumeLayout(false);
             this.pnlDados.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cTRL_VERSAO_cadastrodbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cTRLVERSAOBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -651,6 +678,13 @@
         private Guna.UI2.WinForms.Guna2Panel pnlGrid;
         private Guna.UI2.WinForms.Guna2Panel pnlFooter;
         private Guna.UI2.WinForms.Guna2Panel pnlDados;
+        private MetroFramework.Controls.MetroTextBox txtData;
+        private MetroFramework.Controls.MetroTextBox txtHora;
+        private MetroFramework.Controls.MetroTextBox txtID;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
@@ -667,25 +701,18 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTitulo;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private MetroFramework.Controls.MetroTextBox metroTextBox3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
-        private MetroFramework.Controls.MetroTextBox metroTextBox2;
+        private MetroFramework.Controls.MetroTextBox txtSistema;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private MetroFramework.Controls.MetroTextBox metroTextBox1;
+        private MetroFramework.Controls.MetroTextBox txtVersao;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private MetroFramework.Controls.MetroTextBox txtID;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private USUARIOS_cadastrodbDataSet1 uSUARIOS_cadastrodbDataSet1;
-        private System.Windows.Forms.BindingSource uSUARIOSBindingSource;
-        private USUARIOS_cadastrodbDataSet1TableAdapters.USUARIOSTableAdapter uSUARIOSTableAdapter;
+        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private CTRL_VERSAO_cadastrodbDataSet cTRL_VERSAO_cadastrodbDataSet;
+        private System.Windows.Forms.BindingSource cTRLVERSAOBindingSource;
+        private CTRL_VERSAO_cadastrodbDataSetTableAdapters.CTRL_VERSAOTableAdapter cTRL_VERSAOTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pRINOMEDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn uLTNOMEDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn eMAILDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sENHADataGridViewTextBoxColumn;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dATADataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hORADataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sISTEMADataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn vERSAODataGridViewTextBoxColumn;
     }
 }

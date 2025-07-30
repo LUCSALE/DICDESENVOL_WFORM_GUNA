@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,21 +19,21 @@ namespace dicdesenvol
 
         private void FrmPadrao_Load(object sender, EventArgs e)
         {
+            
             try
             {
-                // TODO: esta linha de código carrega dados na tabela 'db_ab2460_USUARIOS_dbDataSet.USUARIOS'. Você pode movê-la ou removê-la conforme necessário.
-                this.uSUARIOSTableAdapter.Fill(this.db_ab2460_USUARIOS_dbDataSet.USUARIOS);
+
+                this.uSUARIOSTableAdapter.Fill(this.uSUARIOS_cadastrodbDataSet1.USUARIOS);
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao Consultar tabela: Padrao - " + ex.Message);
+               MessageBox.Show("Erro ao Consultar tabela: Padrao - " + ex.Message);
             }
 
-            
 
 
-        }
+            }
 
         private void guna2DataGridView1_Click(object sender, EventArgs e)
         {
@@ -62,18 +62,18 @@ namespace dicdesenvol
         private void salvarToolStripButton_Click(object sender, EventArgs e)
         {
 
-            try
-            {
-                //this.Validate();
-                //this.cTRLVERSAOBindingSource.EndEdit();
-                //this.PadraoTableAdapter.Update(this.db_ab2460_cadastrodbDataSet);
-                MessageBox.Show("Dados salvos com sucesso!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro ao Salvar: " + ex.Message);
-            }
-                
+            //try
+            //{
+            //    this.Validate();
+            //    this.hTMLCSSUSABILIDADEBindingSource.EndEdit();
+            //    this.hTML_CSS_USABILIDADETableAdapter.Update(this.db_ab2460_Usabilidade_DataSet);
+            //    MessageBox.Show("Dados salvos com sucesso!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("Erro ao Salvar: " + ex.Message);
+            //}
+            this.Close();        
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
@@ -97,10 +97,46 @@ namespace dicdesenvol
             
         }
 
-        private void toolStripButton2_Click(object sender, EventArgs e)
+        private void toolStripButton1_Click_1(object sender, EventArgs e)
         {
-            FrmSenha Senha = new FrmSenha();
-            Senha.ShowDialog();
+            this.Close();   
+        }
+
+        private void salvarToolStripButton_Click_1(object sender, EventArgs e)
+        {
+            
+            try
+            {
+                this.Validate();
+                this.uSUARIOSBindingSource.EndEdit();
+                this.uSUARIOSTableAdapter.Update(this.uSUARIOS_cadastrodbDataSet1);
+                MessageBox.Show("Dados salvos com sucesso!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao Salvar: " + ex.Message);
+            }
+            this.Close();
+        }
+
+        private void guna2DataGridView1_Click_2(object sender, EventArgs e)
+        {
+            //txtUsabilidade_Objetivo.Focus();
+        }
+
+        private void guna2DataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void bindingNavigatorAddNewItem_Click_1(object sender, EventArgs e)
+        {
+            //txtUsabilidade_Objetivo.Focus();
+        }
+
+        private void guna2DataGridView1_Click_3(object sender, EventArgs e)
+        {
+            txtPRI_NOME.Focus();
         }
     }
 }

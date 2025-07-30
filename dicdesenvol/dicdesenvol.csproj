@@ -94,6 +94,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassesApoio.cs" />
+    <Compile Include="CTRL_VERSAO_cadastrodbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CTRL_VERSAO_cadastrodbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="db_ab2460_cadastrodbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -136,17 +141,17 @@
     <Compile Include="FrmPadraoClient.Designer.cs">
       <DependentUpon>FrmPadraoClient.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmSenha.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmSenha.Designer.cs">
-      <DependentUpon>FrmSenha.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmUsuarios.Designer.cs">
       <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSenha.Designer.cs">
+      <DependentUpon>FrmSenha.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
@@ -173,11 +178,11 @@
     <EmbeddedResource Include="FrmPadraoClient.resx">
       <DependentUpon>FrmPadraoClient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmSenha.resx">
-      <DependentUpon>FrmSenha.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmUsuarios.resx">
       <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSenha.resx">
+      <DependentUpon>FrmSenha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
@@ -195,6 +200,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="CTRL_VERSAO_cadastrodbDataSet.xsc">
+      <DependentUpon>CTRL_VERSAO_cadastrodbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CTRL_VERSAO_cadastrodbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CTRL_VERSAO_cadastrodbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CTRL_VERSAO_cadastrodbDataSet.xss">
+      <DependentUpon>CTRL_VERSAO_cadastrodbDataSet.xsd</DependentUpon>
+    </None>
     <None Include="db_ab2460_cadastrodbDataSet.xsc">
       <DependentUpon>db_ab2460_cadastrodbDataSet.xsd</DependentUpon>
     </None>
@@ -355,6 +371,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\8679871_lock_password_fill_icon.png" />
+    <None Include="images\9069503_pull_door_icon.png" />
     <Content Include="LUCSALE_Icone.ico" />
   </ItemGroup>
   <ItemGroup>
