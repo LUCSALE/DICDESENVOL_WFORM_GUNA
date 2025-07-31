@@ -35,5 +35,12 @@ namespace dicdesenvol
             get { return m_Senha; }
             set { m_Senha = value; }
         }
+
+        private static string m_SalvaSenha = "";
+        public static string SalvaSenha
+        {
+            get { return m_SalvaSenha; }
+            set { m_SalvaSenha = value; }
+        }
     }
 }

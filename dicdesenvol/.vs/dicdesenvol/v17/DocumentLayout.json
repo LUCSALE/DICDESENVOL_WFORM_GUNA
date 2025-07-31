@@ -1,36 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|e:\\desenvol_web\\dicdesenvol_wform_guna\\dicdesenvol\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|solutionrelative:frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|e:\\desenvol_web\\dicdesenvol_wform_guna\\dicdesenvol\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|solutionrelative:frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|e:\\desenvol_web\\dicdesenvol_wform_guna\\dicdesenvol\\frmsenha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|solutionrelative:frmsenha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|e:\\desenvol_web\\dicdesenvol_wform_guna\\dicdesenvol\\frmsenha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|solutionrelative:frmsenha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|e:\\desenvol_web\\dicdesenvol_wform_guna\\dicdesenvol\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|solutionrelative:frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|e:\\desenvol_web\\dicdesenvol_wform_guna\\dicdesenvol\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|solutionrelative:frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|e:\\desenvol_web\\dicdesenvol_wform_guna\\dicdesenvol\\classesapoio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|solutionrelative:classesapoio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -38,15 +9,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Bookmark",
@@ -55,6 +26,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
             },
             {
               "$type": "Bookmark",
@@ -67,94 +42,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmUsuarios.cs",
-              "DocumentMoniker": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmUsuarios.cs",
-              "RelativeDocumentMoniker": "FrmUsuarios.cs",
-              "ToolTip": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmUsuarios.cs",
-              "RelativeToolTip": "FrmUsuarios.cs",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAqwJAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T17:49:11.017Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmUsuarios.cs [Design]",
-              "DocumentMoniker": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmUsuarios.cs",
-              "RelativeDocumentMoniker": "FrmUsuarios.cs",
-              "ToolTip": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmUsuarios.cs [Design]",
-              "RelativeToolTip": "FrmUsuarios.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T17:48:23.221Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmSenha.cs",
-              "DocumentMoniker": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmSenha.cs",
-              "RelativeDocumentMoniker": "FrmSenha.cs",
-              "ToolTip": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmSenha.cs",
-              "RelativeToolTip": "FrmSenha.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAqwB8AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T17:23:13.975Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FrmSenha.cs [Design]",
-              "DocumentMoniker": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmSenha.cs",
-              "RelativeDocumentMoniker": "FrmSenha.cs",
-              "ToolTip": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmSenha.cs [Design]",
-              "RelativeToolTip": "FrmSenha.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T17:23:09.453Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FrmPrincipal.cs",
-              "DocumentMoniker": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmPrincipal.cs",
-              "RelativeDocumentMoniker": "FrmPrincipal.cs",
-              "ToolTip": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmPrincipal.cs",
-              "RelativeToolTip": "FrmPrincipal.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAF0AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T17:21:30.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FrmPrincipal.cs [Design]",
-              "DocumentMoniker": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmPrincipal.cs",
-              "RelativeDocumentMoniker": "FrmPrincipal.cs",
-              "ToolTip": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmPrincipal.cs [Design]",
-              "RelativeToolTip": "FrmPrincipal.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T17:21:24.304Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ClassesApoio.cs",
-              "DocumentMoniker": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\ClassesApoio.cs",
-              "RelativeDocumentMoniker": "ClassesApoio.cs",
-              "ToolTip": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\ClassesApoio.cs",
-              "RelativeToolTip": "ClassesApoio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T17:15:57.646Z",
-              "EditorCaption": ""
             }
           ]
         }

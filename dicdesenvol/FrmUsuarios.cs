@@ -145,6 +145,13 @@ namespace dicdesenvol
 
             FrmSenha Senha = new FrmSenha();
             Senha.ShowDialog();
+
+            if (InfoSenha.SalvaSenha == "SIM")
+            {
+                guna2DataGridView1.CurrentRow.Cells[4].Value = InfoSenha.Senha.Trim();
+                
+            }
+            
         }
     }
 }

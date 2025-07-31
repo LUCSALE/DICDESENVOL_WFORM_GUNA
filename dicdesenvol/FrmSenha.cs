@@ -24,6 +24,7 @@ namespace dicdesenvol
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            InfoSenha.SalvaSenha = "NAO";
             this.Close();   
         }
 
@@ -37,6 +38,8 @@ namespace dicdesenvol
             InfoSenha.Senha = txtSenha.Text.Trim();
             if (InfoSenha.Senha.Length > 0)
             {
+
+                InfoSenha.SalvaSenha = "SIM";
                 // Fecha o formulário
                 this.Close();
             }
