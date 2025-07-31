@@ -12,37 +12,25 @@ namespace dicdesenvol
 {
     public partial class FrmCTRL_Versao : Form
     {
-        
-
         public FrmCTRL_Versao()
         {
             InitializeComponent();
         }
 
-        private void FrmCTRL_Versao_Load(object sender, EventArgs e)
+        private void FrmPadrao_Load(object sender, EventArgs e)
         {
-
             try
             {
-                // TODO: esta linha de código carrega dados na tabela 'db_ab2460_cadastrodbDataSet.CTRL_VERSAO'. Você pode movê-la ou removê-la conforme necessário.
-                this.cTRL_VERSAOTableAdapter.Fill(this.db_ab2460_cadastrodbDataSet.CTRL_VERSAO);
-                txtSistema.Focus();
+                // TODO: esta linha de código carrega dados na tabela 'db_ab2460_cadastrodbDataSet.Padrao'. Você pode movê-la ou removê-la conforme necessário.
+                this.cTRL_VERSAOTableAdapter.Fill(this.cTRL_VERSAO_cadastrodbDataSet.CTRL_VERSAO);
+
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao Consultar tabela: CTRL_Versao - " + ex.Message);
+                MessageBox.Show("Erro ao Consultar tabela: Padrao - " + ex.Message);
             }
 
-            // Exemplo de como acessar um campo específico de uma linha do DataSet  
-            //String nomeDoCampo = this.db_ab2460_cadastrodbDataSet.CTRL_VERSAO[0].VERSAO;
-            //MessageBox.Show(nomeDoCampo);
 
-            // Exemplo de como acessar um campo específico em uma leitura sequencial do DataSet  
-            //foreach (DataRow row in this.db_ab2460_cadastrodbDataSet.CTRL_VERSAO.Rows)
-            //{
-            //    string work = row["VERSAO"].ToString();
-            //    MessageBox.Show(work);
-            //}
 
         }
 
@@ -73,18 +61,18 @@ namespace dicdesenvol
         private void salvarToolStripButton_Click(object sender, EventArgs e)
         {
 
-            try
-            {
-                this.Validate();
-                this.cTRLVERSAOBindingSource.EndEdit();
-                this.cTRL_VERSAOTableAdapter.Update(this.db_ab2460_cadastrodbDataSet);
-                MessageBox.Show("Dados salvos com sucesso!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro ao Salvar: " + ex.Message);
-            }
-                
+            //try
+            //{
+            //    this.Validate();
+            //    this.hTMLCSSUSABILIDADEBindingSource.EndEdit();
+            //    this.hTML_CSS_USABILIDADETableAdapter.Update(this.db_ab2460_Usabilidade_DataSet);
+            //    MessageBox.Show("Dados salvos com sucesso!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("Erro ao Salvar: " + ex.Message);
+            //}
+            this.Close();        
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
@@ -100,16 +88,59 @@ namespace dicdesenvol
 
         private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void FrmPadrao_Shown(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void toolStripButton1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();   
+        }
+
+        private void salvarToolStripButton_Click_1(object sender, EventArgs e)
+        {
             DateTime DataAtual = DateTime.Now;
             string DataFormat = DataAtual.ToString("dd/MM/yyyy");
             string HoraFormat = DataAtual.ToString("HH:mm:ss");
             txtData.Text = DataFormat;
             txtHora.Text = HoraFormat;
+
+            try
+            {
+                this.Validate();
+                this.cTRLVERSAOBindingSource.EndEdit();
+                this.cTRL_VERSAOTableAdapter.Update(this.cTRL_VERSAO_cadastrodbDataSet);
+                MessageBox.Show("Dados salvos com sucesso!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao Salvar: " + ex.Message);
+            }
+            this.Close();
         }
 
-        private void FrmCTRL_Versao_Shown(object sender, EventArgs e)
+        private void guna2DataGridView1_Click_2(object sender, EventArgs e)
         {
-            
+            //txtUsabilidade_Objetivo.Focus();
+        }
+
+        private void guna2DataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void bindingNavigatorAddNewItem_Click_1(object sender, EventArgs e)
+        {
+            txtSistema.Focus();
+        }
+
+        private void guna2DataGridView1_Click_3(object sender, EventArgs e)
+        {
+            txtSistema.Focus();
         }
     }
 }

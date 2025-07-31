@@ -135,12 +135,6 @@
     <Compile Include="FrmCTRL_Versao.Designer.cs">
       <DependentUpon>FrmCTRL_Versao.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPadraoClient.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmPadraoClient.Designer.cs">
-      <DependentUpon>FrmPadraoClient.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,9 +168,6 @@
     </Compile>
     <EmbeddedResource Include="FrmCTRL_Versao.resx">
       <DependentUpon>FrmCTRL_Versao.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmPadraoClient.resx">
-      <DependentUpon>FrmPadraoClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUsuarios.resx">
       <DependentUpon>FrmUsuarios.cs</DependentUpon>

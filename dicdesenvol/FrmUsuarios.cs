@@ -138,5 +138,13 @@ namespace dicdesenvol
         {
             txtPRI_NOME.Focus();
         }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            InfoSenha.Senha = guna2DataGridView1.CurrentRow.Cells[4].Value.ToString();
+
+            FrmSenha Senha = new FrmSenha();
+            Senha.ShowDialog();
+        }
     }
 }

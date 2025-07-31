@@ -381,8 +381,9 @@
             this.toolStripButton2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(87, 20);
-            this.toolStripButton2.Text = "Definir SENHA";
+            this.toolStripButton2.Size = new System.Drawing.Size(108, 20);
+            this.toolStripButton2.Text = "(Re)Definir SENHA";
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
             // toolStripSeparator2
             // 
@@ -614,7 +615,7 @@
             // 
             this.uSUARIOSTableAdapter.ClearBeforeFill = true;
             // 
-            // FrmPadraoClient
+            // FrmUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -625,7 +626,7 @@
             this.Controls.Add(this.pnlGrid);
             this.Controls.Add(this.pnlHeader);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmPadraoClient";
+            this.Name = "FrmUsuarios";
             this.Text = "FrmPadrao";
             this.Load += new System.EventHandler(this.FrmPadrao_Load);
             this.Shown += new System.EventHandler(this.FrmPadrao_Shown);

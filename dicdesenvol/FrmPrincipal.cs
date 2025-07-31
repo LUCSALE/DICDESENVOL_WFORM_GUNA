@@ -103,7 +103,7 @@ namespace dicdesenvol
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            FormShow(new FrmPadraoClient());
+            FormShow(new FrmCTRL_Versao());
         }
 
         private void guna2GradientButton5_Click(object sender, EventArgs e)
