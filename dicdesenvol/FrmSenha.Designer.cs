@@ -111,7 +111,7 @@
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(125, 27);
             this.guna2Button2.TabIndex = 1;
-            this.guna2Button2.Text = "Salvar SENHA";
+            this.guna2Button2.Text = "Atualizar SENHA";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Button1
@@ -175,7 +175,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.AliceBlue;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(210)))), ((int)(((byte)(245)))));
             this.ClientSize = new System.Drawing.Size(375, 225);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.guna2CustomGradientPanel2);
