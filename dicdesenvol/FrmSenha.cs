@@ -30,7 +30,8 @@ namespace dicdesenvol
 
         private void FrmSenha_Load(object sender, EventArgs e)
         {
-            txtSenha.Text = InfoSenha.Senha.Trim(); 
+            txtSenha.Text = InfoSenha.Senha.Trim();
+            txtSenha.Focus();
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)

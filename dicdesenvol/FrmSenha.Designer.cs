@@ -170,6 +170,7 @@
             this.txtSenha.SelectedText = "";
             this.txtSenha.Size = new System.Drawing.Size(200, 20);
             this.txtSenha.TabIndex = 3;
+            this.txtSenha.UseSystemPasswordChar = true;
             // 
             // FrmSenha
             // 
