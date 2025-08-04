@@ -238,6 +238,7 @@
             this.guna2GradientButton6.Size = new System.Drawing.Size(283, 33);
             this.guna2GradientButton6.TabIndex = 11;
             this.guna2GradientButton6.Text = "Pesquisa (Inclusão RÁPIDA)";
+            this.guna2GradientButton6.Click += new System.EventHandler(this.guna2GradientButton6_Click);
             // 
             // guna2CircleButton1
             // 

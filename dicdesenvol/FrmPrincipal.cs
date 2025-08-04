@@ -155,6 +155,12 @@ namespace dicdesenvol
         {
             this.Close();
         }
+
+        private void guna2GradientButton6_Click(object sender, EventArgs e)
+        {
+            FrmPesquisaRap PesquisaRap = new FrmPesquisaRap();
+            PesquisaRap.ShowDialog();
+        }
     }
 
 
