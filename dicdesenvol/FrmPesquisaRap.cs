@@ -19,19 +19,37 @@ namespace dicdesenvol
 
         private void FrmPadrao_Load(object sender, EventArgs e)
         {
-       
-            //try
-            //{
-            //    // TODO: esta linha de código carrega dados na tabela 'db_ab2460_cadastrodbDataSet.Padrao'. Você pode movê-la ou removê-la conforme necessário.
-            //    //this.PadraoTableAdapter.Fill(this.db_ab2460_cadastrodbDataSet.Padrao);
-                
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show("Erro ao Consultar tabela: Padrao - " + ex.Message);
-            //}
+            // TODO: esta linha de código carrega dados na tabela 'db_ab2460_USABILIDADE.HTML_CSS_USABILIDADE'. Você pode movê-la ou removê-la conforme necessário.
+            this.hTML_CSS_USABILIDADETableAdapter.Fill(this.db_ab2460_USABILIDADE.HTML_CSS_USABILIDADE);
+            //this.Cursor = Cursors.WaitCursor;
 
-            
+            // Atualiza DADOS da aplicação
+            toolStripLabel1.Text = "Local: " + InfoApp.local;
+            toolStripLabel2.Text = "Sistema: " + InfoApp.sistema;
+
+            // Inicializa Tabela em MODO INCLUSÃO
+            try
+            {
+                // TODO: esta linha de código carrega dados na tabela 'db_ab2460_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN'. Você pode movê-la ou removê-la conforme necessário.
+                this.hTML_CSS_RADZENTableAdapter.Fill(this.db_ab2460_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN);
+                hTMLCSSRADZENBindingSource.AddNew();
+                this.Cursor = Cursors.Default;
+                DateTime DataAtual = DateTime.Now;
+                string DataFormat = DataAtual.ToString("dd/MM/yyyy");
+                string HoraFormat = DataAtual.ToString("HH:mm:ss");
+
+
+                txtData.Text = DataFormat;
+                txtHora.Text = HoraFormat;
+                //cbxUSABILIDADE_OBJETIVO.Focus();
+
+            }
+            catch (Exception ex)
+            {
+                    MessageBox.Show("Erro ao Consultar tabela: Padrao - " + ex.Message);
+            }
+            //this.Cursor = Cursors.Default;
+
 
         }
 

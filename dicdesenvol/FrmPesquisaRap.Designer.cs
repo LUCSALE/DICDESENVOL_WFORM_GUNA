@@ -32,10 +32,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPesquisaRap));
             this.pnlFooter = new Guna.UI2.WinForms.Guna2Panel();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.hTMLCSSRADZENBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.db_ab2460_HTML_CSS_RADZEN_DataSet = new dicdesenvol.db_ab2460_HTML_CSS_RADZEN_DataSet();
+            this.salvarToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.pnlDados = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtData = new MetroFramework.Controls.MetroTextBox();
             this.txtHora = new MetroFramework.Controls.MetroTextBox();
             this.txtID = new MetroFramework.Controls.MetroTextBox();
@@ -44,15 +58,20 @@
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.salvarToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.hTML_CSS_RADZENTableAdapter = new dicdesenvol.db_ab2460_HTML_CSS_RADZEN_DataSetTableAdapters.HTML_CSS_RADZENTableAdapter();
+            this.db_ab2460_USABILIDADE = new dicdesenvol.db_ab2460_USABILIDADE();
+            this.hTMLCSSUSABILIDADEBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hTML_CSS_USABILIDADETableAdapter = new dicdesenvol.db_ab2460_USABILIDADETableAdapters.HTML_CSS_USABILIDADETableAdapter();
             this.pnlFooter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hTMLCSSRADZENBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.db_ab2460_HTML_CSS_RADZEN_DataSet)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
-            this.pnlDados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.pnlDados.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.db_ab2460_USABILIDADE)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hTMLCSSUSABILIDADEBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlFooter
@@ -68,12 +87,18 @@
             // 
             this.bindingNavigator1.AddNewItem = null;
             this.bindingNavigator1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.bindingNavigator1.BindingSource = this.hTMLCSSRADZENBindingSource;
             this.bindingNavigator1.CountItem = null;
             this.bindingNavigator1.DeleteItem = null;
             this.bindingNavigator1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.salvarToolStripButton,
-            this.toolStripButton1});
+            this.toolStripSeparator2,
+            this.toolStripLabel1,
+            this.toolStripSeparator1,
+            this.toolStripLabel2,
+            this.toolStripButton1,
+            this.toolStripSeparator3});
             this.bindingNavigator1.Location = new System.Drawing.Point(0, 1);
             this.bindingNavigator1.MoveFirstItem = null;
             this.bindingNavigator1.MoveLastItem = null;
@@ -84,6 +109,71 @@
             this.bindingNavigator1.PositionItem = null;
             this.bindingNavigator1.Size = new System.Drawing.Size(717, 29);
             this.bindingNavigator1.TabIndex = 2;
+            // 
+            // hTMLCSSRADZENBindingSource
+            // 
+            this.hTMLCSSRADZENBindingSource.DataMember = "HTML_CSS_RADZEN";
+            this.hTMLCSSRADZENBindingSource.DataSource = this.db_ab2460_HTML_CSS_RADZEN_DataSet;
+            // 
+            // db_ab2460_HTML_CSS_RADZEN_DataSet
+            // 
+            this.db_ab2460_HTML_CSS_RADZEN_DataSet.DataSetName = "db_ab2460_HTML_CSS_RADZEN_DataSet";
+            this.db_ab2460_HTML_CSS_RADZEN_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // salvarToolStripButton
+            // 
+            this.salvarToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.salvarToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("salvarToolStripButton.Image")));
+            this.salvarToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.salvarToolStripButton.Name = "salvarToolStripButton";
+            this.salvarToolStripButton.Size = new System.Drawing.Size(23, 20);
+            this.salvarToolStripButton.Text = "&Salvar";
+            this.salvarToolStripButton.Click += new System.EventHandler(this.salvarToolStripButton_Click_1);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 23);
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.AutoSize = false;
+            this.toolStripLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(104, 20);
+            this.toolStripLabel1.Text = "Local: ";
+            this.toolStripLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 23);
+            // 
+            // toolStripLabel2
+            // 
+            this.toolStripLabel2.AutoSize = false;
+            this.toolStripLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.toolStripLabel2.Name = "toolStripLabel2";
+            this.toolStripLabel2.Size = new System.Drawing.Size(300, 20);
+            this.toolStripLabel2.Text = "Sistema: ";
+            this.toolStripLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = global::dicdesenvol.Properties.Resources._4213475_arrow_back_left_return_icon;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 20);
+            this.toolStripButton1.ToolTipText = "Voltar ...";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click_1);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 23);
             // 
             // guna2BorderlessForm1
             // 
@@ -106,6 +196,20 @@
             this.guna2GradientPanel1.Size = new System.Drawing.Size(717, 100);
             this.guna2GradientPanel1.TabIndex = 4;
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.FillColor = System.Drawing.Color.DarkBlue;
+            this.guna2PictureBox1.Image = global::dicdesenvol.Properties.Resources.PESQUISA_NEW;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(201, 12);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(315, 90);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.guna2PictureBox1.TabIndex = 3;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
+            // 
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -127,6 +231,10 @@
             this.pnlDados.BackColor = System.Drawing.Color.AliceBlue;
             this.pnlDados.BorderColor = System.Drawing.Color.MidnightBlue;
             this.pnlDados.BorderThickness = 2;
+            this.pnlDados.Controls.Add(this.guna2ComboBox1);
+            this.pnlDados.Controls.Add(this.guna2HtmlLabel2);
+            this.pnlDados.Controls.Add(this.guna2HtmlLabel3);
+            this.pnlDados.Controls.Add(this.guna2HtmlLabel7);
             this.pnlDados.Controls.Add(this.txtData);
             this.pnlDados.Controls.Add(this.txtHora);
             this.pnlDados.Controls.Add(this.txtID);
@@ -139,6 +247,63 @@
             this.pnlDados.Name = "pnlDados";
             this.pnlDados.Size = new System.Drawing.Size(717, 341);
             this.pnlDados.TabIndex = 5;
+            // 
+            // guna2ComboBox1
+            // 
+            this.guna2ComboBox1.AutoRoundedCorners = true;
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.hTMLCSSUSABILIDADEBindingSource, "USABILIDADE_OBJETIV0", true));
+            this.guna2ComboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.hTMLCSSRADZENBindingSource, "USABILIDADE_OBJETIVO", true));
+            this.guna2ComboBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hTMLCSSRADZENBindingSource, "USABILIDADE_OBJETIVO", true));
+            this.guna2ComboBox1.DataSource = this.hTMLCSSUSABILIDADEBindingSource;
+            this.guna2ComboBox1.DisplayMember = "USABILIDADE_OBJETIV0";
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.Location = new System.Drawing.Point(12, 176);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.Size = new System.Drawing.Size(453, 36);
+            this.guna2ComboBox1.TabIndex = 10;
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(12, 277);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(110, 15);
+            this.guna2HtmlLabel2.TabIndex = 9;
+            this.guna2HtmlLabel2.TabStop = false;
+            this.guna2HtmlLabel2.Text = "FOTO / ARQUIVO:";
+            // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(12, 228);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(162, 15);
+            this.guna2HtmlLabel3.TabIndex = 8;
+            this.guna2HtmlLabel3.TabStop = false;
+            this.guna2HtmlLabel3.Text = "CONSIDERAÇÕES GERAIS:";
+            // 
+            // guna2HtmlLabel7
+            // 
+            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(12, 155);
+            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(163, 15);
+            this.guna2HtmlLabel7.TabIndex = 7;
+            this.guna2HtmlLabel7.TabStop = false;
+            this.guna2HtmlLabel7.Text = "USABILIDADE / OBJETIVO:";
             // 
             // txtData
             // 
@@ -154,6 +319,7 @@
             this.txtData.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtData.CustomButton.UseSelectable = true;
             this.txtData.CustomButton.Visible = false;
+            this.txtData.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hTMLCSSRADZENBindingSource, "DATA", true));
             this.txtData.Enabled = false;
             this.txtData.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.txtData.Lines = new string[0];
@@ -187,6 +353,7 @@
             this.txtHora.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtHora.CustomButton.UseSelectable = true;
             this.txtHora.CustomButton.Visible = false;
+            this.txtHora.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hTMLCSSRADZENBindingSource, "HORA", true));
             this.txtHora.Enabled = false;
             this.txtHora.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.txtHora.Lines = new string[0];
@@ -220,6 +387,7 @@
             this.txtID.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtID.CustomButton.UseSelectable = true;
             this.txtID.CustomButton.Visible = false;
+            this.txtID.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hTMLCSSRADZENBindingSource, "ID", true));
             this.txtID.Enabled = false;
             this.txtID.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.txtID.Lines = new string[0];
@@ -291,40 +459,23 @@
             this.guna2ShadowForm1.ShadowColor = System.Drawing.Color.MidnightBlue;
             this.guna2ShadowForm1.TargetForm = this;
             // 
-            // guna2PictureBox1
+            // hTML_CSS_RADZENTableAdapter
             // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.FillColor = System.Drawing.Color.DarkBlue;
-            this.guna2PictureBox1.Image = global::dicdesenvol.Properties.Resources.PESQUISA_NEW;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(201, 12);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(315, 90);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.guna2PictureBox1.TabIndex = 3;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
+            this.hTML_CSS_RADZENTableAdapter.ClearBeforeFill = true;
             // 
-            // salvarToolStripButton
+            // db_ab2460_USABILIDADE
             // 
-            this.salvarToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.salvarToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("salvarToolStripButton.Image")));
-            this.salvarToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.salvarToolStripButton.Name = "salvarToolStripButton";
-            this.salvarToolStripButton.Size = new System.Drawing.Size(23, 20);
-            this.salvarToolStripButton.Text = "&Salvar";
-            this.salvarToolStripButton.Click += new System.EventHandler(this.salvarToolStripButton_Click_1);
+            this.db_ab2460_USABILIDADE.DataSetName = "db_ab2460_USABILIDADE";
+            this.db_ab2460_USABILIDADE.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // toolStripButton1
+            // hTMLCSSUSABILIDADEBindingSource
             // 
-            this.toolStripButton1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::dicdesenvol.Properties.Resources._4213475_arrow_back_left_return_icon;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 20);
-            this.toolStripButton1.ToolTipText = "Voltar ...";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click_1);
+            this.hTMLCSSUSABILIDADEBindingSource.DataMember = "HTML_CSS_USABILIDADE";
+            this.hTMLCSSUSABILIDADEBindingSource.DataSource = this.db_ab2460_USABILIDADE;
+            // 
+            // hTML_CSS_USABILIDADETableAdapter
+            // 
+            this.hTML_CSS_USABILIDADETableAdapter.ClearBeforeFill = true;
             // 
             // FrmPesquisaRap
             // 
@@ -346,11 +497,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hTMLCSSRADZENBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.db_ab2460_HTML_CSS_RADZEN_DataSet)).EndInit();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.pnlDados.ResumeLayout(false);
             this.pnlDados.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.db_ab2460_USABILIDADE)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hTMLCSSUSABILIDADEBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -373,5 +528,20 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private db_ab2460_HTML_CSS_RADZEN_DataSet db_ab2460_HTML_CSS_RADZEN_DataSet;
+        private System.Windows.Forms.BindingSource hTMLCSSRADZENBindingSource;
+        private db_ab2460_HTML_CSS_RADZEN_DataSetTableAdapters.HTML_CSS_RADZENTableAdapter hTML_CSS_RADZENTableAdapter;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private db_ab2460_USABILIDADE db_ab2460_USABILIDADE;
+        private System.Windows.Forms.BindingSource hTMLCSSUSABILIDADEBindingSource;
+        private db_ab2460_USABILIDADETableAdapters.HTML_CSS_USABILIDADETableAdapter hTML_CSS_USABILIDADETableAdapter;
     }
 }
