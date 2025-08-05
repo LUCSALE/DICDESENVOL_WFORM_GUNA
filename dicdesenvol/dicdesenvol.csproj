@@ -372,6 +372,7 @@
   <ItemGroup>
     <None Include="images\8679871_lock_password_fill_icon.png" />
     <None Include="images\9069503_pull_door_icon.png" />
+    <None Include="images\PESQUISA_NEW.png" />
     <Content Include="LUCSALE_Icone.ico" />
   </ItemGroup>
   <ItemGroup>
