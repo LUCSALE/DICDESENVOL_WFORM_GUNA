@@ -19,21 +19,17 @@ namespace dicdesenvol
 
         private void FrmPadrao_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'db_ab2460_USABILIDADE.HTML_CSS_USABILIDADE'. Você pode movê-la ou removê-la conforme necessário.
-            this.hTML_CSS_USABILIDADETableAdapter.Fill(this.db_ab2460_USABILIDADE.HTML_CSS_USABILIDADE);
-            //this.Cursor = Cursors.WaitCursor;
-
             // Atualiza DADOS da aplicação
             toolStripLabel1.Text = "Local: " + InfoApp.local;
             toolStripLabel2.Text = "Sistema: " + InfoApp.sistema;
-
+            
             // Inicializa Tabela em MODO INCLUSÃO
             try
             {
                 // TODO: esta linha de código carrega dados na tabela 'db_ab2460_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN'. Você pode movê-la ou removê-la conforme necessário.
-                this.hTML_CSS_RADZENTableAdapter.Fill(this.db_ab2460_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN);
+                this.hTML_CSS_RADZENTableAdapter.Fill(this.db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN);
                 hTMLCSSRADZENBindingSource.AddNew();
-                this.Cursor = Cursors.Default;
+                //this.Cursor = Cursors.Default;
                 DateTime DataAtual = DateTime.Now;
                 string DataFormat = DataAtual.ToString("dd/MM/yyyy");
                 string HoraFormat = DataAtual.ToString("HH:mm:ss");
@@ -41,6 +37,8 @@ namespace dicdesenvol
 
                 txtData.Text = DataFormat;
                 txtHora.Text = HoraFormat;
+                txtLocal.Text = InfoApp.local;
+                txtSistema.Text = InfoApp.sistema;
                 //cbxUSABILIDADE_OBJETIVO.Focus();
 
             }
@@ -122,24 +120,27 @@ namespace dicdesenvol
 
         private void salvarToolStripButton_Click_1(object sender, EventArgs e)
         {
-            //DateTime DataAtual = DateTime.Now;
-            //string DataFormat = DataAtual.ToString("dd/MM/yyyy");
-            //string HoraFormat = DataAtual.ToString("HH:mm:ss");
-            //txtData.Text = DataFormat;
-            //txtHora.Text = HoraFormat;
+            
+            
+            try
+            {
+                this.Validate();
+                
+                // Atualiza DADOS da aplicação
+                //db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN.Rows[0]["LOCAL"] = InfoApp.local;
+                //db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN.Rows[0]["SISTEMA"] = InfoApp.sistema; ---> NÃO FUNCIONA
 
-            //try
-            //{
-            //    this.Validate();
-            //    this.hTMLCSSUSABILIDADEBindingSource.EndEdit();
-            //    this.hTML_CSS_USABILIDADETableAdapter.Update(this.db_ab2460_Usabilidade_DataSet);
-            //    MessageBox.Show("Dados salvos com sucesso!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show("Erro ao Salvar: " + ex.Message);
-            //}
-            //this.Close();
+                this.hTMLCSSRADZENBindingSource.EndEdit();
+
+                this.tableAdapterManager.UpdateAll(this.db_HTML_CSS_RADZEN_DataSet);
+                                
+                MessageBox.Show("Dados salvos com sucesso !!!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao Salvar: " + ex.Message);
+            }
+            this.Close();
         }
 
         private void guna2DataGridView1_Click_2(object sender, EventArgs e)

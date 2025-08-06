@@ -20,9 +20,9 @@ namespace dicdesenvol {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("db_ab2460_HTML_CSS_RADZEN_DataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("db_HTML_CSS_RADZEN_DataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class db_ab2460_HTML_CSS_RADZEN_DataSet : global::System.Data.DataSet {
+    public partial class db_HTML_CSS_RADZEN_DataSet : global::System.Data.DataSet {
         
         private HTML_CSS_RADZENDataTable tableHTML_CSS_RADZEN;
         
@@ -30,7 +30,7 @@ namespace dicdesenvol {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public db_ab2460_HTML_CSS_RADZEN_DataSet() {
+        public db_HTML_CSS_RADZEN_DataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace dicdesenvol {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected db_ab2460_HTML_CSS_RADZEN_DataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected db_HTML_CSS_RADZEN_DataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace dicdesenvol {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            db_ab2460_HTML_CSS_RADZEN_DataSet cln = ((db_ab2460_HTML_CSS_RADZEN_DataSet)(base.Clone()));
+            db_HTML_CSS_RADZEN_DataSet cln = ((db_HTML_CSS_RADZEN_DataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace dicdesenvol {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "db_ab2460_HTML_CSS_RADZEN_DataSet";
+            this.DataSetName = "db_HTML_CSS_RADZEN_DataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/db_ab2460_HTML_CSS_RADZEN_DataSet.xsd";
+            this.Namespace = "http://tempuri.org/db_HTML_CSS_RADZEN_DataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableHTML_CSS_RADZEN = new HTML_CSS_RADZENDataTable();
@@ -225,7 +225,7 @@ namespace dicdesenvol {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            db_ab2460_HTML_CSS_RADZEN_DataSet ds = new db_ab2460_HTML_CSS_RADZEN_DataSet();
+            db_HTML_CSS_RADZEN_DataSet ds = new db_HTML_CSS_RADZEN_DataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -622,7 +622,7 @@ namespace dicdesenvol {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                db_ab2460_HTML_CSS_RADZEN_DataSet ds = new db_ab2460_HTML_CSS_RADZEN_DataSet();
+                db_HTML_CSS_RADZEN_DataSet ds = new db_HTML_CSS_RADZEN_DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1022,7 +1022,7 @@ namespace dicdesenvol {
         }
     }
 }
-namespace dicdesenvol.db_ab2460_HTML_CSS_RADZEN_DataSetTableAdapters {
+namespace dicdesenvol.db_HTML_CSS_RADZEN_DataSetTableAdapters {
     
     
     /// <summary>
@@ -1251,7 +1251,7 @@ SELECT ID, DATA, HORA, USABILIDADE_OBJETIVO, EXEMPLO_USO, CONSIDERACOES_GERAIS, 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(db_ab2460_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZENDataTable dataTable) {
+        public virtual int Fill(db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZENDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1264,9 +1264,9 @@ SELECT ID, DATA, HORA, USABILIDADE_OBJETIVO, EXEMPLO_USO, CONSIDERACOES_GERAIS, 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual db_ab2460_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZENDataTable GetData() {
+        public virtual db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZENDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            db_ab2460_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZENDataTable dataTable = new db_ab2460_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZENDataTable();
+            db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZENDataTable dataTable = new db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZENDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1274,14 +1274,14 @@ SELECT ID, DATA, HORA, USABILIDADE_OBJETIVO, EXEMPLO_USO, CONSIDERACOES_GERAIS, 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(db_ab2460_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZENDataTable dataTable) {
+        public virtual int Update(db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZENDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(db_ab2460_HTML_CSS_RADZEN_DataSet dataSet) {
+        public virtual int Update(db_HTML_CSS_RADZEN_DataSet dataSet) {
             return this.Adapter.Update(dataSet, "HTML_CSS_RADZEN");
         }
         
@@ -1753,7 +1753,7 @@ SELECT ID, DATA, HORA, USABILIDADE_OBJETIVO, EXEMPLO_USO, CONSIDERACOES_GERAIS, 
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(db_ab2460_HTML_CSS_RADZEN_DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(db_HTML_CSS_RADZEN_DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._hTML_CSS_RADZENTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.HTML_CSS_RADZEN.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1772,7 +1772,7 @@ SELECT ID, DATA, HORA, USABILIDADE_OBJETIVO, EXEMPLO_USO, CONSIDERACOES_GERAIS, 
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(db_ab2460_HTML_CSS_RADZEN_DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(db_HTML_CSS_RADZEN_DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._hTML_CSS_RADZENTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.HTML_CSS_RADZEN.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1790,7 +1790,7 @@ SELECT ID, DATA, HORA, USABILIDADE_OBJETIVO, EXEMPLO_USO, CONSIDERACOES_GERAIS, 
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(db_ab2460_HTML_CSS_RADZEN_DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(db_HTML_CSS_RADZEN_DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._hTML_CSS_RADZENTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.HTML_CSS_RADZEN.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1832,7 +1832,7 @@ SELECT ID, DATA, HORA, USABILIDADE_OBJETIVO, EXEMPLO_USO, CONSIDERACOES_GERAIS, 
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(db_ab2460_HTML_CSS_RADZEN_DataSet dataSet) {
+        public virtual int UpdateAll(db_HTML_CSS_RADZEN_DataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

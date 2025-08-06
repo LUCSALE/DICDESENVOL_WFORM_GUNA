@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="db_ab2460_HTML_CSS_RADZEN_DataSet" targetNamespace="http://tempuri.org/db_ab2460_HTML_CSS_RADZEN_DataSet.xsd" xmlns:mstns="http://tempuri.org/db_ab2460_HTML_CSS_RADZEN_DataSet.xsd" xmlns="http://tempuri.org/db_ab2460_HTML_CSS_RADZEN_DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="db_HTML_CSS_RADZEN_DataSet" targetNamespace="http://tempuri.org/db_HTML_CSS_RADZEN_DataSet.xsd" xmlns:mstns="http://tempuri.org/db_HTML_CSS_RADZEN_DataSet.xsd" xmlns="http://tempuri.org/db_HTML_CSS_RADZEN_DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -116,7 +116,7 @@ SELECT ID, DATA, HORA, USABILIDADE_OBJETIVO, EXEMPLO_USO, CONSIDERACOES_GERAIS, 
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="db_ab2460_HTML_CSS_RADZEN_DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="db_ab2460_HTML_CSS_RADZEN_DataSet" msprop:Generator_DataSetName="db_ab2460_HTML_CSS_RADZEN_DataSet">
+  <xs:element name="db_HTML_CSS_RADZEN_DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="db_HTML_CSS_RADZEN_DataSet" msprop:Generator_DataSetName="db_HTML_CSS_RADZEN_DataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="HTML_CSS_RADZEN" msprop:Generator_RowEvHandlerName="HTML_CSS_RADZENRowChangeEventHandler" msprop:Generator_RowDeletedName="HTML_CSS_RADZENRowDeleted" msprop:Generator_RowDeletingName="HTML_CSS_RADZENRowDeleting" msprop:Generator_RowEvArgName="HTML_CSS_RADZENRowChangeEvent" msprop:Generator_TablePropName="HTML_CSS_RADZEN" msprop:Generator_RowChangedName="HTML_CSS_RADZENRowChanged" msprop:Generator_RowChangingName="HTML_CSS_RADZENRowChanging" msprop:Generator_TableClassName="HTML_CSS_RADZENDataTable" msprop:Generator_RowClassName="HTML_CSS_RADZENRow" msprop:Generator_TableVarName="tableHTML_CSS_RADZEN" msprop:Generator_UserTableName="HTML_CSS_RADZEN">
