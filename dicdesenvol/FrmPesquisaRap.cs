@@ -19,32 +19,48 @@ namespace dicdesenvol
 
         private void FrmPadrao_Load(object sender, EventArgs e)
         {
-            // Atualiza DADOS da aplicação
-            toolStripLabel1.Text = "Local: " + InfoApp.local;
-            toolStripLabel2.Text = "Sistema: " + InfoApp.sistema;
-            
-            // Inicializa Tabela em MODO INCLUSÃO
             try
             {
-                // TODO: esta linha de código carrega dados na tabela 'db_ab2460_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN'. Você pode movê-la ou removê-la conforme necessário.
+                // TODO: esta linha de código carrega dados na tabela 'db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN'. Você pode movê-la ou removê-la conforme necessário.
                 this.hTML_CSS_RADZENTableAdapter.Fill(this.db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN);
-                hTMLCSSRADZENBindingSource.AddNew();
-                //this.Cursor = Cursors.Default;
-                DateTime DataAtual = DateTime.Now;
-                string DataFormat = DataAtual.ToString("dd/MM/yyyy");
-                string HoraFormat = DataAtual.ToString("HH:mm:ss");
+                //this.hTML_CSS_RADZENBindingSource.AddNew();
 
+                //DateTime DataAtual = DateTime.Now;
+                //string DataFormat = DataAtual.ToString("dd/MM/yyyy");
+                //string HoraFormat = DataAtual.ToString("HH:mm:ss");
 
-                txtData.Text = DataFormat;
-                txtHora.Text = HoraFormat;
-                txtLocal.Text = InfoApp.local;
-                txtSistema.Text = InfoApp.sistema;
-                //cbxUSABILIDADE_OBJETIVO.Focus();
-
+                //// Atualiza DADOS da aplicação
+                //txtData.Text = DataFormat;
+                //txtHora.Text = HoraFormat;
+                //txtLocal.Text = InfoApp.local;
+                //txtSistema.Text = InfoApp.sistema;
             }
+            //// Atualiza DADOS da aplicação
+            //toolStripLabel1.Text = "Local: " + InfoApp.local;
+            //toolStripLabel2.Text = "Sistema: " + InfoApp.sistema;
+
+            //// Inicializa Tabela em MODO INCLUSÃO
+            //try
+            //{
+            //    // TODO: esta linha de código carrega dados na tabela 'db_ab2460_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN'. Você pode movê-la ou removê-la conforme necessário.
+            //    this.hTML_CSS_RADZENTableAdapter.Fill(this.db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN);
+            //    hTMLCSSRADZENBindingSource.AddNew();
+            //    //this.Cursor = Cursors.Default;
+            //    DateTime DataAtual = DateTime.Now;
+            //    string DataFormat = DataAtual.ToString("dd/MM/yyyy");
+            //    string HoraFormat = DataAtual.ToString("HH:mm:ss");
+
+
+            //    txtData.Text = DataFormat;
+            //    txtHora.Text = HoraFormat;
+            //    txtLocal.Text = InfoApp.local;
+            //    txtSistema.Text = InfoApp.sistema;
+            //    //cbxUSABILIDADE_OBJETIVO.Focus();
+
+
             catch (Exception ex)
             {
-                    MessageBox.Show("Erro ao Consultar tabela: Padrao - " + ex.Message);
+                MessageBox.Show("Erro ao Consultar tabela: Padrao - " + ex.Message);
             }
             //this.Cursor = Cursors.Default;
 
@@ -122,25 +138,7 @@ namespace dicdesenvol
         {
             
             
-            try
-            {
-                this.Validate();
-                
-                // Atualiza DADOS da aplicação
-                //db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN.Rows[0]["LOCAL"] = InfoApp.local;
-                //db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN.Rows[0]["SISTEMA"] = InfoApp.sistema; ---> NÃO FUNCIONA
-
-                this.hTMLCSSRADZENBindingSource.EndEdit();
-
-                this.tableAdapterManager.UpdateAll(this.db_HTML_CSS_RADZEN_DataSet);
-                                
-                MessageBox.Show("Dados salvos com sucesso !!!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro ao Salvar: " + ex.Message);
-            }
-            this.Close();
+            
         }
 
         private void guna2DataGridView1_Click_2(object sender, EventArgs e)
@@ -156,6 +154,26 @@ namespace dicdesenvol
         private void bindingNavigatorAddNewItem_Click_1(object sender, EventArgs e)
         {
             //txtUsabilidade_Objetivo.Focus();
+        }
+
+        private void pnlDados_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void hTML_CSS_RADZENBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void hTML_CSS_RADZENBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
+        {
+            this.Validate();
+
+            this.hTML_CSS_RADZENBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.db_HTML_CSS_RADZEN_DataSet);
+            this.Close();
         }
     }
 }

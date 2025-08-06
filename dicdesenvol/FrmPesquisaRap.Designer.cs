@@ -31,23 +31,39 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPesquisaRap));
             this.pnlFooter = new Guna.UI2.WinForms.Guna2Panel();
-            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.salvarToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.hTML_CSS_RADZENBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.hTML_CSS_RADZENBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.db_HTML_CSS_RADZEN_DataSet = new dicdesenvol.db_HTML_CSS_RADZEN_DataSet();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.hTML_CSS_RADZENBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.pnlDados = new Guna.UI2.WinForms.Guna2Panel();
+            this.hTML_CSS_RADZENDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtSistema = new MetroFramework.Controls.MetroTextBox();
-            this.hTMLCSSRADZENBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.db_HTML_CSS_RADZEN_DataSet = new dicdesenvol.db_HTML_CSS_RADZEN_DataSet();
             this.txtLocal = new MetroFramework.Controls.MetroTextBox();
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -67,104 +83,159 @@
             this.hTML_CSS_RADZENTableAdapter = new dicdesenvol.db_HTML_CSS_RADZEN_DataSetTableAdapters.HTML_CSS_RADZENTableAdapter();
             this.tableAdapterManager = new dicdesenvol.db_HTML_CSS_RADZEN_DataSetTableAdapters.TableAdapterManager();
             this.pnlFooter.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
-            this.bindingNavigator1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hTML_CSS_RADZENBindingNavigator)).BeginInit();
+            this.hTML_CSS_RADZENBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hTML_CSS_RADZENBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.db_HTML_CSS_RADZEN_DataSet)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.pnlDados.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hTMLCSSRADZENBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.db_HTML_CSS_RADZEN_DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hTML_CSS_RADZENDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlFooter
             // 
-            this.pnlFooter.Controls.Add(this.bindingNavigator1);
+            this.pnlFooter.Controls.Add(this.hTML_CSS_RADZENBindingNavigator);
             this.pnlFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlFooter.Location = new System.Drawing.Point(0, 441);
+            this.pnlFooter.Location = new System.Drawing.Point(0, 458);
             this.pnlFooter.Name = "pnlFooter";
             this.pnlFooter.Size = new System.Drawing.Size(717, 30);
             this.pnlFooter.TabIndex = 3;
             // 
-            // bindingNavigator1
+            // hTML_CSS_RADZENBindingNavigator
             // 
-            this.bindingNavigator1.AddNewItem = null;
-            this.bindingNavigator1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.bindingNavigator1.CountItem = null;
-            this.bindingNavigator1.DeleteItem = null;
-            this.bindingNavigator1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.salvarToolStripButton,
-            this.toolStripSeparator2,
-            this.toolStripLabel1,
-            this.toolStripSeparator1,
-            this.toolStripLabel2,
-            this.toolStripButton1,
-            this.toolStripSeparator3});
-            this.bindingNavigator1.Location = new System.Drawing.Point(0, 1);
-            this.bindingNavigator1.MoveFirstItem = null;
-            this.bindingNavigator1.MoveLastItem = null;
-            this.bindingNavigator1.MoveNextItem = null;
-            this.bindingNavigator1.MovePreviousItem = null;
-            this.bindingNavigator1.Name = "bindingNavigator1";
-            this.bindingNavigator1.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(717, 29);
-            this.bindingNavigator1.TabIndex = 2;
+            this.hTML_CSS_RADZENBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.hTML_CSS_RADZENBindingNavigator.BindingSource = this.hTML_CSS_RADZENBindingSource;
+            this.hTML_CSS_RADZENBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.hTML_CSS_RADZENBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.hTML_CSS_RADZENBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem,
+            this.bindingNavigatorMovePreviousItem,
+            this.bindingNavigatorSeparator,
+            this.bindingNavigatorPositionItem,
+            this.bindingNavigatorCountItem,
+            this.bindingNavigatorSeparator1,
+            this.bindingNavigatorMoveNextItem,
+            this.bindingNavigatorMoveLastItem,
+            this.bindingNavigatorSeparator2,
+            this.bindingNavigatorAddNewItem,
+            this.bindingNavigatorDeleteItem,
+            this.hTML_CSS_RADZENBindingNavigatorSaveItem});
+            this.hTML_CSS_RADZENBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.hTML_CSS_RADZENBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.hTML_CSS_RADZENBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.hTML_CSS_RADZENBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.hTML_CSS_RADZENBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.hTML_CSS_RADZENBindingNavigator.Name = "hTML_CSS_RADZENBindingNavigator";
+            this.hTML_CSS_RADZENBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.hTML_CSS_RADZENBindingNavigator.Size = new System.Drawing.Size(717, 25);
+            this.hTML_CSS_RADZENBindingNavigator.TabIndex = 7;
+            this.hTML_CSS_RADZENBindingNavigator.Text = "bindingNavigator1";
             // 
-            // salvarToolStripButton
+            // bindingNavigatorAddNewItem
             // 
-            this.salvarToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.salvarToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("salvarToolStripButton.Image")));
-            this.salvarToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.salvarToolStripButton.Name = "salvarToolStripButton";
-            this.salvarToolStripButton.Size = new System.Drawing.Size(23, 20);
-            this.salvarToolStripButton.Text = "&Salvar";
-            this.salvarToolStripButton.Click += new System.EventHandler(this.salvarToolStripButton_Click_1);
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Adicionar novo";
             // 
-            // toolStripSeparator2
+            // hTML_CSS_RADZENBindingSource
             // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 23);
+            this.hTML_CSS_RADZENBindingSource.DataMember = "HTML_CSS_RADZEN";
+            this.hTML_CSS_RADZENBindingSource.DataSource = this.db_HTML_CSS_RADZEN_DataSet;
             // 
-            // toolStripLabel1
+            // db_HTML_CSS_RADZEN_DataSet
             // 
-            this.toolStripLabel1.AutoSize = false;
-            this.toolStripLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(104, 20);
-            this.toolStripLabel1.Text = "Local: ";
-            this.toolStripLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.db_HTML_CSS_RADZEN_DataSet.DataSetName = "db_HTML_CSS_RADZEN_DataSet";
+            this.db_HTML_CSS_RADZEN_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // toolStripSeparator1
+            // bindingNavigatorCountItem
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 23);
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
             // 
-            // toolStripLabel2
+            // bindingNavigatorDeleteItem
             // 
-            this.toolStripLabel2.AutoSize = false;
-            this.toolStripLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(300, 20);
-            this.toolStripLabel2.Text = "Sistema: ";
-            this.toolStripLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Excluir";
             // 
-            // toolStripButton1
+            // bindingNavigatorMoveFirstItem
             // 
-            this.toolStripButton1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripButton1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::dicdesenvol.Properties.Resources._4213475_arrow_back_left_return_icon;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 20);
-            this.toolStripButton1.ToolTipText = "Voltar ...";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click_1);
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Text = "Mover primeiro";
             // 
-            // toolStripSeparator3
+            // bindingNavigatorMovePreviousItem
             // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 23);
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
+            // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Posição";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Posição atual";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Text = "Mover próximo";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Text = "Mover último";
+            // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // hTML_CSS_RADZENBindingNavigatorSaveItem
+            // 
+            this.hTML_CSS_RADZENBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.hTML_CSS_RADZENBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("hTML_CSS_RADZENBindingNavigatorSaveItem.Image")));
+            this.hTML_CSS_RADZENBindingNavigatorSaveItem.Name = "hTML_CSS_RADZENBindingNavigatorSaveItem";
+            this.hTML_CSS_RADZENBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
+            this.hTML_CSS_RADZENBindingNavigatorSaveItem.Text = "Salvar Dados";
+            this.hTML_CSS_RADZENBindingNavigatorSaveItem.Click += new System.EventHandler(this.hTML_CSS_RADZENBindingNavigatorSaveItem_Click_1);
             // 
             // guna2BorderlessForm1
             // 
@@ -227,6 +298,7 @@
             this.pnlDados.BackColor = System.Drawing.Color.AliceBlue;
             this.pnlDados.BorderColor = System.Drawing.Color.MidnightBlue;
             this.pnlDados.BorderThickness = 2;
+            this.pnlDados.Controls.Add(this.hTML_CSS_RADZENDataGridView);
             this.pnlDados.Controls.Add(this.txtSistema);
             this.pnlDados.Controls.Add(this.txtLocal);
             this.pnlDados.Controls.Add(this.guna2HtmlLabel12);
@@ -240,8 +312,105 @@
             this.pnlDados.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlDados.Location = new System.Drawing.Point(0, 100);
             this.pnlDados.Name = "pnlDados";
-            this.pnlDados.Size = new System.Drawing.Size(717, 341);
+            this.pnlDados.Size = new System.Drawing.Size(717, 358);
             this.pnlDados.TabIndex = 5;
+            this.pnlDados.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlDados_Paint);
+            // 
+            // hTML_CSS_RADZENDataGridView
+            // 
+            this.hTML_CSS_RADZENDataGridView.AllowUserToAddRows = false;
+            this.hTML_CSS_RADZENDataGridView.AllowUserToDeleteRows = false;
+            this.hTML_CSS_RADZENDataGridView.AllowUserToOrderColumns = true;
+            this.hTML_CSS_RADZENDataGridView.AutoGenerateColumns = false;
+            this.hTML_CSS_RADZENDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.hTML_CSS_RADZENDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10});
+            this.hTML_CSS_RADZENDataGridView.DataSource = this.hTML_CSS_RADZENBindingSource;
+            this.hTML_CSS_RADZENDataGridView.Dock = System.Windows.Forms.DockStyle.Top;
+            this.hTML_CSS_RADZENDataGridView.Location = new System.Drawing.Point(0, 0);
+            this.hTML_CSS_RADZENDataGridView.Name = "hTML_CSS_RADZENDataGridView";
+            this.hTML_CSS_RADZENDataGridView.ReadOnly = true;
+            this.hTML_CSS_RADZENDataGridView.Size = new System.Drawing.Size(717, 193);
+            this.hTML_CSS_RADZENDataGridView.TabIndex = 17;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "DATA";
+            this.dataGridViewTextBoxColumn2.HeaderText = "DATA";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "HORA";
+            this.dataGridViewTextBoxColumn3.HeaderText = "HORA";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "USABILIDADE_OBJETIVO";
+            this.dataGridViewTextBoxColumn4.HeaderText = "USABILIDADE_OBJETIVO";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "EXEMPLO_USO";
+            this.dataGridViewTextBoxColumn5.HeaderText = "EXEMPLO_USO";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "CONSIDERACOES_GERAIS";
+            this.dataGridViewTextBoxColumn6.HeaderText = "CONSIDERACOES_GERAIS";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "LOCAL";
+            this.dataGridViewTextBoxColumn7.HeaderText = "LOCAL";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "SISTEMA";
+            this.dataGridViewTextBoxColumn8.HeaderText = "SISTEMA";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "CAMINHO_FOTO";
+            this.dataGridViewTextBoxColumn9.HeaderText = "CAMINHO_FOTO";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "FOTO_ARQUIVO";
+            this.dataGridViewTextBoxColumn10.HeaderText = "FOTO_ARQUIVO";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
             // 
             // txtSistema
             // 
@@ -257,7 +426,6 @@
             this.txtSistema.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtSistema.CustomButton.UseSelectable = true;
             this.txtSistema.CustomButton.Visible = false;
-            this.txtSistema.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hTMLCSSRADZENBindingSource, "DATA", true));
             this.txtSistema.Enabled = false;
             this.txtSistema.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.txtSistema.Lines = new string[0];
@@ -277,16 +445,6 @@
             this.txtSistema.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtSistema.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // hTMLCSSRADZENBindingSource
-            // 
-            this.hTMLCSSRADZENBindingSource.DataMember = "HTML_CSS_RADZEN";
-            this.hTMLCSSRADZENBindingSource.DataSource = this.db_HTML_CSS_RADZEN_DataSet;
-            // 
-            // db_HTML_CSS_RADZEN_DataSet
-            // 
-            this.db_HTML_CSS_RADZEN_DataSet.DataSetName = "db_HTML_CSS_RADZEN_DataSet";
-            this.db_HTML_CSS_RADZEN_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // txtLocal
             // 
             // 
@@ -301,7 +459,6 @@
             this.txtLocal.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtLocal.CustomButton.UseSelectable = true;
             this.txtLocal.CustomButton.Visible = false;
-            this.txtLocal.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hTMLCSSRADZENBindingSource, "DATA", true));
             this.txtLocal.Enabled = false;
             this.txtLocal.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.txtLocal.Lines = new string[0];
@@ -359,11 +516,10 @@
             this.txtData.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtData.CustomButton.UseSelectable = true;
             this.txtData.CustomButton.Visible = false;
-            this.txtData.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hTMLCSSRADZENBindingSource, "DATA", true));
             this.txtData.Enabled = false;
             this.txtData.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.txtData.Lines = new string[0];
-            this.txtData.Location = new System.Drawing.Point(12, 74);
+            this.txtData.Location = new System.Drawing.Point(12, 267);
             this.txtData.MaxLength = 32767;
             this.txtData.Name = "txtData";
             this.txtData.PasswordChar = '\0';
@@ -393,11 +549,10 @@
             this.txtHora.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtHora.CustomButton.UseSelectable = true;
             this.txtHora.CustomButton.Visible = false;
-            this.txtHora.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hTMLCSSRADZENBindingSource, "HORA", true));
             this.txtHora.Enabled = false;
             this.txtHora.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.txtHora.Lines = new string[0];
-            this.txtHora.Location = new System.Drawing.Point(12, 122);
+            this.txtHora.Location = new System.Drawing.Point(12, 315);
             this.txtHora.MaxLength = 32767;
             this.txtHora.Name = "txtHora";
             this.txtHora.PasswordChar = '\0';
@@ -427,11 +582,10 @@
             this.txtID.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtID.CustomButton.UseSelectable = true;
             this.txtID.CustomButton.Visible = false;
-            this.txtID.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hTMLCSSRADZENBindingSource, "ID", true));
             this.txtID.Enabled = false;
             this.txtID.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.txtID.Lines = new string[0];
-            this.txtID.Location = new System.Drawing.Point(12, 23);
+            this.txtID.Location = new System.Drawing.Point(12, 216);
             this.txtID.MaxLength = 32767;
             this.txtID.Name = "txtID";
             this.txtID.PasswordChar = '\0';
@@ -452,7 +606,7 @@
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(12, 105);
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(12, 298);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(30, 15);
             this.guna2HtmlLabel8.TabIndex = 11;
@@ -464,7 +618,7 @@
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.guna2HtmlLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(12, 56);
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(12, 249);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
             this.guna2HtmlLabel9.Size = new System.Drawing.Size(30, 15);
             this.guna2HtmlLabel9.TabIndex = 9;
@@ -476,7 +630,7 @@
             this.guna2HtmlLabel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.guna2HtmlLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel10.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(12, 6);
+            this.guna2HtmlLabel10.Location = new System.Drawing.Point(12, 199);
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
             this.guna2HtmlLabel10.Size = new System.Drawing.Size(16, 15);
             this.guna2HtmlLabel10.TabIndex = 7;
@@ -568,7 +722,7 @@
             // 
             // hTML_CSS_RADZENTableAdapter
             // 
-            this.hTML_CSS_RADZENTableAdapter.ClearBeforeFill = false;
+            this.hTML_CSS_RADZENTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
@@ -581,7 +735,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(717, 471);
+            this.ClientSize = new System.Drawing.Size(717, 488);
             this.Controls.Add(this.pnlDados);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.pnlFooter);
@@ -593,35 +747,28 @@
             this.Shown += new System.EventHandler(this.FrmPadrao_Shown);
             this.pnlFooter.ResumeLayout(false);
             this.pnlFooter.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
-            this.bindingNavigator1.ResumeLayout(false);
-            this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hTML_CSS_RADZENBindingNavigator)).EndInit();
+            this.hTML_CSS_RADZENBindingNavigator.ResumeLayout(false);
+            this.hTML_CSS_RADZENBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hTML_CSS_RADZENBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.db_HTML_CSS_RADZEN_DataSet)).EndInit();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.pnlDados.ResumeLayout(false);
             this.pnlDados.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hTMLCSSRADZENBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.db_HTML_CSS_RADZEN_DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hTML_CSS_RADZENDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private Guna.UI2.WinForms.Guna2Panel pnlFooter;
-        private System.Windows.Forms.BindingNavigator bindingNavigator1;
-        private System.Windows.Forms.ToolStripButton salvarToolStripButton;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private Guna.UI2.WinForms.Guna2Panel pnlDados;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
@@ -636,13 +783,37 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
-        private db_HTML_CSS_RADZEN_DataSet db_HTML_CSS_RADZEN_DataSet;
-        private System.Windows.Forms.BindingSource hTMLCSSRADZENBindingSource;
-        private db_HTML_CSS_RADZEN_DataSetTableAdapters.HTML_CSS_RADZENTableAdapter hTML_CSS_RADZENTableAdapter;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
         private MetroFramework.Controls.MetroTextBox txtSistema;
         private MetroFramework.Controls.MetroTextBox txtLocal;
+        private System.Windows.Forms.BindingSource hTML_CSS_RADZENBindingSource;
+        private db_HTML_CSS_RADZEN_DataSet db_HTML_CSS_RADZEN_DataSet;
+        private db_HTML_CSS_RADZEN_DataSetTableAdapters.HTML_CSS_RADZENTableAdapter hTML_CSS_RADZENTableAdapter;
         private db_HTML_CSS_RADZEN_DataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.BindingNavigator hTML_CSS_RADZENBindingNavigator;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
+        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
+        private System.Windows.Forms.ToolStripButton hTML_CSS_RADZENBindingNavigatorSaveItem;
+        private System.Windows.Forms.DataGridView hTML_CSS_RADZENDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
     }
 }
