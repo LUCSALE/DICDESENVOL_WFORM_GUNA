@@ -25,32 +25,49 @@ namespace dicdesenvol
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN'. Você pode movê-la ou removê-la conforme necessário.
-            this.hTML_CSS_RADZENTableAdapter.Fill(this.db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN);
-            this.hTML_CSS_RADZENBindingSource.AddNew();
+            try
+            {
+                // TODO: esta linha de código carrega dados na tabela 'db_ab2460_USABILIDADE.HTML_CSS_USABILIDADE'. Você pode movê-la ou removê-la conforme necessário.
+                this.hTML_CSS_USABILIDADETableAdapter.Fill(this.db_ab2460_USABILIDADE.HTML_CSS_USABILIDADE);
 
-            DateTime DataAtual = DateTime.Now;
-            string DataFormat = DataAtual.ToString("dd/MM/yyyy");
-            string HoraFormat = DataAtual.ToString("HH:mm:ss");
+                // TODO: esta linha de código carrega dados na tabela 'db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN'. Você pode movê-la ou removê-la conforme necessário.
+                this.hTML_CSS_RADZENTableAdapter.Fill(this.db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN);
+                this.hTML_CSS_RADZENBindingSource.AddNew();
 
-            // Atualiza DADOS da aplicação
-            txtData.Text = DataFormat;
-            txtHora.Text = HoraFormat;
-            txtLocal.Text = InfoApp.local;
-            toolStripLabel1.Text = "Local: " + InfoApp.local;
-            txtSistema.Text = InfoApp.sistema;
-            toolStripLabel2.Text = "Sistema: " + InfoApp.sistema;
-            hTML_CSS_RADZENBindingNavigatorSaveItem.Enabled = true;
+                DateTime DataAtual = DateTime.Now;
+                string DataFormat = DataAtual.ToString("dd/MM/yyyy");
+                string HoraFormat = DataAtual.ToString("HH:mm:ss");
+
+                // Atualiza DADOS da aplicação
+                txtData.Text = DataFormat;
+                txtHora.Text = HoraFormat;
+                txtLocal.Text = InfoApp.local;
+                toolStripLabel1.Text = "Local: " + InfoApp.local;
+                txtSistema.Text = InfoApp.sistema;
+                toolStripLabel2.Text = "Sistema: " + InfoApp.sistema;
+                hTML_CSS_RADZENBindingNavigatorSaveItem.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao CONECTAR AO BANCO DE DADOS: " + ex.Message);
+            }
 
         }
 
         private void hTML_CSS_RADZENBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
-
-            this.hTML_CSS_RADZENBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.db_HTML_CSS_RADZEN_DataSet);
-
+            try
+            {
+                this.Validate();
+                this.hTML_CSS_RADZENBindingSource.EndEdit();
+                this.tableAdapterManager.UpdateAll(this.db_HTML_CSS_RADZEN_DataSet);
+                MessageBox.Show("Dados salvos com sucesso!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao Salvar: " + ex.Message);
+            }
+            this.Close();
         }
 
         private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
