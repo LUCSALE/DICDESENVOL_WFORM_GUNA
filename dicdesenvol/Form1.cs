@@ -90,5 +90,42 @@ namespace dicdesenvol
         {
             this.Close();
         }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            DateTime DataAtual = DateTime.Now;
+            string nomeArquivo = "IMG_" + DataAtual.ToString("yyyyMMdd_HHmmss") + ".png";
+
+            //openFileDialog1.InitialDirectory = @InfoApp.local;
+            //openFileDialog1.Filter = "Arquivos de Imagem (*.jpg;*.jpeg;*.png;*.gif)|*.jpg;*.jpeg;*.png;*.gif|Todos os Arquivos (*.*)|*.*";
+            //openFileDialog1.Title = "Selecione uma Imagem";
+            //openFileDialog1.ShowDialog();
+            //fOTO_ARQUIVOTextBox.Text = openFileDialog1.FileName;
+
+            if (string.IsNullOrEmpty(txtFoto_Arquivo.Text))
+            {
+                txtFoto_Arquivo.Text = nomeArquivo;
+                Clipboard.SetText(nomeArquivo);
+            }
+            else
+            {
+                DialogResult result = MessageBox.Show("Já existe um nome de arquivo definido !!!", "IMAGEM: ", MessageBoxButtons.OK);
+
+            }
+        }
+
+        private void guna2CircleButton2_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtFoto_Arquivo.Text))
+            {
+                DialogResult result = MessageBox.Show("Arquivo INDEFINIDO !!!", "IMAGEM: ", MessageBoxButtons.OK);
+            }
+            else
+            {
+                System.Diagnostics.Process.Start(InfoApp.dirfoto + txtFoto_Arquivo.Text);
+
+
+            }
+        }
     }
 }

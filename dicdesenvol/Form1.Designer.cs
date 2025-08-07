@@ -289,6 +289,7 @@
             this.guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton2.Size = new System.Drawing.Size(32, 40);
             this.guna2CircleButton2.TabIndex = 48;
+            this.guna2CircleButton2.Click += new System.EventHandler(this.guna2CircleButton2_Click);
             // 
             // guna2CircleButton1
             // 
@@ -306,6 +307,7 @@
             this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton1.Size = new System.Drawing.Size(32, 40);
             this.guna2CircleButton1.TabIndex = 47;
+            this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
             // 
             // txtFoto_Arquivo
             // 

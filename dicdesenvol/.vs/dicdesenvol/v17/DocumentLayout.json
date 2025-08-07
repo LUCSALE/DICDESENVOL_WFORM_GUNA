@@ -1,16 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|e:\\desenvol_web\\dicdesenvol_wform_guna\\dicdesenvol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,41 +9,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T17:23:54.008Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAiwDMAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T17:33:00.572Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Bookmark",
@@ -61,6 +26,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
             },
             {
               "$type": "Bookmark",
