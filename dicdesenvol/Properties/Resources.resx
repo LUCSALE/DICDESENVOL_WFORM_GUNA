@@ -118,79 +118,88 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Titulo_Principal_D" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Titulo_Principal_D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="4213475_arrow_back_left_return_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\4213475_arrow_back_left_return_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hydro-energy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\hydro-energy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LUCSALE_logo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\LUCSALE_logo3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Blue and White Illustrated Login Page Mobile Prototype" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Blue and White Illustrated Login Page Mobile Prototype.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Titulo_Principal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Titulo_Principal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="leave_13087965" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\leave_13087965.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="9069503_pull_door_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\9069503_pull_door_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LUCSALE_logo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\LUCSALE_logo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MSG_Princ" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\MSG_Princ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Titulo_Principal_C" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Titulo_Principal_C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Pesquisa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Pesquisa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pinguim" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\pinguim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PESQUISA_NEW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\PESQUISA_NEW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="4213447_arrow_load_loading_refresh_reload_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\4213447_arrow_load_loading_refresh_reload_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LUCSALE_Icone" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\LUCSALE_Icone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Titulo_Principal_F" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Titulo_Principal_F.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="8679871_lock_password_fill_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\8679871_lock_password_fill_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LUCSALE System 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\LUCSALE System 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RAIO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\RAIO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4213475_arrow_back_left_return_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\4213475_arrow_back_left_return_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="DICDESENVOL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\DICDESENVOL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Titulo_Principal_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Titulo_Principal_G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LUCSALE System" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\LUCSALE System.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Caminho_Foto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Caminho_Foto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MSG_Princ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\MSG_Princ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RAIO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\RAIO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Titulo_Principal_C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Titulo_Principal_C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LUCSALE_logo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\LUCSALE_logo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blue and White Illustrated Login Page Mobile Prototype" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Blue and White Illustrated Login Page Mobile Prototype.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9069503_pull_door_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\9069503_pull_door_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Titulo_Principal_E" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Titulo_Principal_E.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PESQUISA_NEW" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\PESQUISA_NEW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LUCSALE_logo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\LUCSALE_logo3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LUCSALE System 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\LUCSALE System 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LUCSALE_Icone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\LUCSALE_Icone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="leave_13087965" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\leave_13087965.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Titulo_Principal_F" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Titulo_Principal_F.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pinguim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\pinguim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Titulo_Principal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Titulo_Principal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8679871_lock_password_fill_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\8679871_lock_password_fill_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8666689_file_text_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\8666689_file_text_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Titulo_Principal_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Titulo_Principal_G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Caminho_Foto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Caminho_Foto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="185042_edit_modify_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\185042_edit_modify_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Titulo_Principal_D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Titulo_Principal_D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pesquisa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Pesquisa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hydro-energy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\hydro-energy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8725936_edit_alt_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\8725936_edit_alt_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

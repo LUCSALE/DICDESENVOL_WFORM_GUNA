@@ -63,6 +63,16 @@ namespace dicdesenvol.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _185042_edit_modify_icon {
+            get {
+                object obj = ResourceManager.GetObject("185042_edit_modify_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _4213447_arrow_load_loading_refresh_reload_icon {
             get {
                 object obj = ResourceManager.GetObject("4213447_arrow_load_loading_refresh_reload_icon", resourceCulture);
@@ -83,9 +93,29 @@ namespace dicdesenvol.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _8666689_file_text_icon {
+            get {
+                object obj = ResourceManager.GetObject("8666689_file_text_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _8679871_lock_password_fill_icon {
             get {
                 object obj = ResourceManager.GetObject("8679871_lock_password_fill_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _8725936_edit_alt_icon {
+            get {
+                object obj = ResourceManager.GetObject("8725936_edit_alt_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

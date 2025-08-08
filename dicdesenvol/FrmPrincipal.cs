@@ -133,7 +133,8 @@ namespace dicdesenvol
 
         private void guna2GradientButton3_Click(object sender, EventArgs e)
         {
-            
+            FormShow(new FrmPesquisa());
+
         }
 
         private void guna2GradientButton4_Click(object sender, EventArgs e)
@@ -161,7 +162,7 @@ namespace dicdesenvol
             //FrmPesquisaRap PesquisaRap = new FrmPesquisaRap();
             //PesquisaRap.ShowDialog();
 
-            Form1 PesquisaRap = new Form1();
+            FrmPesquisaRap PesquisaRap = new FrmPesquisaRap();
             PesquisaRap.ShowDialog();
         }
     }
