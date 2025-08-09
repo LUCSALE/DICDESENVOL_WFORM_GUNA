@@ -385,6 +385,8 @@
     <None Include="images\185042_edit_modify_icon.png" />
     <None Include="images\8666689_file_text_icon.png" />
     <None Include="images\8725936_edit_alt_icon.png" />
+    <None Include="images\9004715_cross_delete_remove_cancel_icon.png" />
+    <None Include="images\2530798_average image_image_images_landscape_photography_icon.png" />
     <Content Include="LUCSALE_Icone.ico" />
   </ItemGroup>
   <ItemGroup>

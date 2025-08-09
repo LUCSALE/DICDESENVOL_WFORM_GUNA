@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -106,12 +108,6 @@ namespace dicdesenvol
 
         private void salvarToolStripButton_Click_1(object sender, EventArgs e)
         {
-            //DateTime DataAtual = DateTime.Now;
-            //string DataFormat = DataAtual.ToString("dd/MM/yyyy");
-            //string HoraFormat = DataAtual.ToString("HH:mm:ss");
-            //txtData.Text = DataFormat;
-            //txtHora.Text = HoraFormat;
-
             //try
             //{
             //    this.Validate();
@@ -145,5 +141,57 @@ namespace dicdesenvol
         {
 
         }
+
+        private void bindingNavigatorDeleteItem_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Validate();
+                this.hTML_CSS_RADZENBindingSource.EndEdit();
+                this.hTML_CSS_RADZENTableAdapter.Update(this.db_HTML_CSS_RADZEN_DataSet);
+                            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao Salvar: " + ex.Message);
+            }
+            
+
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void metroGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 0)
+            {
+
+                // Exibir a imagem
+                // 
+                if (File.Exists(InfoApp.dirfoto + metroGrid1.CurrentRow.Cells[10].Value))
+                {
+                    System.Diagnostics.Process.Start(InfoApp.dirfoto + metroGrid1.CurrentRow.Cells[10].Value);
+                }
+
+            }
+
+            if (e.ColumnIndex == 1)
+            {
+
+                // Editar o registro   
+                MessageBox.Show("Você clicou na Coluna: 1 - Edição !!!");
+            }
+
+            if (e.ColumnIndex == 11)
+            {
+
+                // Excluir o registro   
+                MessageBox.Show("Você clicou na Coluna: 11 - Exclusão !!!");
+            }
+
+        }
+
     }
 }

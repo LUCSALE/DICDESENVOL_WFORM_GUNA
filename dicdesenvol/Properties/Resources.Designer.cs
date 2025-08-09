@@ -73,6 +73,16 @@ namespace dicdesenvol.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2530798_average_image_image_images_landscape_photography_icon {
+            get {
+                object obj = ResourceManager.GetObject("2530798_average image_image_images_landscape_photography_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _4213447_arrow_load_loading_refresh_reload_icon {
             get {
                 object obj = ResourceManager.GetObject("4213447_arrow_load_loading_refresh_reload_icon", resourceCulture);
@@ -116,6 +126,16 @@ namespace dicdesenvol.Properties {
         internal static System.Drawing.Bitmap _8725936_edit_alt_icon {
             get {
                 object obj = ResourceManager.GetObject("8725936_edit_alt_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _9004715_cross_delete_remove_cancel_icon {
+            get {
+                object obj = ResourceManager.GetObject("9004715_cross_delete_remove_cancel_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
