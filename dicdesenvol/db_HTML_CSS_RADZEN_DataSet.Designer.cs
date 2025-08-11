@@ -1239,13 +1239,20 @@ SELECT ID, DATA, HORA, USABILIDADE_OBJETIVO, EXEMPLO_USO, CONSIDERACOES_GERAIS, 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT        ID, DATA, HORA, USABILIDADE_OBJETIVO, EXEMPLO_USO, CONSIDERACOES_GE" +
                 "RAIS, FOTO, LOCAL, SISTEMA, CAMINHO_FOTO, FOTO_ARQUIVO\r\nFROM            HTML_CSS" +
                 "_RADZEN\r\nORDER BY ID";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT        ID, DATA, HORA, USABILIDADE_OBJETIVO, EXEMPLO_USO, CONSIDERACOES_GE" +
+                "RAIS, FOTO, LOCAL, SISTEMA, CAMINHO_FOTO, FOTO_ARQUIVO\r\nFROM            HTML_CSS" +
+                "_RADZEN\r\nWHERE ID = @ID\r\n";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1267,6 +1274,32 @@ SELECT ID, DATA, HORA, USABILIDADE_OBJETIVO, EXEMPLO_USO, CONSIDERACOES_GERAIS, 
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZENDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZENDataTable dataTable = new db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZENDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy(db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZENDataTable dataTable, int ID) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(ID));
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZENDataTable GetDataBy(int ID) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(ID));
             db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZENDataTable dataTable = new db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZENDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;

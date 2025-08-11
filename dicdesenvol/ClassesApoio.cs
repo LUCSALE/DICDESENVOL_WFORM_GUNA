@@ -43,4 +43,16 @@ namespace dicdesenvol
             set { m_SalvaSenha = value; }
         }
     }
+
+
+    public static class InfoPesq
+    {
+        private static int m_ID = 0;
+        public static int ID
+        {
+            get { return m_ID; }
+            set { m_ID = value; }
+        }
+
+    }
 }

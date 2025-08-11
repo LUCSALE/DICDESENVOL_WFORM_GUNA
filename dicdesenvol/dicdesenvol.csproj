@@ -124,10 +124,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>db_ab2460_USUARIOS_dbDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="db_HTML_CSS_RADZEN_DataSet.cs">
+      <DependentUpon>db_HTML_CSS_RADZEN_DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="db_HTML_CSS_RADZEN_DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>db_HTML_CSS_RADZEN_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPesquisaManut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPesquisaManut.Designer.cs">
+      <DependentUpon>FrmPesquisaManut.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPesquisaRap.cs">
       <SubType>Form</SubType>
@@ -178,6 +187,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>USUARIOS_cadastrodbDataSet1.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmPesquisaManut.resx">
+      <DependentUpon>FrmPesquisaManut.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPesquisaRap.resx">
       <DependentUpon>FrmPesquisaRap.cs</DependentUpon>
     </EmbeddedResource>
@@ -389,6 +401,7 @@
     <None Include="images\2530798_average image_image_images_landscape_photography_icon.png" />
     <None Include="images\46768_add_address_icon.png" />
     <None Include="images\315164_add_note_icon.png" />
+    <None Include="images\PEQUISA_MANUT.png" />
     <Content Include="LUCSALE_Icone.ico" />
   </ItemGroup>
   <ItemGroup>

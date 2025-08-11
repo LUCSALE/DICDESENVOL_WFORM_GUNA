@@ -1,4 +1,5 @@
 ﻿using Guna.UI2.WinForms;
+using MetroFramework.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,19 +22,16 @@ namespace dicdesenvol
 
         private void FrmPadrao_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN'. Você pode movê-la ou removê-la conforme necessário.
-            this.hTML_CSS_RADZENTableAdapter.Fill(this.db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN);
-            
-            //try
-            //{
-            //    // TODO: esta linha de código carrega dados na tabela 'db_ab2460_cadastrodbDataSet.Padrao'. Você pode movê-la ou removê-la conforme necessário.
-            //    //this.PadraoTableAdapter.Fill(this.db_ab2460_cadastrodbDataSet.Padrao);
+            try
+            {
+                // TODO: esta linha de código carrega dados na tabela 'db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN'. Você pode movê-la ou removê-la conforme necessário.
+                this.hTML_CSS_RADZENTableAdapter.Fill(this.db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN);
 
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show("Erro ao Consultar tabela: Padrao - " + ex.Message);
-            //}
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao Consultar tabela: Padrao - " + ex.Message);
+            }
 
 
 
@@ -180,20 +178,45 @@ namespace dicdesenvol
             if (e.ColumnIndex == 1)
             {
 
-                // Editar o registro   
-                MessageBox.Show("Você clicou na Coluna: 1 - Edição !!!");
+                // Editar o registro
+                // 
+                InfoPesq.ID = (int)metroGrid1.CurrentRow.Cells[2].Value; // Pega o ID da pesquisa   
+
+
+
+                FrmPesquisaManut PesquisaManut = new FrmPesquisaManut();
+                PesquisaManut.ShowDialog();
+
+                //MessageBox.Show("Você clicou na Coluna: 1 - Edição !!!");
             }
 
-            if (e.ColumnIndex == 11)
-            {
-
-                // Excluir o registro   
-                hTML_CSS_RADZENBindingSource.RemoveAt(5);   
-                this.Close();
-                //MessageBox.Show("Você clicou na Coluna: 11 - Exclusão !!!");
-            }
+            
 
         }
 
+        private void toolStripButton1_Click_2(object sender, EventArgs e)
+        {
+            InfoPesq.ID = 0; // Zera o ID da pesquisa    
+            FrmPesquisaManut PesquisaManut = new FrmPesquisaManut();
+            PesquisaManut.ShowDialog();
+
+            try
+            {
+                // TODO: esta linha de código carrega dados na tabela 'db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN'. Você pode movê-la ou removê-la conforme necessário.
+                this.hTML_CSS_RADZENTableAdapter.Fill(this.db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN);
+
+                // Atualiza o DataGridView
+                //this.db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN.AsDataView().Sort = "ID DESC"; // Ordena por ID decrescente 
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao Consultar tabela: Padrao - " + ex.Message);
+            }
+
+
+
+
+        }
     }
 }
