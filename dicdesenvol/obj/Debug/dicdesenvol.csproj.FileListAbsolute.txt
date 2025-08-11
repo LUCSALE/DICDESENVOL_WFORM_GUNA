@@ -45,8 +45,9 @@ E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.FrmUsua
 C:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.FrmSenha.resources
 E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.FrmSenha.resources
 C:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.exe.config
-C:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.Form1.resources
 C:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.FrmPesquisaRap.resources
 E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.FrmPesquisaRap.resources
 E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.FrmPesquisa.resources
 E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.FrmPesquisaManut.resources
+C:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.FrmPesquisaManut.resources
+C:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.FrmPesquisa.resources
