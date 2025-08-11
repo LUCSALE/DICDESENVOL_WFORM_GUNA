@@ -188,7 +188,9 @@ namespace dicdesenvol
             {
 
                 // Excluir o registro   
-                MessageBox.Show("Você clicou na Coluna: 11 - Exclusão !!!");
+                hTML_CSS_RADZENBindingSource.RemoveAt(5);   
+                this.Close();
+                //MessageBox.Show("Você clicou na Coluna: 11 - Exclusão !!!");
             }
 
         }

@@ -83,6 +83,16 @@ namespace dicdesenvol.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _315164_add_note_icon {
+            get {
+                object obj = ResourceManager.GetObject("315164_add_note_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _4213447_arrow_load_loading_refresh_reload_icon {
             get {
                 object obj = ResourceManager.GetObject("4213447_arrow_load_loading_refresh_reload_icon", resourceCulture);
@@ -96,6 +106,16 @@ namespace dicdesenvol.Properties {
         internal static System.Drawing.Bitmap _4213475_arrow_back_left_return_icon {
             get {
                 object obj = ResourceManager.GetObject("4213475_arrow_back_left_return_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _46768_add_address_icon {
+            get {
+                object obj = ResourceManager.GetObject("46768_add_address_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
