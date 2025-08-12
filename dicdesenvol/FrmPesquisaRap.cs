@@ -31,7 +31,7 @@ namespace dicdesenvol
                 this.hTML_CSS_USABILIDADETableAdapter.Fill(this.db_ab2460_USABILIDADE.HTML_CSS_USABILIDADE);
 
                 // TODO: esta linha de código carrega dados na tabela 'db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN'. Você pode movê-la ou removê-la conforme necessário.
-                this.hTML_CSS_RADZENTableAdapter.Fill(this.db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN);
+                //this.hTML_CSS_RADZENTableAdapter.Fill(this.db_HTML_CSS_RADZEN_DataSet.HTML_CSS_RADZEN);
                 this.hTML_CSS_RADZENBindingSource.AddNew();
 
                 DateTime DataAtual = DateTime.Now;

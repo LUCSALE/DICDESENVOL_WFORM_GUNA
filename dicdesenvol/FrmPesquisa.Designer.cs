@@ -67,6 +67,7 @@
             this.tableAdapterManager = new dicdesenvol.db_HTML_CSS_RADZEN_DataSetTableAdapters.TableAdapterManager();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.pnlFooter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
@@ -106,7 +107,8 @@
             this.toolStripButton1,
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorDeleteItem,
-            this.toolStripSeparator1});
+            this.toolStripSeparator1,
+            this.toolStripButton2});
             this.bindingNavigator1.Location = new System.Drawing.Point(0, 1);
             this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
@@ -443,6 +445,18 @@
             this.dataGridViewImageColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.dataGridViewImageColumn2.Width = 50;
             // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = global::dicdesenvol.Properties.Resources._4213475_arrow_back_left_return_icon;
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(23, 20);
+            this.toolStripButton2.Text = "toolStripButton1";
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click_1);
+            // 
             // FrmPesquisa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -504,5 +518,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn lOCALDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn sISTEMADataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fOTOARQUIVODataGridViewTextBoxColumn;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
     }
 }
