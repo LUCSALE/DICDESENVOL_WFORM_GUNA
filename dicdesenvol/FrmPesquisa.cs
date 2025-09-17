@@ -223,5 +223,17 @@ namespace dicdesenvol
         {
             this.Close();
         }
+
+        private void metroGrid1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Editar o registro
+            // 
+            InfoPesq.ID = (int)metroGrid1.CurrentRow.Cells[2].Value; // Pega o ID da pesquisa   
+
+
+
+            FrmPesquisaManut PesquisaManut = new FrmPesquisaManut();
+            PesquisaManut.ShowDialog();
+        }
     }
 }

@@ -29,14 +29,19 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCTRL_Versao));
             this.pnlHeader = new Guna.UI2.WinForms.Guna2Panel();
             this.lblTitulo = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlGrid = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dATADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hORADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sISTEMADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vERSAODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cTRLVERSAOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cTRL_VERSAO_cadastrodbDataSet = new dicdesenvol.CTRL_VERSAO_cadastrodbDataSet();
             this.pnlFooter = new Guna.UI2.WinForms.Guna2Panel();
@@ -68,11 +73,7 @@
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cTRL_VERSAOTableAdapter = new dicdesenvol.CTRL_VERSAO_cadastrodbDataSetTableAdapters.CTRL_VERSAOTableAdapter();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dATADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hORADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sISTEMADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vERSAODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.imprimirToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.pnlHeader.SuspendLayout();
             this.pnlGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
@@ -121,17 +122,17 @@
             this.guna2DataGridView1.AllowUserToAddRows = false;
             this.guna2DataGridView1.AllowUserToDeleteRows = false;
             this.guna2DataGridView1.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.guna2DataGridView1.AutoGenerateColumns = false;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.guna2DataGridView1.ColumnHeadersHeight = 15;
             this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -141,14 +142,14 @@
             this.sISTEMADataGridViewTextBoxColumn,
             this.vERSAODataGridViewTextBoxColumn});
             this.guna2DataGridView1.DataSource = this.cTRLVERSAOBindingSource;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
             this.guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(0, 0);
@@ -179,6 +180,51 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.guna2DataGridView1.Click += new System.EventHandler(this.guna2DataGridView1_Click_3);
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.FillWeight = 126.9036F;
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDDataGridViewTextBoxColumn.Width = 30;
+            // 
+            // dATADataGridViewTextBoxColumn
+            // 
+            this.dATADataGridViewTextBoxColumn.DataPropertyName = "DATA";
+            this.dATADataGridViewTextBoxColumn.FillWeight = 93.27411F;
+            this.dATADataGridViewTextBoxColumn.HeaderText = "DATA";
+            this.dATADataGridViewTextBoxColumn.Name = "dATADataGridViewTextBoxColumn";
+            this.dATADataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // hORADataGridViewTextBoxColumn
+            // 
+            this.hORADataGridViewTextBoxColumn.DataPropertyName = "HORA";
+            this.hORADataGridViewTextBoxColumn.FillWeight = 93.27411F;
+            this.hORADataGridViewTextBoxColumn.HeaderText = "HORA";
+            this.hORADataGridViewTextBoxColumn.Name = "hORADataGridViewTextBoxColumn";
+            this.hORADataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sISTEMADataGridViewTextBoxColumn
+            // 
+            this.sISTEMADataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.sISTEMADataGridViewTextBoxColumn.DataPropertyName = "SISTEMA";
+            this.sISTEMADataGridViewTextBoxColumn.FillWeight = 93.27411F;
+            this.sISTEMADataGridViewTextBoxColumn.HeaderText = "SISTEMA";
+            this.sISTEMADataGridViewTextBoxColumn.Name = "sISTEMADataGridViewTextBoxColumn";
+            this.sISTEMADataGridViewTextBoxColumn.ReadOnly = true;
+            this.sISTEMADataGridViewTextBoxColumn.Width = 250;
+            // 
+            // vERSAODataGridViewTextBoxColumn
+            // 
+            this.vERSAODataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.vERSAODataGridViewTextBoxColumn.DataPropertyName = "VERSAO";
+            this.vERSAODataGridViewTextBoxColumn.FillWeight = 93.27411F;
+            this.vERSAODataGridViewTextBoxColumn.HeaderText = "VERSAO";
+            this.vERSAODataGridViewTextBoxColumn.Name = "vERSAODataGridViewTextBoxColumn";
+            this.vERSAODataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // cTRLVERSAOBindingSource
             // 
@@ -219,6 +265,7 @@
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
             this.salvarToolStripButton,
+            this.imprimirToolStripButton,
             this.toolStripSeparator1,
             this.toolStripButton1});
             this.bindingNavigator1.Location = new System.Drawing.Point(0, 1);
@@ -606,52 +653,17 @@
             // 
             this.cTRL_VERSAOTableAdapter.ClearBeforeFill = true;
             // 
-            // iDDataGridViewTextBoxColumn
+            // imprimirToolStripButton
             // 
-            this.iDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.FillWeight = 126.9036F;
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.iDDataGridViewTextBoxColumn.Width = 30;
+            this.imprimirToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.imprimirToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("imprimirToolStripButton.Image")));
+            this.imprimirToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.imprimirToolStripButton.Name = "imprimirToolStripButton";
+            this.imprimirToolStripButton.Size = new System.Drawing.Size(23, 20);
+            this.imprimirToolStripButton.Text = "&Imprimir";
+            this.imprimirToolStripButton.Click += new System.EventHandler(this.imprimirToolStripButton_Click);
             // 
-            // dATADataGridViewTextBoxColumn
-            // 
-            this.dATADataGridViewTextBoxColumn.DataPropertyName = "DATA";
-            this.dATADataGridViewTextBoxColumn.FillWeight = 93.27411F;
-            this.dATADataGridViewTextBoxColumn.HeaderText = "DATA";
-            this.dATADataGridViewTextBoxColumn.Name = "dATADataGridViewTextBoxColumn";
-            this.dATADataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // hORADataGridViewTextBoxColumn
-            // 
-            this.hORADataGridViewTextBoxColumn.DataPropertyName = "HORA";
-            this.hORADataGridViewTextBoxColumn.FillWeight = 93.27411F;
-            this.hORADataGridViewTextBoxColumn.HeaderText = "HORA";
-            this.hORADataGridViewTextBoxColumn.Name = "hORADataGridViewTextBoxColumn";
-            this.hORADataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // sISTEMADataGridViewTextBoxColumn
-            // 
-            this.sISTEMADataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.sISTEMADataGridViewTextBoxColumn.DataPropertyName = "SISTEMA";
-            this.sISTEMADataGridViewTextBoxColumn.FillWeight = 93.27411F;
-            this.sISTEMADataGridViewTextBoxColumn.HeaderText = "SISTEMA";
-            this.sISTEMADataGridViewTextBoxColumn.Name = "sISTEMADataGridViewTextBoxColumn";
-            this.sISTEMADataGridViewTextBoxColumn.ReadOnly = true;
-            this.sISTEMADataGridViewTextBoxColumn.Width = 250;
-            // 
-            // vERSAODataGridViewTextBoxColumn
-            // 
-            this.vERSAODataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.vERSAODataGridViewTextBoxColumn.DataPropertyName = "VERSAO";
-            this.vERSAODataGridViewTextBoxColumn.FillWeight = 93.27411F;
-            this.vERSAODataGridViewTextBoxColumn.HeaderText = "VERSAO";
-            this.vERSAODataGridViewTextBoxColumn.Name = "vERSAODataGridViewTextBoxColumn";
-            this.vERSAODataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // FrmPadraoClient
+            // FrmCTRL_Versao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -662,7 +674,7 @@
             this.Controls.Add(this.pnlGrid);
             this.Controls.Add(this.pnlHeader);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmPadraoClient";
+            this.Name = "FrmCTRL_Versao";
             this.Text = "FrmPadrao";
             this.Load += new System.EventHandler(this.FrmPadrao_Load);
             this.Shown += new System.EventHandler(this.FrmPadrao_Shown);
@@ -725,5 +737,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn hORADataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn sISTEMADataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn vERSAODataGridViewTextBoxColumn;
+        private System.Windows.Forms.ToolStripButton imprimirToolStripButton;
     }
 }

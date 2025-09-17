@@ -1,5 +1,6 @@
 ﻿using System;
 namespace dicdesenvol
+
 {
 
 
@@ -25,6 +26,27 @@ namespace dicdesenvol
             get { return m_dirfoto; }
             set { m_dirfoto = value; }
         }
+
+        private static string m_versao = "";
+        public static string versao
+        {
+            get { return m_versao; }
+            set { m_versao = value; }
+        }
+
+        private static string m_opcao = "";
+        public static string opcao
+        {
+            get { return m_opcao; }
+            set { m_opcao = value; }
+        }
+
+        private static string m_nome_entidade = "";
+        public static string nome_entidade
+        {
+            get { return m_nome_entidade; }
+            set { m_nome_entidade = value; }
+        }
     }
 
     public static class InfoSenha
@@ -42,6 +64,23 @@ namespace dicdesenvol
             get { return m_SalvaSenha; }
             set { m_SalvaSenha = value; }
         }
+
+        private static bool m_Logado = false;
+        public static bool Logado
+        {
+            get { return m_Logado; }
+            set { m_Logado = value; }
+        }
+
+        private static string m_Usuario = "";
+        public static string Usuario
+        {
+            get { return m_Usuario; }
+            set { m_Usuario = value; }
+        }
+
+
+        //public string Usuario { get; set; }
     }
 
 

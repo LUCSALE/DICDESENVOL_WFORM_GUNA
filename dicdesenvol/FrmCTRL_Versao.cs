@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Spire.Doc;
+using Spire.Doc.Documents;
+
 
 namespace dicdesenvol
 {
@@ -141,6 +144,29 @@ namespace dicdesenvol
         private void guna2DataGridView1_Click_3(object sender, EventArgs e)
         {
             txtSistema.Focus();
+        }
+
+        private void imprimirToolStripButton_Click(object sender, EventArgs e)
+        {
+            //Create word document
+            Document document = new Document();
+
+            //Create a new paragraph
+            Paragraph paragraph = document.AddSection().AddParagraph();
+
+            //Append Text
+            paragraph.AppendText("Hello World!");
+
+            //Save doc file.
+            document.SaveToFile("Sample.doc", FileFormat.Doc);
+
+            //Launching the MS Word file.
+            try
+            {
+                System.Diagnostics.Process.Start("Sample.doc");
+            }
+
+            catch { }
         }
     }
 }

@@ -14,6 +14,10 @@ namespace dicdesenvol
         [STAThread]
         static void Main()
         {
+
+            InfoApp.versao = "1.00.003";
+            InfoApp.opcao = "";
+            InfoSenha.Logado = false;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmPrincipal());

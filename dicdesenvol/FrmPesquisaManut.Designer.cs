@@ -46,6 +46,7 @@
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlDados = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2CircleButton2 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -70,16 +71,15 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.hTML_CSS_USABILIDADETableAdapter = new dicdesenvol.db_ab2460_USABILIDADETableAdapters.HTML_CSS_USABILIDADETableAdapter();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.db_HTML_CSS_RADZEN_DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hTML_CSS_RADZENBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hTML_CSS_RADZENBindingNavigator)).BeginInit();
             this.hTML_CSS_RADZENBindingNavigator.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.pnlDados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hTMLCSSUSABILIDADEBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.db_ab2460_USABILIDADE)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // db_HTML_CSS_RADZEN_DataSet
@@ -112,12 +112,12 @@
             this.hTML_CSS_RADZENBindingNavigator.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.hTML_CSS_RADZENBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.hTML_CSS_RADZENBindingNavigatorSaveItem,
-            this.toolStripButton1,
             this.toolStripSeparator1,
             this.toolStripLabel1,
             this.toolStripSeparator2,
             this.toolStripLabel2,
-            this.toolStripSeparator3});
+            this.toolStripSeparator3,
+            this.toolStripButton1});
             this.hTML_CSS_RADZENBindingNavigator.Location = new System.Drawing.Point(0, 453);
             this.hTML_CSS_RADZENBindingNavigator.MoveFirstItem = null;
             this.hTML_CSS_RADZENBindingNavigator.MoveLastItem = null;
@@ -141,7 +141,6 @@
             // 
             // toolStripButton1
             // 
-            this.toolStripButton1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripButton1.BackColor = System.Drawing.Color.RoyalBlue;
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButton1.Image = global::dicdesenvol.Properties.Resources._4213475_arrow_back_left_return_icon;
@@ -227,6 +226,21 @@
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(850, 136);
             this.guna2GradientPanel1.TabIndex = 28;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2PictureBox1.Image = global::dicdesenvol.Properties.Resources.PEQUISA_MANUT;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(805, 136);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.guna2PictureBox1.TabIndex = 3;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
             // 
             // pnlDados
             // 
@@ -713,21 +727,6 @@
             // 
             this.hTML_CSS_USABILIDADETableAdapter.ClearBeforeFill = true;
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2PictureBox1.Image = global::dicdesenvol.Properties.Resources.PEQUISA_MANUT;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
-            this.guna2PictureBox1.Size = new System.Drawing.Size(850, 136);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.guna2PictureBox1.TabIndex = 3;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
-            // 
             // FrmPesquisaManut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -747,11 +746,11 @@
             this.hTML_CSS_RADZENBindingNavigator.ResumeLayout(false);
             this.hTML_CSS_RADZENBindingNavigator.PerformLayout();
             this.guna2GradientPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.pnlDados.ResumeLayout(false);
             this.pnlDados.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hTMLCSSUSABILIDADEBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.db_ab2460_USABILIDADE)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

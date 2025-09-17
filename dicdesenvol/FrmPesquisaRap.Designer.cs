@@ -112,12 +112,12 @@
             this.hTML_CSS_RADZENBindingNavigator.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.hTML_CSS_RADZENBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.hTML_CSS_RADZENBindingNavigatorSaveItem,
-            this.toolStripButton1,
             this.toolStripSeparator1,
             this.toolStripLabel1,
             this.toolStripSeparator2,
             this.toolStripLabel2,
-            this.toolStripSeparator3});
+            this.toolStripSeparator3,
+            this.toolStripButton1});
             this.hTML_CSS_RADZENBindingNavigator.Location = new System.Drawing.Point(0, 425);
             this.hTML_CSS_RADZENBindingNavigator.MoveFirstItem = null;
             this.hTML_CSS_RADZENBindingNavigator.MoveLastItem = null;
@@ -141,7 +141,6 @@
             // 
             // toolStripButton1
             // 
-            this.toolStripButton1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripButton1.BackColor = System.Drawing.Color.RoyalBlue;
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButton1.Image = global::dicdesenvol.Properties.Resources._4213475_arrow_back_left_return_icon;
@@ -727,7 +726,7 @@
             // 
             this.hTML_CSS_USABILIDADETableAdapter.ClearBeforeFill = true;
             // 
-            // Form1
+            // FrmPesquisaRap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -736,7 +735,7 @@
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.hTML_CSS_RADZENBindingNavigator);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "FrmPesquisaRap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
