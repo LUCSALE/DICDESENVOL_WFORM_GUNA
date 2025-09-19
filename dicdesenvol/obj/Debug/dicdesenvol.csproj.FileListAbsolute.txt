@@ -66,3 +66,7 @@ E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\bin\Debug\System.Buffers.xml
 E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\bin\Debug\System.Memory.xml
 E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\bin\Debug\System.Numerics.Vectors.xml
 E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\bin\Debug\Spire.PdfViewer.Asp.dll
+E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\bin\Debug\Spire.PdfViewer.Forms.dll
+E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\bin\Debug\Spire.PdfViewer.Asp.xml
+E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\bin\Debug\Spire.PdfViewer.Forms.xml

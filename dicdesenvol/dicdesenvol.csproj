@@ -83,8 +83,14 @@
     <Reference Include="Spire.Doc, Version=13.9.3.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
       <HintPath>packages\Spire.Doc.13.9.4\lib\net48\Spire.Doc.dll</HintPath>
     </Reference>
-    <Reference Include="Spire.Pdf, Version=11.8.7.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
-      <HintPath>packages\Spire.PDF.11.8.7\lib\net48\Spire.Pdf.dll</HintPath>
+    <Reference Include="Spire.Pdf, Version=8.6.0.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>packages\FreeSpire.PDFViewer.7.6.0\lib\net46\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.PdfViewer.Asp, Version=7.6.0.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>packages\FreeSpire.PDFViewer.7.6.0\lib\net46\Spire.PdfViewer.Asp.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.PdfViewer.Forms, Version=7.6.0.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>packages\FreeSpire.PDFViewer.7.6.0\lib\net46\Spire.PdfViewer.Forms.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">

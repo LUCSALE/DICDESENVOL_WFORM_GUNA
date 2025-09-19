@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Spire.Doc;
 using Spire.Doc.Documents;
+using System.Data.Odbc;
 
 
 namespace dicdesenvol
@@ -148,25 +149,54 @@ namespace dicdesenvol
 
         private void imprimirToolStripButton_Click(object sender, EventArgs e)
         {
-            //Create word document
-            Document document = new Document();
+            ////Create word document
+            //Document document = new Document();
 
-            //Create a new paragraph
-            Paragraph paragraph = document.AddSection().AddParagraph();
+            ////Create a new paragraph
+            //Paragraph paragraph = document.AddSection().AddParagraph();
 
-            //Append Text
-            paragraph.AppendText("Hello World!");
+            ////Append Text
+            //paragraph.AppendText("Hello World!");
 
-            //Save doc file.
-            document.SaveToFile("Sample.doc", FileFormat.Doc);
+            ////Save doc file.
+            //document.SaveToFile("Sample.doc", FileFormat.Doc);
 
-            //Launching the MS Word file.
-            try
+            ////Launching the MS Word file.
+            //try
+            //{
+            //    System.Diagnostics.Process.Start("Sample.doc");
+            //}
+
+            //catch { }
+
+            //load the sample PDF file
+            //this.pdfViewer1.LoadFromFile("c:/zzz.pdf");
+
+            string connectionString = "DSN=SQL1001_site4now_net";
+
+            using (OdbcConnection connection = new OdbcConnection(connectionString))
             {
-                System.Diagnostics.Process.Start("Sample.doc");
+                try
+                {
+                    connection.Open();
+                    MessageBox.Show("Conexão ODBC bem-sucedida!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Crie um comando, por exemplo:
+                    OdbcCommand command = new OdbcCommand("SELECT * FROM CTRL_Versao", connection);
+                    OdbcDataReader reader = command.ExecuteReader();
+
+                    MessageBox.Show("Execução da SELECT bem-sucedida!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // ... processe os dados ...
+                }
+                catch (OdbcException ex)
+                {
+                    MessageBox.Show($"Erro na conexão ODBC: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+                this.Close();
             }
 
-            catch { }
+
         }
     }
 }
