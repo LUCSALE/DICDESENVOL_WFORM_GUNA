@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using Spire.Doc;
 using Spire.Doc.Documents;
 using System.Data.Odbc;
+using Spire.Pdf.Graphics;
+using Spire.Pdf;
 
 
 namespace dicdesenvol
@@ -149,6 +151,8 @@ namespace dicdesenvol
 
         private void imprimirToolStripButton_Click(object sender, EventArgs e)
         {
+
+            //Exemplo: word document
             //////Create word document
             //Document document = new Document();
 
@@ -169,41 +173,68 @@ namespace dicdesenvol
 
             //catch { }
 
+
+            //Exemplo: pdfViewer
             ////load the sample PDF file
             //this.pdfViewer1.LoadFromFile("c:/zzz.pdf");
 
-            string connectionString = "DSN=SQL1001_site4now_net;UID=db_ab2460_cadastrodb_admin;PWD=Mag160163@";
-            OdbcConnection connection = new OdbcConnection(connectionString);
 
-            OdbcCommand command = new OdbcCommand("SELECT * FROM CTRL_Versao", connection);
+            //Exemplo: pdfViewer com ODBC
+            //string connectionString = "DSN=SQL1001_site4now_net;UID=db_ab2460_cadastrodb_admin;PWD=Mag160163@";
+            //OdbcConnection connection = new OdbcConnection(connectionString);
+
+            //OdbcCommand command = new OdbcCommand("SELECT * FROM CTRL_Versao", connection);
 
 
 
 
-            Spire.DataExport.PDF.PDFExport pdfExport1 = new Spire.DataExport.PDF.PDFExport();
-            pdfExport1.ActionAfterExport = Spire.DataExport.Common.ActionType.OpenView;
-            pdfExport1.DataFormats.CultureName = "zh-CN";
-            pdfExport1.DataFormats.Currency = "c";
-            pdfExport1.DataFormats.DateTime = "yyyy-M-d H:mm";
-            pdfExport1.DataFormats.Float = "g";
-            pdfExport1.DataFormats.Integer = "g";
-            pdfExport1.DataFormats.Time = "H:mm";
-            pdfExport1.FileName = "sample.pdf";
-            pdfExport1.PDFOptions.DataFont.CustomFont = new System.Drawing.Font("Arial", 10F);
-            pdfExport1.PDFOptions.FooterFont.CustomFont = new System.Drawing.Font("Arial", 10F);
-            pdfExport1.PDFOptions.HeaderFont.CustomFont = new System.Drawing.Font("Arial", 10F);
-            pdfExport1.PDFOptions.PageOptions.Format = Spire.DataExport.PDF.PageFormat.User;
-            pdfExport1.PDFOptions.PageOptions.Height = 11.67;
-            pdfExport1.PDFOptions.PageOptions.MarginBottom = 0.78;
-            pdfExport1.PDFOptions.PageOptions.MarginLeft = 1.17;
-            pdfExport1.PDFOptions.PageOptions.MarginRight = 0.57;
-            pdfExport1.PDFOptions.PageOptions.MarginTop = 0.78;
-            pdfExport1.PDFOptions.PageOptions.Width = 10.25;
-            pdfExport1.PDFOptions.TitleFont.CustomFont = new System.Drawing.Font("Arial", 10F);
-            pdfExport1.SQLCommand = command;
+            //Spire.DataExport.PDF.PDFExport pdfExport1 = new Spire.DataExport.PDF.PDFExport();
+            //pdfExport1.ActionAfterExport = Spire.DataExport.Common.ActionType.OpenView;
+            //pdfExport1.DataFormats.CultureName = "zh-CN";
+            //pdfExport1.DataFormats.Currency = "c";
+            //pdfExport1.DataFormats.DateTime = "yyyy-M-d H:mm";
+            //pdfExport1.DataFormats.Float = "g";
+            //pdfExport1.DataFormats.Integer = "g";
+            //pdfExport1.DataFormats.Time = "H:mm";
+            //pdfExport1.FileName = "sample.pdf";
+            //pdfExport1.PDFOptions.DataFont.CustomFont = new System.Drawing.Font("Arial", 10F);
+            //pdfExport1.PDFOptions.FooterFont.CustomFont = new System.Drawing.Font("Arial", 10F);
+            //pdfExport1.PDFOptions.HeaderFont.CustomFont = new System.Drawing.Font("Arial", 10F);
+            //pdfExport1.PDFOptions.PageOptions.Format = Spire.DataExport.PDF.PageFormat.User;
+            //pdfExport1.PDFOptions.PageOptions.Height = 11.67;
+            //pdfExport1.PDFOptions.PageOptions.MarginBottom = 0.78;
+            //pdfExport1.PDFOptions.PageOptions.MarginLeft = 1.17;
+            //pdfExport1.PDFOptions.PageOptions.MarginRight = 0.57;
+            //pdfExport1.PDFOptions.PageOptions.MarginTop = 0.78;
+            //pdfExport1.PDFOptions.PageOptions.Width = 10.25;
+            //pdfExport1.PDFOptions.TitleFont.CustomFont = new System.Drawing.Font("Arial", 10F);
+            //pdfExport1.SQLCommand = command;
 
-            connection.Open();
-            pdfExport1.SaveToFile();
+            //connection.Open();
+            //pdfExport1.SaveToFile();
+
+
+            //Exemplo: pdf document 
+            //Create a pdf document.
+            PdfDocument doc = new PdfDocument();
+
+            // Create one page
+            PdfPageBase page = doc.Pages.Add();
+
+            //Draw the text
+            page.Canvas.DrawString("Hello, World!",
+                                   new PdfFont(PdfFontFamily.Helvetica, 30f),
+                                   new PdfSolidBrush(Color.Black),
+                                   10, 10);
+
+            //Save pdf file.
+            doc.SaveToFile("c:/temp/HelloWorld.pdf");
+            doc.Close();
+
+            //Launching the Pdf file.
+            this.pdfViewer1.LoadFromFile("c:/temp/HelloWorld.pdf");
+
+
 
 
         }
