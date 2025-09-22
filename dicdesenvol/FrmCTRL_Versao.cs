@@ -178,6 +178,8 @@ namespace dicdesenvol
             OdbcCommand command = new OdbcCommand("SELECT * FROM CTRL_Versao", connection);
 
 
+
+
             Spire.DataExport.PDF.PDFExport pdfExport1 = new Spire.DataExport.PDF.PDFExport();
             pdfExport1.ActionAfterExport = Spire.DataExport.Common.ActionType.OpenView;
             pdfExport1.DataFormats.CultureName = "zh-CN";
