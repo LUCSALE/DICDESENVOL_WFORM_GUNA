@@ -149,19 +149,19 @@ namespace dicdesenvol
 
         private void imprimirToolStripButton_Click(object sender, EventArgs e)
         {
-            ////Create word document
+            //////Create word document
             //Document document = new Document();
 
-            ////Create a new paragraph
+            //////Create a new paragraph
             //Paragraph paragraph = document.AddSection().AddParagraph();
 
-            ////Append Text
-            //paragraph.AppendText("Hello World!");
+            //////Append Text
+            //paragraph.AppendText("Teste !!!");
 
-            ////Save doc file.
+            //////Save doc file.
             //document.SaveToFile("Sample.doc", FileFormat.Doc);
 
-            ////Launching the MS Word file.
+            //////Launching the MS Word file.
             //try
             //{
             //    System.Diagnostics.Process.Start("Sample.doc");
@@ -169,34 +169,42 @@ namespace dicdesenvol
 
             //catch { }
 
-            //load the sample PDF file
+            ////load the sample PDF file
             //this.pdfViewer1.LoadFromFile("c:/zzz.pdf");
 
-            string connectionString = "DSN=SQL1001_site4now_net";
+            string connectionString = "DSN=SQL1001_site4now_net;UID=db_ab2460_cadastrodb_admin;PWD=Mag160163@";
+            OdbcConnection connection = new OdbcConnection(connectionString);
 
-            using (OdbcConnection connection = new OdbcConnection(connectionString))
-            {
-                try
-                {
-                    connection.Open();
-                    MessageBox.Show("Conexão ODBC bem-sucedida!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            OdbcCommand command = new OdbcCommand("SELECT * FROM CTRL_Versao", connection);
 
-                    // Crie um comando, por exemplo:
-                    OdbcCommand command = new OdbcCommand("SELECT * FROM CTRL_Versao", connection);
-                    OdbcDataReader reader = command.ExecuteReader();
 
-                    MessageBox.Show("Execução da SELECT bem-sucedida!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    // ... processe os dados ...
-                }
-                catch (OdbcException ex)
-                {
-                    MessageBox.Show($"Erro na conexão ODBC: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            Spire.DataExport.PDF.PDFExport pdfExport1 = new Spire.DataExport.PDF.PDFExport();
+            pdfExport1.ActionAfterExport = Spire.DataExport.Common.ActionType.OpenView;
+            pdfExport1.DataFormats.CultureName = "zh-CN";
+            pdfExport1.DataFormats.Currency = "c";
+            pdfExport1.DataFormats.DateTime = "yyyy-M-d H:mm";
+            pdfExport1.DataFormats.Float = "g";
+            pdfExport1.DataFormats.Integer = "g";
+            pdfExport1.DataFormats.Time = "H:mm";
+            pdfExport1.FileName = "sample.pdf";
+            pdfExport1.PDFOptions.DataFont.CustomFont = new System.Drawing.Font("Arial", 10F);
+            pdfExport1.PDFOptions.FooterFont.CustomFont = new System.Drawing.Font("Arial", 10F);
+            pdfExport1.PDFOptions.HeaderFont.CustomFont = new System.Drawing.Font("Arial", 10F);
+            pdfExport1.PDFOptions.PageOptions.Format = Spire.DataExport.PDF.PageFormat.User;
+            pdfExport1.PDFOptions.PageOptions.Height = 11.67;
+            pdfExport1.PDFOptions.PageOptions.MarginBottom = 0.78;
+            pdfExport1.PDFOptions.PageOptions.MarginLeft = 1.17;
+            pdfExport1.PDFOptions.PageOptions.MarginRight = 0.57;
+            pdfExport1.PDFOptions.PageOptions.MarginTop = 0.78;
+            pdfExport1.PDFOptions.PageOptions.Width = 10.25;
+            pdfExport1.PDFOptions.TitleFont.CustomFont = new System.Drawing.Font("Arial", 10F);
+            pdfExport1.SQLCommand = command;
 
-                }
-                this.Close();
-            }
+            connection.Open();
+            pdfExport1.SaveToFile();
 
 
         }
+    
     }
 }

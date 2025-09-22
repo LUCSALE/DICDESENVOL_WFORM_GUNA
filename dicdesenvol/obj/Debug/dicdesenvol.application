@@ -7,14 +7,14 @@
     <framework targetVersion="4.8" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="dicdesenvol.exe.manifest" size="13589">
+    <dependentAssembly dependencyType="install" codebase="dicdesenvol.exe.manifest" size="15670">
       <assemblyIdentity name="dicdesenvol.exe" version="1.0.0.6" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>JgXGkXS4UL6srM785idRRNMq7VE3vU/DaVLPHzA+Hr4=</dsig:DigestValue>
+        <dsig:DigestValue>53JqTVeD2GoClPNBAyv9rlvmXWqtTKOIi2kY6FzMKiI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -62,6 +62,7 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.pnlDados = new Guna.UI2.WinForms.Guna2Panel();
+            this.pdfViewer1 = new Spire.PdfViewer.Forms.PdfViewer();
             this.txtSistema = new MetroFramework.Controls.MetroTextBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtVersao = new MetroFramework.Controls.MetroTextBox();
@@ -74,7 +75,6 @@
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cTRL_VERSAOTableAdapter = new dicdesenvol.CTRL_VERSAO_cadastrodbDataSetTableAdapters.CTRL_VERSAOTableAdapter();
-            this.pdfViewer1 = new Spire.PdfViewer.Forms.PdfViewer();
             this.pnlHeader.SuspendLayout();
             this.pnlGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
@@ -424,13 +424,29 @@
             this.pnlDados.Size = new System.Drawing.Size(717, 261);
             this.pnlDados.TabIndex = 2;
             // 
+            // pdfViewer1
+            // 
+            this.pdfViewer1.FindTextHighLightColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(153)))), ((int)(((byte)(193)))), ((int)(((byte)(218)))));
+            this.pdfViewer1.FormFillEnabled = false;
+            this.pdfViewer1.IgnoreCase = false;
+            this.pdfViewer1.IsToolBarVisible = true;
+            this.pdfViewer1.Location = new System.Drawing.Point(117, 14);
+            this.pdfViewer1.MultiPagesThreshold = 60;
+            this.pdfViewer1.Name = "pdfViewer1";
+            this.pdfViewer1.OnRenderPageExceptionEvent = null;
+            this.pdfViewer1.Size = new System.Drawing.Size(554, 229);
+            this.pdfViewer1.TabIndex = 15;
+            this.pdfViewer1.Text = "pdfViewer1";
+            this.pdfViewer1.Threshold = 60;
+            this.pdfViewer1.ViewerBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            // 
             // txtSistema
             // 
             // 
             // 
             // 
             this.txtSistema.CustomButton.Image = null;
-            this.txtSistema.CustomButton.Location = new System.Drawing.Point(296, 1);
+            this.txtSistema.CustomButton.Location = new System.Drawing.Point(77, 1);
             this.txtSistema.CustomButton.Name = "";
             this.txtSistema.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtSistema.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -450,7 +466,7 @@
             this.txtSistema.SelectionLength = 0;
             this.txtSistema.SelectionStart = 0;
             this.txtSistema.ShortcutsEnabled = true;
-            this.txtSistema.Size = new System.Drawing.Size(318, 23);
+            this.txtSistema.Size = new System.Drawing.Size(99, 23);
             this.txtSistema.TabIndex = 12;
             this.txtSistema.UseSelectable = true;
             this.txtSistema.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -664,22 +680,6 @@
             // cTRL_VERSAOTableAdapter
             // 
             this.cTRL_VERSAOTableAdapter.ClearBeforeFill = true;
-            // 
-            // pdfViewer1
-            // 
-            this.pdfViewer1.FindTextHighLightColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(153)))), ((int)(((byte)(193)))), ((int)(((byte)(218)))));
-            this.pdfViewer1.FormFillEnabled = false;
-            this.pdfViewer1.IgnoreCase = false;
-            this.pdfViewer1.IsToolBarVisible = true;
-            this.pdfViewer1.Location = new System.Drawing.Point(122, 14);
-            this.pdfViewer1.MultiPagesThreshold = 60;
-            this.pdfViewer1.Name = "pdfViewer1";
-            this.pdfViewer1.OnRenderPageExceptionEvent = null;
-            this.pdfViewer1.Size = new System.Drawing.Size(554, 110);
-            this.pdfViewer1.TabIndex = 15;
-            this.pdfViewer1.Text = "pdfViewer1";
-            this.pdfViewer1.Threshold = 60;
-            this.pdfViewer1.ViewerBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             // 
             // FrmCTRL_Versao
             // 
