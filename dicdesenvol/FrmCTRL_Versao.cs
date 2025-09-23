@@ -216,11 +216,76 @@ namespace dicdesenvol
 
             //Exemplo: pdf document 
             //Create a pdf document.
-            PdfDocument doc = new PdfDocument();
+            //PdfDocument doc = new PdfDocument();
 
             // Create one page
-            PdfPageBase page = doc.Pages.Add();
+            //PdfPageBase page = doc.Pages.Add();
 
+            //Draw the text
+            //page.Canvas.DrawString("Hello, World!",
+            //                     new PdfFont(PdfFontFamily.Helvetica, 30f),
+            //                     new PdfSolidBrush(Color.Black),
+            //                     10, 10);
+
+            //Save pdf file.
+            //doc.SaveToFile("c:/temp/HelloWorld.pdf");
+            //doc.Close();
+
+            //Launching the Pdf file.
+            //this.pdfViewer1.LoadFromFile("c:/temp/HelloWorld.pdf");
+
+            ////Exemplo: pdf Grafico
+            //// Create a PdfDocument instance
+            //PdfDocument pdf = new PdfDocument();
+
+            //// Add a page
+            //PdfPageBase page = pdf.Pages.Add();
+
+            //// Save the current graphics state
+            //PdfGraphicsState state = page.Canvas.Save();
+
+            //// Specify the PDF font and brush           
+            //PdfFont font = new PdfFont(PdfFontFamily.Helvetica, 18f);
+            //PdfSolidBrush brush1 = new PdfSolidBrush(Color.Green);
+            //PdfSolidBrush brush2 = new PdfSolidBrush(Color.Blue);
+            //PdfSolidBrush brush3 = new PdfSolidBrush(Color.Magenta);
+
+            //// Translate the coordinate system by specified coordinates
+            //page.Canvas.TranslateTransform(20, 280);
+
+            //// Scale the coordinate system by specified coordinates
+            //page.Canvas.ScaleTransform(1f, 0.6f);
+            //// Skew the coordinate system axes
+            //page.Canvas.SkewTransform(-10, 0);
+            //// Draw transformed text on the page
+            //page.Canvas.DrawString("A Powerful PDF Processing Library", font, brush1, 0, -30);
+
+            //// Skew the coordinate system axes
+            //page.Canvas.SkewTransform(10, 0);
+            //// Draw transformed text on the page
+            //page.Canvas.DrawString("A Powerful PDF Processing Library", font, brush2, 0, 0);
+
+            ////Scale the coordinate system by specified coordinates
+            //page.Canvas.ScaleTransform(1f, -1f);
+            //// Draw transformed text on the page
+            //page.Canvas.DrawString("A Powerful PDF Processing Library", font, brush3, 0, 0);
+
+            //// Restor graphics state
+            //page.Canvas.Restore(state);
+
+            //// Save the result document
+            //pdf.SaveToFile("c:/temp/TransformText.pdf");
+            //pdf.Close();
+            //this.pdfViewer1.LoadFromFile("c:/temp/TransformText.pdf");
+
+
+            //Exemplo: pdf BÁSICO com adição de TEMPLATE
+            //Create a pdf document.
+            PdfDocument doc = new PdfDocument();
+            
+            // Create one page
+            PdfPageBase page = doc.Pages.Add();
+            doc.LoadFromFile("c:/temp/impCTRL_Versao.pdf"); 
             //Draw the text
             page.Canvas.DrawString("Hello, World!",
                                    new PdfFont(PdfFontFamily.Helvetica, 30f),
@@ -235,9 +300,10 @@ namespace dicdesenvol
             this.pdfViewer1.LoadFromFile("c:/temp/HelloWorld.pdf");
 
 
-
-
         }
-    
     }
+
+
+
+
 }
