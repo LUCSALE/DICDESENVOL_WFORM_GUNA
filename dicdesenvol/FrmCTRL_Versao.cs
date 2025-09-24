@@ -12,6 +12,8 @@ using Spire.Doc.Documents;
 using System.Data.Odbc;
 using Spire.Pdf.Graphics;
 using Spire.Pdf;
+using Spire.Pdf.Tables;
+using Spire.Pdf.Grid;
 
 
 namespace dicdesenvol
@@ -281,23 +283,204 @@ namespace dicdesenvol
 
             //Exemplo: pdf BÁSICO com adição de TEMPLATE
             //Create a pdf document.
+            //PdfDocument doc = new PdfDocument();
+
+            //// Create one page
+            //PdfPageBase page = doc.Pages.Add();
+            //doc.LoadFromFile("c:/temp/impCTRL_Versao.pdf"); 
+
+            ////Draw the text
+            //page.Canvas.DrawString("Hello, World!",
+            //                       new PdfFont(PdfFontFamily.Helvetica, 30f),
+            //                       new PdfSolidBrush(Color.Black),
+            //                       10, 10);
+
+            ////Save pdf file.
+            //doc.SaveToFile("c:/temp/HelloWorld.pdf");
+            //doc.Close();
+
+            ////Launching the Pdf file.
+            //this.pdfViewer1.LoadFromFile("c:/temp/HelloWorld.pdf");
+
+            //Exemplo: pdf em "TABLET"
+            //   //Create a pdf document.
+            //   PdfDocument doc = new PdfDocument();
+            //   PdfSection sec = doc.Sections.Add();
+            //   sec.PageSettings.Width = PdfPageSize.A4.Width;
+            //   PdfPageBase page = sec.Pages.Add();
+            //   float y = 10;
+            //   //title
+            //   PdfBrush brush1 = PdfBrushes.Black;
+            //   PdfTrueTypeFont font1 = new PdfTrueTypeFont(new Font("Arial", 16f, FontStyle.Bold));
+            //   PdfStringFormat format1 = new PdfStringFormat(PdfTextAlignment.Center);
+            //   page.Canvas.DrawString("Part Sales Information", font1, brush1, page.Canvas.ClientSize.Width / 2, y, format1);
+            //   y = y + font1.MeasureString("Country List", format1).Height;
+            //   y = y + 5;
+
+            //   String[] data
+            //= {
+            //   "PartNo;Description;OnHand;OnOrder;Cost;ListPrice",
+            //   "900;Dive kayak;24;16;1356.75;3999.95",
+            //   "912;Underwater Diver Vehicle;5;3;504;1680",
+            //   "1313;Regulator System;165;216;117.5;250",
+            //   "1314;Second Stage Regulator;98;88;124.1;365",
+            //   "1316;Regulator System;75;70;119.35;341",
+            //   "1320;Second Stage Regulator;37;35;73.53;171",
+            //   "1328;Regulator System;166;100;154.8;430",
+            //   "1330;Alternate Inflation Regulator;47;43;85.8;260",
+            //   "1364;Second Stage Regulator;128;135;99.9;270",
+            //   "1390;First Stage Regulator;146;140;64.6;170",
+            //   "1946;Second Stage Regulator;13;10;95.79;309",
+            //   "1986;Depth/Pressure Gauge Console;25;24;73.32;188",
+            //   "2314;Electronic Console;13;12;120.9;390",
+            //   "2341;Depth/Pressure Gauge;226;225;48.3;105",
+            //   "2343;Personal Dive Sonar;46;45;72.85;235",
+            //   "2350;Compass Console Mount;211;300;10.15;29"
+            //   };
+            //   String[][] dataSource
+            //       = new String[data.Length][];
+            //   for (int i = 0; i < data.Length; i++)
+            //   {
+            //       dataSource[i] = data[i].Split(';');
+            //   }
+
+            //   PdfTable table = new PdfTable();
+            //   table.Style.CellPadding = 2;
+            //   table.Style.BorderPen = new PdfPen(brush1, 0.75f);
+            //   table.Style.HeaderStyle.StringFormat = new PdfStringFormat(PdfTextAlignment.Center);
+            //   table.Style.HeaderSource = PdfHeaderSource.Rows;
+            //   table.Style.HeaderRowCount = 1;
+            //   table.Style.ShowHeader = true;
+            //   table.Style.HeaderStyle.BackgroundBrush = PdfBrushes.CadetBlue;
+            //   table.DataSource = dataSource;
+            //   foreach (PdfColumn column in table.Columns)
+            //   {
+            //       column.StringFormat = new PdfStringFormat(PdfTextAlignment.Center, PdfVerticalAlignment.Middle);
+            //   }
+            //   table.Draw(page, new PointF(0, y));
+
+            //   doc.SaveToFile("c:/temp/SimpleTable.pdf");
+
+            //   ////Launching the Pdf file.
+            //   this.pdfViewer1.LoadFromFile("c:/temp/SimpleTable.pdf");
+
+
+            //Exemplo: pdf em "GRID"
+            //PdfDocument document = new PdfDocument();
+            //PdfPageBase page = document.Pages.Add();
+
+            //String[] data
+            //   = {
+            //        "VendorName;Address;City",
+            //        "Cacor Corporation;161 Southfield Rd;Southfield",
+            //        "Underwater;50 N 3rd Street;Indianapolis",
+            //        "J.W.  Luscher Mfg.;65 Addams Street;Berkely"
+            //    };
+
+            //PdfGrid grid = new PdfGrid();
+            //for (int r = 0; r < data.Length; r++)
+            //{
+            //    PdfGridRow row = grid.Rows.Add();
+            //}
+            //grid.Columns.Add(3);
+
+            //float width = page.Canvas.ClientSize.Width - (grid.Columns.Count + 1);
+            //grid.Columns[0].Width = width * 0.15f;
+            //grid.Columns[1].Width = width * 0.15f;
+            //grid.Columns[2].Width = width * 0.15f;
+
+            //float height = page.Canvas.ClientSize.Height - (grid.Rows.Count + 1);
+            //grid.Rows[0].Height = 12.5f;
+            //grid.Rows[1].Height = 12.5f;
+            //grid.Rows[2].Height = 12.5f;
+            //grid.Rows[3].Height = 12.5f;
+
+            ////insert data to grid
+            //for (int r = 0; r < data.Length; r++)
+            //{
+            //    String[] rowData = data[r].Split(';');
+            //    for (int c = 0; c < rowData.Length; c++)
+            //    {
+            //        grid.Rows[r].Cells[c].Value = rowData[c];
+            //    }
+            //}
+
+            //grid.Rows[0].Style.Font = new PdfTrueTypeFont(new Font("Arial", 8f, FontStyle.Bold), true);
+
+            ////Set borders color to LightBule
+            //PdfBorders border = new PdfBorders();
+            //border.All = new PdfPen(Color.LightBlue);
+
+            //foreach (PdfGridRow pgr in grid.Rows)
+            //{
+            //    foreach (PdfGridCell pgc in pgr.Cells)
+            //    {
+            //        pgc.Style.Borders = border;
+            //    }
+            //}
+
+            //PdfLayoutResult result = grid.Draw(page, new PointF(10, 30));
+            //document.SaveToFile("c:/temp/result.pdf");
+
+            //this.pdfViewer1.LoadFromFile("c:/temp/result.pdf");
+
+            //Exemplo: pdf em "TABLE"
+            //Create a PdfDocument object
             PdfDocument doc = new PdfDocument();
-            
-            // Create one page
-            PdfPageBase page = doc.Pages.Add();
-            doc.LoadFromFile("c:/temp/impCTRL_Versao.pdf"); 
-            //Draw the text
-            page.Canvas.DrawString("Hello, World!",
-                                   new PdfFont(PdfFontFamily.Helvetica, 30f),
-                                   new PdfSolidBrush(Color.Black),
-                                   10, 10);
 
-            //Save pdf file.
-            doc.SaveToFile("c:/temp/HelloWorld.pdf");
-            doc.Close();
+            //Add a page
+            PdfPageBase page = doc.Pages.Add(PdfPageSize.A4, new PdfMargins(40));
 
-            //Launching the Pdf file.
-            this.pdfViewer1.LoadFromFile("c:/temp/HelloWorld.pdf");
+            //Create a PdfTable object
+            PdfTable table = new PdfTable();
+
+            //Set font for header and the rest cells
+            table.Style.DefaultStyle.Font = new PdfTrueTypeFont(new Font("Times New Roman", 12f, FontStyle.Regular), true);
+            table.Style.HeaderStyle.Font = new PdfTrueTypeFont(new Font("Times New Roman", 12f, FontStyle.Bold), true);
+
+            //Crate a DataTable
+            DataTable dataTable = new DataTable();
+            dataTable.Columns.Add("ID");
+            dataTable.Columns.Add("Name");
+            dataTable.Columns.Add("Department");
+            dataTable.Columns.Add("Position");
+            dataTable.Columns.Add("Level");
+            dataTable.Rows.Add(new string[] { "1", "David", "IT", "Manager", "1" });
+            dataTable.Rows.Add(new string[] { "3", "Julia", "HR", "Manager", "1" });
+            dataTable.Rows.Add(new string[] { "4", "Sophie", "Marketing", "Manager", "1" });
+            dataTable.Rows.Add(new string[] { "7", "Wickey", "Marketing", "Sales Rep", "2" });
+            dataTable.Rows.Add(new string[] { "9", "Wayne", "HR", "HR Supervisor", "2" });
+            dataTable.Rows.Add(new string[] { "11", "Mia", "Dev", "Developer", "2" });
+
+            //Set the datatable as the data source of table
+            table.DataSource = dataTable;
+
+            //Show header(the header is hidden by default)
+            table.Style.ShowHeader = true;
+
+            //Set font color and backgroud color of header row
+            table.Style.HeaderStyle.BackgroundBrush = PdfBrushes.Gray;
+            table.Style.HeaderStyle.TextBrush = PdfBrushes.White;
+
+            //Set text alignment in header row
+            table.Style.HeaderStyle.StringFormat = new PdfStringFormat(PdfTextAlignment.Center, PdfVerticalAlignment.Middle);
+
+            //Set text alignment in other cells
+            for (int i = 0; i < table.Columns.Count; i++)
+            {
+                table.Columns[i].StringFormat = new PdfStringFormat(PdfTextAlignment.Center, PdfVerticalAlignment.Middle);
+            }
+
+            //Register with BeginRowLayout event
+            //table.BeginRowLayout += Table_BeginRowLayout;
+
+            //Draw table on the page
+            table.Draw(page, new PointF(0, 30));
+
+            //Save the document to a PDF file 
+            doc.SaveToFile("c:/temp/PdfTable.pdf");
+
+            this.pdfViewer1.LoadFromFile("c:/temp/PdfTable.pdf");
 
 
         }

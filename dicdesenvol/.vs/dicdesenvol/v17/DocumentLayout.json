@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|e:\\desenvol_web\\dicdesenvol_wform_guna\\dicdesenvol\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\frmctrl_versao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|e:\\desenvol_web\\dicdesenvol_wform_guna\\dicdesenvol\\frmctrl_versao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FAAC899B-5348-44D3-A9A0-22A535BFF6EB}|dicdesenvol.csproj|solutionrelative:frmctrl_versao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -60,7 +60,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-19T18:34:14.646Z",
               "EditorCaption": ""
@@ -74,7 +74,8 @@
               "ToolTip": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmCTRL_Versao.cs [Design]",
               "RelativeToolTip": "FrmCTRL_Versao.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T12:36:07.648Z"
+              "WhenOpened": "2025-09-17T12:36:07.648Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -84,9 +85,10 @@
               "RelativeDocumentMoniker": "FrmCTRL_Versao.cs",
               "ToolTip": "E:\\DESENVOL_WEB\\DICDESENVOL_WFORM_GUNA\\dicdesenvol\\FrmCTRL_Versao.cs",
               "RelativeToolTip": "FrmCTRL_Versao.cs",
-              "ViewState": "AgIAABABAAAAAAAAAAAiwBwBAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAMMBAAAAAAAAAAAiwOABAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T12:50:16.975Z"
+              "WhenOpened": "2025-09-17T12:50:16.975Z",
+              "EditorCaption": ""
             }
           ]
         }
