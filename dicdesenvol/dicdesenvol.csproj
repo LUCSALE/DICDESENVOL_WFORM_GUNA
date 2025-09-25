@@ -169,6 +169,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>db_HTML_CSS_RADZEN_DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FrmCTRL_VersaoImp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCTRL_VersaoImp.Designer.cs">
+      <DependentUpon>FrmCTRL_VersaoImp.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPesquisaManut.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +230,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>USUARIOS_cadastrodbDataSet1.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmCTRL_VersaoImp.resx">
+      <DependentUpon>FrmCTRL_VersaoImp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPesquisaManut.resx">
       <DependentUpon>FrmPesquisaManut.cs</DependentUpon>
     </EmbeddedResource>
