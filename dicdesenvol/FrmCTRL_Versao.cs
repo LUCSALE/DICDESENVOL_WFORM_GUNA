@@ -425,64 +425,199 @@ namespace dicdesenvol
             //this.pdfViewer1.LoadFromFile("c:/temp/result.pdf");
 
             //Exemplo: pdf em "TABLE"
-            //Create a PdfDocument object
+            ////Create a PdfDocument object
+            //PdfDocument doc = new PdfDocument();
+
+            ////Add a page
+            //PdfPageBase page = doc.Pages.Add(PdfPageSize.A4, new PdfMargins(40));
+
+            ////Create a PdfTable object
+            //PdfTable table = new PdfTable();
+
+            ////Set font for header and the rest cells
+            //table.Style.DefaultStyle.Font = new PdfTrueTypeFont(new Font("Times New Roman", 12f, FontStyle.Regular), true);
+            //table.Style.HeaderStyle.Font = new PdfTrueTypeFont(new Font("Times New Roman", 12f, FontStyle.Bold), true);
+
+            ////Crate a DataTable
+            //DataTable dataTable = new DataTable();
+            //dataTable.Columns.Add("ID");
+            //dataTable.Columns.Add("Name");
+            //dataTable.Columns.Add("Department");
+            //dataTable.Columns.Add("Position");
+            //dataTable.Columns.Add("Level");
+            //dataTable.Rows.Add(new string[] { "1", "David", "IT", "Manager", "1" });
+            //dataTable.Rows.Add(new string[] { "3", "Julia", "HR", "Manager", "1" });
+            //dataTable.Rows.Add(new string[] { "4", "Sophie", "Marketing", "Manager", "1" });
+            //dataTable.Rows.Add(new string[] { "7", "Wickey", "Marketing", "Sales Rep", "2" });
+            //dataTable.Rows.Add(new string[] { "9", "Wayne", "HR", "HR Supervisor", "2" });
+            //dataTable.Rows.Add(new string[] { "11", "Mia", "Dev", "Developer", "2" });
+
+            ////Set the datatable as the data source of table
+            //table.DataSource = dataTable;
+
+            ////Show header(the header is hidden by default)
+            //table.Style.ShowHeader = true;
+
+            ////Set font color and backgroud color of header row
+            //table.Style.HeaderStyle.BackgroundBrush = PdfBrushes.Gray;
+            //table.Style.HeaderStyle.TextBrush = PdfBrushes.White;
+
+            ////Set text alignment in header row
+            //table.Style.HeaderStyle.StringFormat = new PdfStringFormat(PdfTextAlignment.Center, PdfVerticalAlignment.Middle);
+
+            ////Set text alignment in other cells
+            //for (int i = 0; i < table.Columns.Count; i++)
+            //{
+            //    table.Columns[i].StringFormat = new PdfStringFormat(PdfTextAlignment.Center, PdfVerticalAlignment.Middle);
+            //}
+
+            ////Register with BeginRowLayout event
+            ////table.BeginRowLayout += Table_BeginRowLayout;
+
+            ////Draw table on the page
+            //table.Draw(page, new PointF(0, 30));
+
+            ////Save the document to a PDF file 
+            //doc.SaveToFile("c:/temp/PdfTable.pdf");
+
+            //this.pdfViewer1.LoadFromFile("c:/temp/PdfTable.pdf");
+
+
+            //Exemplo: pdf em "GRID" (outro exemplo)   
+            ////Create a PdfDocument object
+            //PdfDocument doc = new PdfDocument();
+
+            ////Add a page 
+            //PdfPageBase page = doc.Pages.Add(PdfPageSize.A4, new PdfMargins(40));
+
+            ////Create a PdfGrid
+            //PdfGrid grid = new PdfGrid();
+
+            ////Set cell padding
+            //grid.Style.CellPadding = new PdfPaddings(1, 1, 1, 1);
+
+            ////Set font
+            //grid.Style.Font = new PdfTrueTypeFont(new Font("Times New Roman", 13f, FontStyle.Regular), true);
+
+            ////Add rows
+            //PdfGridRow row1 = grid.Rows.Add();
+            //PdfGridRow row2 = grid.Rows.Add();
+            //PdfGridRow row3 = grid.Rows.Add();
+            //PdfGridRow row4 = grid.Rows.Add();
+            //grid.Columns.Add(4);
+
+            ////Set column width
+            //foreach (PdfGridColumn col in grid.Columns)
+            //{
+            //    col.Width = 110f;
+            //}
+
+            ////Write data into specific cells
+            //row1.Cells[0].Value = "Order and Payment Status";
+            //row2.Cells[0].Value = "Order number";
+            //row2.Cells[1].Value = "Date";
+            //row2.Cells[2].Value = "Customer";
+            //row2.Cells[3].Value = "Paid or not";
+            //row3.Cells[0].Value = "00223";
+            //row3.Cells[1].Value = "2022/06/02";
+            //row3.Cells[2].Value = "Brick Lane Realty";
+            //row3.Cells[3].Value = "Yes";
+            //row4.Cells[0].Value = "00224";
+            //row4.Cells[1].Value = "2022/06/03";
+            //row4.Cells[3].Value = "No";
+
+            ////Span cell across columns
+            //row1.Cells[0].ColumnSpan = 4;
+
+            ////Span cell across rows
+            //row3.Cells[2].RowSpan = 2;
+
+            ////Set text alignment of specific cells
+            //row1.Cells[0].StringFormat = new PdfStringFormat(PdfTextAlignment.Center);
+            //row3.Cells[2].StringFormat = new PdfStringFormat(PdfTextAlignment.Left, PdfVerticalAlignment.Middle);
+
+            ////Set background color of specific cells
+            //row1.Cells[0].Style.BackgroundBrush = PdfBrushes.Orange;
+            //row4.Cells[3].Style.BackgroundBrush = PdfBrushes.LightGray;
+
+            ////Format cell border
+            //PdfBorders borders = new PdfBorders();
+            //borders.All = new PdfPen(Color.Orange, 0.8f);
+            //foreach (PdfGridRow pgr in grid.Rows)
+            //{
+            //    foreach (PdfGridCell pgc in pgr.Cells)
+            //    {
+            //        pgc.Style.Borders = borders;
+            //    }
+            //}
+
+            ////Draw table on the page
+            //grid.Draw(page, new PointF(0, 30));
+
+            ////Save the document to a PDF file
+            //doc.SaveToFile("c:/temp/PdfGrid.pdf");
+            //this.pdfViewer1.LoadFromFile("c:/temp/PdfGrid.pdf");
+
+
+
+            //Exemplo: HEADER
+            //create a PDF document
             PdfDocument doc = new PdfDocument();
+            doc.PageSettings.Size = PdfPageSize.A4;
 
-            //Add a page
-            PdfPageBase page = doc.Pages.Add(PdfPageSize.A4, new PdfMargins(40));
+            //reset the default margins to 0
+            doc.PageSettings.Margins = new PdfMargins(0);
 
-            //Create a PdfTable object
-            PdfTable table = new PdfTable();
+            //create a PdfMargins object, the parameters indicate the page margins you want to set
+            PdfMargins margins = new PdfMargins(60, 60, 60, 60);
 
-            //Set font for header and the rest cells
-            table.Style.DefaultStyle.Font = new PdfTrueTypeFont(new Font("Times New Roman", 12f, FontStyle.Regular), true);
-            table.Style.HeaderStyle.Font = new PdfTrueTypeFont(new Font("Times New Roman", 12f, FontStyle.Bold), true);
+            //create a header template with content and apply it to page template
+            doc.Template.Top = CreateHeaderTemplate(doc, margins);
 
-            //Crate a DataTable
-            DataTable dataTable = new DataTable();
-            dataTable.Columns.Add("ID");
-            dataTable.Columns.Add("Name");
-            dataTable.Columns.Add("Department");
-            dataTable.Columns.Add("Position");
-            dataTable.Columns.Add("Level");
-            dataTable.Rows.Add(new string[] { "1", "David", "IT", "Manager", "1" });
-            dataTable.Rows.Add(new string[] { "3", "Julia", "HR", "Manager", "1" });
-            dataTable.Rows.Add(new string[] { "4", "Sophie", "Marketing", "Manager", "1" });
-            dataTable.Rows.Add(new string[] { "7", "Wickey", "Marketing", "Sales Rep", "2" });
-            dataTable.Rows.Add(new string[] { "9", "Wayne", "HR", "HR Supervisor", "2" });
-            dataTable.Rows.Add(new string[] { "11", "Mia", "Dev", "Developer", "2" });
+            //apply blank templates to other parts of page template
+            doc.Template.Bottom = new PdfPageTemplateElement(doc.PageSettings.Size.Width, margins.Bottom);
+            doc.Template.Left = new PdfPageTemplateElement(margins.Left, doc.PageSettings.Size.Height);
+            doc.Template.Right = new PdfPageTemplateElement(margins.Right, doc.PageSettings.Size.Height);
 
-            //Set the datatable as the data source of table
-            table.DataSource = dataTable;
-
-            //Show header(the header is hidden by default)
-            table.Style.ShowHeader = true;
-
-            //Set font color and backgroud color of header row
-            table.Style.HeaderStyle.BackgroundBrush = PdfBrushes.Gray;
-            table.Style.HeaderStyle.TextBrush = PdfBrushes.White;
-
-            //Set text alignment in header row
-            table.Style.HeaderStyle.StringFormat = new PdfStringFormat(PdfTextAlignment.Center, PdfVerticalAlignment.Middle);
-
-            //Set text alignment in other cells
-            for (int i = 0; i < table.Columns.Count; i++)
-            {
-                table.Columns[i].StringFormat = new PdfStringFormat(PdfTextAlignment.Center, PdfVerticalAlignment.Middle);
-            }
-
-            //Register with BeginRowLayout event
-            //table.BeginRowLayout += Table_BeginRowLayout;
-
-            //Draw table on the page
-            table.Draw(page, new PointF(0, 30));
-
-            //Save the document to a PDF file 
-            doc.SaveToFile("c:/temp/PdfTable.pdf");
-
-            this.pdfViewer1.LoadFromFile("c:/temp/PdfTable.pdf");
+            //save the file
+            doc.SaveToFile("c:/temp/PdfHeader.pdf");
+            this.pdfViewer1.LoadFromFile("c:/temp/PdfHeader.pdf");
 
 
+        }
+
+        static PdfPageTemplateElement CreateHeaderTemplate(PdfDocument doc, PdfMargins margins)
+        {
+            //get page size
+            SizeF pageSize = doc.PageSettings.Size;
+
+            //create a PdfPageTemplateElement object as header space
+            PdfPageTemplateElement headerSpace = new PdfPageTemplateElement(pageSize.Width, margins.Top);
+            headerSpace.Foreground = false;
+
+            //declare two float variables
+            float x = margins.Left;
+            float y = 0;
+
+            //draw image in header space 
+            PdfImage headerImage = PdfImage.FromFile("c:/temp/LUCSALE_Icone.png");
+            float width = headerImage.Width / 3;
+            float height = headerImage.Height / 3;
+            headerSpace.Graphics.DrawImage(headerImage, x, margins.Top - height - 2, width, height);
+
+            //draw line in header space
+            PdfPen pen = new PdfPen(PdfBrushes.Gray, 1);
+            headerSpace.Graphics.DrawLine(pen, x, y + margins.Top - 2, pageSize.Width - x, y + margins.Top - 2);
+
+            //draw text in header space
+            PdfTrueTypeFont font = new PdfTrueTypeFont(new Font("Impact", 25f, FontStyle.Bold));
+            PdfStringFormat format = new PdfStringFormat(PdfTextAlignment.Left);
+            String headerText = "HEADER TEXT";
+            SizeF size = font.MeasureString(headerText, format);
+            headerSpace.Graphics.DrawString(headerText, font, PdfBrushes.Gray, pageSize.Width - x - size.Width - 2, margins.Top - (size.Height + 5), format);
+
+            //return headerSpace
+            return headerSpace;
         }
     }
 
