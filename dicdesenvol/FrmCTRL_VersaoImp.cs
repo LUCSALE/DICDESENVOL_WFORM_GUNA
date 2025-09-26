@@ -1,6 +1,4 @@
-﻿using Spire.Pdf.Graphics;
-using Spire.Pdf;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
+using Spire.Doc;
+using Spire.Doc.Documents;
+using System.Data.Odbc;
+using Spire.Pdf.Graphics;
+using Spire.Pdf;
+using Spire.Pdf.Tables;
+using Spire.Pdf.Grid;
+
 
 namespace dicdesenvol
 {
@@ -357,104 +364,104 @@ namespace dicdesenvol
 
 
             //Exemplo: pdf em "GRID" (outro exemplo)   
-            ////Create a PdfDocument object
-            //PdfDocument doc = new PdfDocument();
-
-            ////Add a page 
-            //PdfPageBase page = doc.Pages.Add(PdfPageSize.A4, new PdfMargins(40));
-
-            ////Create a PdfGrid
-            //PdfGrid grid = new PdfGrid();
-
-            ////Set cell padding
-            //grid.Style.CellPadding = new PdfPaddings(1, 1, 1, 1);
-
-            ////Set font
-            //grid.Style.Font = new PdfTrueTypeFont(new Font("Times New Roman", 13f, FontStyle.Regular), true);
-
-            ////Add rows
-            //PdfGridRow row1 = grid.Rows.Add();
-            //PdfGridRow row2 = grid.Rows.Add();
-            //PdfGridRow row3 = grid.Rows.Add();
-            //PdfGridRow row4 = grid.Rows.Add();
-            //grid.Columns.Add(4);
-
-            ////Set column width
-            //foreach (PdfGridColumn col in grid.Columns)
-            //{
-            //    col.Width = 110f;
-            //}
-
-            ////Write data into specific cells
-            //row1.Cells[0].Value = "Order and Payment Status";
-            //row2.Cells[0].Value = "Order number";
-            //row2.Cells[1].Value = "Date";
-            //row2.Cells[2].Value = "Customer";
-            //row2.Cells[3].Value = "Paid or not";
-            //row3.Cells[0].Value = "00223";
-            //row3.Cells[1].Value = "2022/06/02";
-            //row3.Cells[2].Value = "Brick Lane Realty";
-            //row3.Cells[3].Value = "Yes";
-            //row4.Cells[0].Value = "00224";
-            //row4.Cells[1].Value = "2022/06/03";
-            //row4.Cells[3].Value = "No";
-
-            ////Span cell across columns
-            //row1.Cells[0].ColumnSpan = 4;
-
-            ////Span cell across rows
-            //row3.Cells[2].RowSpan = 2;
-
-            ////Set text alignment of specific cells
-            //row1.Cells[0].StringFormat = new PdfStringFormat(PdfTextAlignment.Center);
-            //row3.Cells[2].StringFormat = new PdfStringFormat(PdfTextAlignment.Left, PdfVerticalAlignment.Middle);
-
-            ////Set background color of specific cells
-            //row1.Cells[0].Style.BackgroundBrush = PdfBrushes.Orange;
-            //row4.Cells[3].Style.BackgroundBrush = PdfBrushes.LightGray;
-
-            ////Format cell border
-            //PdfBorders borders = new PdfBorders();
-            //borders.All = new PdfPen(Color.Orange, 0.8f);
-            //foreach (PdfGridRow pgr in grid.Rows)
-            //{
-            //    foreach (PdfGridCell pgc in pgr.Cells)
-            //    {
-            //        pgc.Style.Borders = borders;
-            //    }
-            //}
-
-            ////Draw table on the page
-            //grid.Draw(page, new PointF(0, 30));
-
-            ////Save the document to a PDF file
-            //doc.SaveToFile("c:/temp/PdfGrid.pdf");
-            //this.pdfViewer1.LoadFromFile("c:/temp/PdfGrid.pdf");
-
-
-
-            //Exemplo: HEADER
-            //create a PDF document
+            //Create a PdfDocument object
             PdfDocument doc = new PdfDocument();
-            doc.PageSettings.Size = PdfPageSize.A4;
 
-            //reset the default margins to 0
-            doc.PageSettings.Margins = new PdfMargins(0);
+            //Add a page 
+            PdfPageBase page = doc.Pages.Add(PdfPageSize.A4, new PdfMargins(40));
 
-            //create a PdfMargins object, the parameters indicate the page margins you want to set
-            PdfMargins margins = new PdfMargins(60, 60, 60, 60);
+            //Create a PdfGrid
+            PdfGrid grid = new PdfGrid();
 
-            //create a header template with content and apply it to page template
-            doc.Template.Top = CreateHeaderTemplate(doc, margins);
+            //Set cell padding
+            grid.Style.CellPadding = new PdfPaddings(1, 1, 1, 1);
 
-            //apply blank templates to other parts of page template
-            doc.Template.Bottom = new PdfPageTemplateElement(doc.PageSettings.Size.Width, margins.Bottom);
-            doc.Template.Left = new PdfPageTemplateElement(margins.Left, doc.PageSettings.Size.Height);
-            doc.Template.Right = new PdfPageTemplateElement(margins.Right, doc.PageSettings.Size.Height);
+            //Set font
+            grid.Style.Font = new PdfTrueTypeFont(new Font("Times New Roman", 13f, FontStyle.Regular), true);
 
-            //save the file
-            doc.SaveToFile("c:/temp/PdfHeader.pdf");
-            this.pdfViewer1.LoadFromFile("c:/temp/PdfHeader.pdf");
+            //Add rows
+            PdfGridRow row1 = grid.Rows.Add();
+            PdfGridRow row2 = grid.Rows.Add();
+            PdfGridRow row3 = grid.Rows.Add();
+            PdfGridRow row4 = grid.Rows.Add();
+            grid.Columns.Add(4);
+
+            //Set column width
+            foreach (PdfGridColumn col in grid.Columns)
+            {
+                col.Width = 110f;
+            }
+
+            //Write data into specific cells
+            row1.Cells[0].Value = "Order and Payment Status";
+            row2.Cells[0].Value = "Order number";
+            row2.Cells[1].Value = "Date";
+            row2.Cells[2].Value = "Customer";
+            row2.Cells[3].Value = "Paid or not";
+            row3.Cells[0].Value = "00223";
+            row3.Cells[1].Value = "2022/06/02";
+            row3.Cells[2].Value = "Brick Lane Realty";
+            row3.Cells[3].Value = "Yes";
+            row4.Cells[0].Value = "00224";
+            row4.Cells[1].Value = "2022/06/03";
+            row4.Cells[3].Value = "No";
+
+            //Span cell across columns
+            row1.Cells[0].ColumnSpan = 4;
+
+            //Span cell across rows
+            row3.Cells[2].RowSpan = 2;
+
+            //Set text alignment of specific cells
+            row1.Cells[0].StringFormat = new PdfStringFormat(PdfTextAlignment.Center);
+            row3.Cells[2].StringFormat = new PdfStringFormat(PdfTextAlignment.Left, PdfVerticalAlignment.Middle);
+
+            //Set background color of specific cells
+            row1.Cells[0].Style.BackgroundBrush = PdfBrushes.Orange;
+            row4.Cells[3].Style.BackgroundBrush = PdfBrushes.LightGray;
+
+            //Format cell border
+            PdfBorders borders = new PdfBorders();
+            borders.All = new PdfPen(Color.Orange, 0.8f);
+            foreach (PdfGridRow pgr in grid.Rows)
+            {
+                foreach (PdfGridCell pgc in pgr.Cells)
+                {
+                    pgc.Style.Borders = borders;
+                }
+            }
+
+            //Draw table on the page
+            grid.Draw(page, new PointF(0, 30));
+
+            //Save the document to a PDF file
+            doc.SaveToFile("c:/temp/PdfGrid.pdf");
+            this.pdfViewer1.LoadFromFile("c:/temp/PdfGrid.pdf");
+
+
+
+        //Exemplo: HEADER
+        //create a PDF document
+        //PdfDocument doc = new PdfDocument();
+        //    doc.PageSettings.Size = PdfPageSize.A4;
+
+        //    //reset the default margins to 0
+        //    doc.PageSettings.Margins = new PdfMargins(0);
+
+        //    //create a PdfMargins object, the parameters indicate the page margins you want to set
+        //    PdfMargins margins = new PdfMargins(60, 60, 60, 60);
+
+        //    //create a header template with content and apply it to page template
+        //    doc.Template.Top = CreateHeaderTemplate(doc, margins);
+
+        //    //apply blank templates to other parts of page template
+        //    doc.Template.Bottom = new PdfPageTemplateElement(doc.PageSettings.Size.Width, margins.Bottom);
+        //    doc.Template.Left = new PdfPageTemplateElement(margins.Left, doc.PageSettings.Size.Height);
+        //    doc.Template.Right = new PdfPageTemplateElement(margins.Right, doc.PageSettings.Size.Height);
+
+        //    //save the file
+        //    doc.SaveToFile("c:/temp/PdfHeader.pdf");
+        //    this.pdfViewer1.LoadFromFile("c:/temp/PdfHeader.pdf");
 
 
         }

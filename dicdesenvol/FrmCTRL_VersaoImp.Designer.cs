@@ -33,11 +33,12 @@
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.pnlDados = new Guna.UI2.WinForms.Guna2Panel();
-            this.hTML_CSS_USABILIDADETableAdapter = new dicdesenvol.db_ab2460_USABILIDADETableAdapters.HTML_CSS_USABILIDADETableAdapter();
-            this.lblTitulo = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTitulo = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.pnlDados = new Guna.UI2.WinForms.Guna2Panel();
             this.pdfViewer1 = new Spire.PdfViewer.Forms.PdfViewer();
+            this.hTML_CSS_USABILIDADETableAdapter = new dicdesenvol.db_ab2460_USABILIDADETableAdapters.HTML_CSS_USABILIDADETableAdapter();
+            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.hTML_CSS_RADZENBindingNavigator)).BeginInit();
             this.hTML_CSS_RADZENBindingNavigator.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
@@ -104,21 +105,17 @@
             this.guna2GradientPanel1.Size = new System.Drawing.Size(850, 136);
             this.guna2GradientPanel1.TabIndex = 28;
             // 
-            // pnlDados
+            // guna2HtmlLabel1
             // 
-            this.pnlDados.BackColor = System.Drawing.Color.AliceBlue;
-            this.pnlDados.BorderColor = System.Drawing.Color.MidnightBlue;
-            this.pnlDados.BorderThickness = 2;
-            this.pnlDados.Controls.Add(this.pdfViewer1);
-            this.pnlDados.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlDados.Location = new System.Drawing.Point(0, 136);
-            this.pnlDados.Name = "pnlDados";
-            this.pnlDados.Size = new System.Drawing.Size(850, 317);
-            this.pnlDados.TabIndex = 29;
-            // 
-            // hTML_CSS_USABILIDADETableAdapter
-            // 
-            this.hTML_CSS_USABILIDADETableAdapter.ClearBeforeFill = true;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(290, 66);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(271, 57);
+            this.guna2HtmlLabel1.TabIndex = 4;
+            this.guna2HtmlLabel1.TabStop = false;
+            this.guna2HtmlLabel1.Text = "(Impressão)";
             // 
             // lblTitulo
             // 
@@ -132,17 +129,17 @@
             this.lblTitulo.TabStop = false;
             this.lblTitulo.Text = "CTRL_Versão";
             // 
-            // guna2HtmlLabel1
+            // pnlDados
             // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(290, 66);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(271, 57);
-            this.guna2HtmlLabel1.TabIndex = 4;
-            this.guna2HtmlLabel1.TabStop = false;
-            this.guna2HtmlLabel1.Text = "(Impressão)";
+            this.pnlDados.BackColor = System.Drawing.Color.AliceBlue;
+            this.pnlDados.BorderColor = System.Drawing.Color.MidnightBlue;
+            this.pnlDados.BorderThickness = 2;
+            this.pnlDados.Controls.Add(this.pdfViewer1);
+            this.pnlDados.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlDados.Location = new System.Drawing.Point(0, 136);
+            this.pnlDados.Name = "pnlDados";
+            this.pnlDados.Size = new System.Drawing.Size(850, 317);
+            this.pnlDados.TabIndex = 29;
             // 
             // pdfViewer1
             // 
@@ -160,6 +157,19 @@
             this.pdfViewer1.Text = "pdfViewer1";
             this.pdfViewer1.Threshold = 60;
             this.pdfViewer1.ViewerBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            // 
+            // hTML_CSS_USABILIDADETableAdapter
+            // 
+            this.hTML_CSS_USABILIDADETableAdapter.ClearBeforeFill = true;
+            // 
+            // guna2BorderlessForm1
+            // 
+            this.guna2BorderlessForm1.AnimateWindow = true;
+            this.guna2BorderlessForm1.AnimationType = Guna.UI2.WinForms.Guna2BorderlessForm.AnimateWindowType.AW_VER_NEGATIVE;
+            this.guna2BorderlessForm1.BorderRadius = 25;
+            this.guna2BorderlessForm1.ContainerControl = this;
+            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
             // FrmCTRL_VersaoImp
             // 
@@ -195,5 +205,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTitulo;
         private Spire.PdfViewer.Forms.PdfViewer pdfViewer1;
+        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
     }
 }
