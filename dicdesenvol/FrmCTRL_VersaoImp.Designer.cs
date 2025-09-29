@@ -39,10 +39,16 @@
             this.pdfViewer1 = new Spire.PdfViewer.Forms.PdfViewer();
             this.hTML_CSS_USABILIDADETableAdapter = new dicdesenvol.db_ab2460_USABILIDADETableAdapters.HTML_CSS_USABILIDADETableAdapter();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.cTRL_VERSAO_cadastrodbDataSet = new dicdesenvol.CTRL_VERSAO_cadastrodbDataSet();
+            this.cTRL_VERSAOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cTRL_VERSAOTableAdapter = new dicdesenvol.CTRL_VERSAO_cadastrodbDataSetTableAdapters.CTRL_VERSAOTableAdapter();
+            this.tableAdapterManager = new dicdesenvol.CTRL_VERSAO_cadastrodbDataSetTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.hTML_CSS_RADZENBindingNavigator)).BeginInit();
             this.hTML_CSS_RADZENBindingNavigator.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
             this.pnlDados.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cTRL_VERSAO_cadastrodbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cTRL_VERSAOBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // hTML_CSS_RADZENBindingNavigator
@@ -61,7 +67,7 @@
             this.hTML_CSS_RADZENBindingNavigator.MovePreviousItem = null;
             this.hTML_CSS_RADZENBindingNavigator.Name = "hTML_CSS_RADZENBindingNavigator";
             this.hTML_CSS_RADZENBindingNavigator.PositionItem = null;
-            this.hTML_CSS_RADZENBindingNavigator.Size = new System.Drawing.Size(850, 25);
+            this.hTML_CSS_RADZENBindingNavigator.Size = new System.Drawing.Size(858, 25);
             this.hTML_CSS_RADZENBindingNavigator.TabIndex = 0;
             this.hTML_CSS_RADZENBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -86,7 +92,7 @@
             this.guna2ControlBox1.FillColor = System.Drawing.Color.MidnightBlue;
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.SystemColors.Highlight;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(811, 12);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(819, 12);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.PressedColor = System.Drawing.Color.DarkGray;
             this.guna2ControlBox1.Size = new System.Drawing.Size(27, 21);
@@ -102,7 +108,7 @@
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.DodgerBlue;
             this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(850, 136);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(858, 143);
             this.guna2GradientPanel1.TabIndex = 28;
             // 
             // guna2HtmlLabel1
@@ -136,9 +142,9 @@
             this.pnlDados.BorderThickness = 2;
             this.pnlDados.Controls.Add(this.pdfViewer1);
             this.pnlDados.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlDados.Location = new System.Drawing.Point(0, 136);
+            this.pnlDados.Location = new System.Drawing.Point(0, 143);
             this.pnlDados.Name = "pnlDados";
-            this.pnlDados.Size = new System.Drawing.Size(850, 317);
+            this.pnlDados.Size = new System.Drawing.Size(858, 310);
             this.pnlDados.TabIndex = 29;
             // 
             // pdfViewer1
@@ -152,7 +158,7 @@
             this.pdfViewer1.MultiPagesThreshold = 60;
             this.pdfViewer1.Name = "pdfViewer1";
             this.pdfViewer1.OnRenderPageExceptionEvent = null;
-            this.pdfViewer1.Size = new System.Drawing.Size(850, 317);
+            this.pdfViewer1.Size = new System.Drawing.Size(858, 310);
             this.pdfViewer1.TabIndex = 16;
             this.pdfViewer1.Text = "pdfViewer1";
             this.pdfViewer1.Threshold = 60;
@@ -165,17 +171,37 @@
             // guna2BorderlessForm1
             // 
             this.guna2BorderlessForm1.AnimateWindow = true;
-            this.guna2BorderlessForm1.AnimationType = Guna.UI2.WinForms.Guna2BorderlessForm.AnimateWindowType.AW_VER_NEGATIVE;
+            this.guna2BorderlessForm1.AnimationType = Guna.UI2.WinForms.Guna2BorderlessForm.AnimateWindowType.AW_CENTER;
             this.guna2BorderlessForm1.BorderRadius = 25;
             this.guna2BorderlessForm1.ContainerControl = this;
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
+            // cTRL_VERSAO_cadastrodbDataSet
+            // 
+            this.cTRL_VERSAO_cadastrodbDataSet.DataSetName = "CTRL_VERSAO_cadastrodbDataSet";
+            this.cTRL_VERSAO_cadastrodbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cTRL_VERSAOBindingSource
+            // 
+            this.cTRL_VERSAOBindingSource.DataMember = "CTRL_VERSAO";
+            this.cTRL_VERSAOBindingSource.DataSource = this.cTRL_VERSAO_cadastrodbDataSet;
+            // 
+            // cTRL_VERSAOTableAdapter
+            // 
+            this.cTRL_VERSAOTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.CTRL_VERSAOTableAdapter = this.cTRL_VERSAOTableAdapter;
+            this.tableAdapterManager.UpdateOrder = dicdesenvol.CTRL_VERSAO_cadastrodbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // FrmCTRL_VersaoImp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(850, 478);
+            this.ClientSize = new System.Drawing.Size(858, 478);
             this.Controls.Add(this.pnlDados);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.hTML_CSS_RADZENBindingNavigator);
@@ -190,6 +216,8 @@
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             this.pnlDados.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.cTRL_VERSAO_cadastrodbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cTRL_VERSAOBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,5 +234,9 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTitulo;
         private Spire.PdfViewer.Forms.PdfViewer pdfViewer1;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private CTRL_VERSAO_cadastrodbDataSet cTRL_VERSAO_cadastrodbDataSet;
+        private System.Windows.Forms.BindingSource cTRL_VERSAOBindingSource;
+        private CTRL_VERSAO_cadastrodbDataSetTableAdapters.CTRL_VERSAOTableAdapter cTRL_VERSAOTableAdapter;
+        private CTRL_VERSAO_cadastrodbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     }
 }

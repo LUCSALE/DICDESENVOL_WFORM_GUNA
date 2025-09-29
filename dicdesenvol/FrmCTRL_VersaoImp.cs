@@ -17,6 +17,8 @@ using Spire.Pdf.Tables;
 using Spire.Pdf.Grid;
 
 
+
+
 namespace dicdesenvol
 {
     public partial class FrmCTRL_VersaoImp : Form
@@ -34,79 +36,97 @@ namespace dicdesenvol
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //Exemplo: pdf em "GRID" (outro exemplo)   
-            //Create a PdfDocument object
-            PdfDocument doc = new PdfDocument();
-
-            //Add a page 
-            PdfPageBase page = doc.Pages.Add(PdfPageSize.A4, new PdfMargins(40));
-
-            //Create a PdfGrid
-            PdfGrid grid = new PdfGrid();
-
-            //Set cell padding
-            grid.Style.CellPadding = new PdfPaddings(1, 1, 1, 1);
-
-            //Set font
-            grid.Style.Font = new PdfTrueTypeFont(new Font("Times New Roman", 13f, FontStyle.Regular), true);
-
-            //Add rows
-            PdfGridRow row1 = grid.Rows.Add();
-            PdfGridRow row2 = grid.Rows.Add();
-            PdfGridRow row3 = grid.Rows.Add();
-            grid.Columns.Add(5);
-
-            //Set column width
-            foreach (PdfGridColumn col in grid.Columns)
+            try
             {
-                col.Width = 110f;
+                // TODO: esta linha de código carrega dados na tabela 'cTRL_VERSAO_cadastrodbDataSet.CTRL_VERSAO'. Você pode movê-la ou removê-la conforme necessário.
+                this.cTRL_VERSAOTableAdapter.Fill(this.cTRL_VERSAO_cadastrodbDataSet.CTRL_VERSAO);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao Consultar tabela: Padrao - " + ex.Message);
             }
 
-            //Write data into specific cells
-            row1.Cells[0].Value = "Order and Payment Status";
-            row2.Cells[0].Value = "Order number";
-            row2.Cells[1].Value = "Date";
-            row2.Cells[2].Value = "Customer";
-            row2.Cells[3].Value = "Paid or not";
-            row3.Cells[0].Value = "00223";
-            row3.Cells[1].Value = "2022/06/02";
-            row3.Cells[2].Value = "Brick Lane Realty";
-            row3.Cells[3].Value = "Yes";
-            row4.Cells[0].Value = "00224";
-            row4.Cells[1].Value = "2022/06/03";
-            row4.Cells[3].Value = "No";
+            DataTableReader dtr = this.cTRL_VERSAO_cadastrodbDataSet.CreateDataReader();
 
-            //Span cell across columns
-            row1.Cells[0].ColumnSpan = 4;
-
-            //Span cell across rows
-            row3.Cells[2].RowSpan = 2;
-
-            //Set text alignment of specific cells
-            row1.Cells[0].StringFormat = new PdfStringFormat(PdfTextAlignment.Center);
-            row3.Cells[2].StringFormat = new PdfStringFormat(PdfTextAlignment.Left, PdfVerticalAlignment.Middle);
-
-            //Set background color of specific cells
-            row1.Cells[0].Style.BackgroundBrush = PdfBrushes.Orange;
-            row4.Cells[3].Style.BackgroundBrush = PdfBrushes.LightGray;
-
-            //Format cell border
-            PdfBorders borders = new PdfBorders();
-            borders.All = new PdfPen(Color.Orange, 0.8f);
-            foreach (PdfGridRow pgr in grid.Rows)
+            if (dtr.HasRows)
             {
-                foreach (PdfGridCell pgc in pgr.Cells)
+                while (dtr.Read())
                 {
-                    pgc.Style.Borders = borders;
+                    MessageBox.Show(dtr["Versao"].ToString());
                 }
             }
+            else
+            {
+                MessageBox.Show("Não há dados");
+            }
 
-            //Draw table on the page
-            grid.Draw(page, new PointF(0, 30));
+            //Exemplo: pdf em "TABLET"
+            //Create a pdf document.
+            PdfDocument doc = new PdfDocument();
+            PdfSection sec = doc.Sections.Add();
+            sec.PageSettings.Width = PdfPageSize.A4.Width;
+            PdfPageBase page = sec.Pages.Add();
+            float y = 10;
+            
+            //title
+            PdfBrush brush1 = PdfBrushes.Black;
+            PdfTrueTypeFont font1 = new PdfTrueTypeFont(new Font("Arial", 16f, FontStyle.Bold));
+            PdfStringFormat format1 = new PdfStringFormat(PdfTextAlignment.Center);
+            page.Canvas.DrawString("Part Sales Information", font1, brush1, page.Canvas.ClientSize.Width / 2, y, format1);
+            y = y + font1.MeasureString("Country List", format1).Height;
+            y = y + 5;
 
-            //Save the document to a PDF file
-            doc.SaveToFile("c:/temp/PdfGrid.pdf");
-            this.pdfViewer1.LoadFromFile("c:/temp/PdfGrid.pdf");
+            String[] data
+         = {
+               "PartNo;Description;OnHand;OnOrder;Cost;ListPrice",
+               "900;Dive kayak;24;16;1356.75;3999.95"
+               //"912;Underwater Diver Vehicle;5;3;504;1680",
+               //"1313;Regulator System;165;216;117.5;250",
+               //"1314;Second Stage Regulator;98;88;124.1;365",
+               //"1316;Regulator System;75;70;119.35;341",
+               //"1320;Second Stage Regulator;37;35;73.53;171",
+               //"1328;Regulator System;166;100;154.8;430",
+               //"1330;Alternate Inflation Regulator;47;43;85.8;260",
+               //"1364;Second Stage Regulator;128;135;99.9;270",
+               //"1390;First Stage Regulator;146;140;64.6;170",
+               //"1946;Second Stage Regulator;13;10;95.79;309",
+               //"1986;Depth/Pressure Gauge Console;25;24;73.32;188",
+               //"2314;Electronic Console;13;12;120.9;390",
+               //"2341;Depth/Pressure Gauge;226;225;48.3;105",
+               //"2343;Personal Dive Sonar;46;45;72.85;235",
+               //"2350;Compass Console Mount;211;300;10.15;29"
+               };
+            MessageBox.Show(data.Count().ToString());
+            
+            String[][] dataSource
+                = new String[data.Length][];
+            
+            for (int i = 0; i < data.Length; i++)
+            {
+                dataSource[i] = data[i].Split(';');
+            }
+
+            PdfTable table = new PdfTable();
+            table.Style.CellPadding = 2;
+            table.Style.BorderPen = new PdfPen(brush1, 0.75f);
+            table.Style.HeaderStyle.StringFormat = new PdfStringFormat(PdfTextAlignment.Center);
+            table.Style.HeaderSource = PdfHeaderSource.Rows;
+            table.Style.HeaderRowCount = 1;
+            table.Style.ShowHeader = true;
+            table.Style.HeaderStyle.BackgroundBrush = PdfBrushes.CadetBlue;
+            table.DataSource = dataSource;
+            foreach (PdfColumn column in table.Columns)
+            {
+                column.StringFormat = new PdfStringFormat(PdfTextAlignment.Center, PdfVerticalAlignment.Middle);
+            }
+            table.Draw(page, new PointF(0, y));
+
+            doc.SaveToFile("c:/temp/SimpleTable.pdf");
+
+            ////Launching the Pdf file.
+            this.pdfViewer1.LoadFromFile("c:/temp/SimpleTable.pdf");
+                     
 
 
 
