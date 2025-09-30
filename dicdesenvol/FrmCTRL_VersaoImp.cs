@@ -49,17 +49,17 @@ namespace dicdesenvol
 
             DataTableReader dtr = this.cTRL_VERSAO_cadastrodbDataSet.CreateDataReader();
 
-            if (dtr.HasRows)
-            {
-                while (dtr.Read())
-                {
-                    MessageBox.Show(dtr["Versao"].ToString());
-                }
-            }
-            else
-            {
-                MessageBox.Show("Não há dados");
-            }
+            //if (dtr.HasRows)
+            //{
+            //    while (dtr.Read())
+            //    {
+            //        MessageBox.Show(dtr["Versao"].ToString());
+            //    }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Não há dados");
+            //}
 
             //Exemplo: pdf em "TABLET"
             //Create a pdf document.
@@ -77,36 +77,50 @@ namespace dicdesenvol
             y = y + font1.MeasureString("Country List", format1).Height;
             y = y + 5;
 
-            String[] data
-         = {
-               "PartNo;Description;OnHand;OnOrder;Cost;ListPrice",
-               "900;Dive kayak;24;16;1356.75;3999.95"
-               //"912;Underwater Diver Vehicle;5;3;504;1680",
-               //"1313;Regulator System;165;216;117.5;250",
-               //"1314;Second Stage Regulator;98;88;124.1;365",
-               //"1316;Regulator System;75;70;119.35;341",
-               //"1320;Second Stage Regulator;37;35;73.53;171",
-               //"1328;Regulator System;166;100;154.8;430",
-               //"1330;Alternate Inflation Regulator;47;43;85.8;260",
-               //"1364;Second Stage Regulator;128;135;99.9;270",
-               //"1390;First Stage Regulator;146;140;64.6;170",
-               //"1946;Second Stage Regulator;13;10;95.79;309",
-               //"1986;Depth/Pressure Gauge Console;25;24;73.32;188",
-               //"2314;Electronic Console;13;12;120.9;390",
-               //"2341;Depth/Pressure Gauge;226;225;48.3;105",
-               //"2343;Personal Dive Sonar;46;45;72.85;235",
-               //"2350;Compass Console Mount;211;300;10.15;29"
-               };
-            MessageBox.Show(data.Count().ToString());
-            
-            String[][] dataSource
-                = new String[data.Length][];
-            
-            for (int i = 0; i < data.Length; i++)
+            //   String[] data
+            //= {
+            //      "ID;DATA;HORA;SISTEMA;VERSÃO",
+            //      "1;30/09/2025;08:59:000;XXX;1.60"
+
+            //      //"PartNo;Description;OnHand;OnOrder;Cost;ListPrice",
+            //      //"912;Underwater Diver Vehicle;5;3;504;1680"
+            //      //"1313;Regulator System;165;216;117.5;250",
+            //      //"1314;Second Stage Regulator;98;88;124.1;365",
+            //      //"1316;Regulator System;75;70;119.35;341",
+            //      //"1320;Second Stage Regulator;37;35;73.53;171",
+            //      //"1328;Regulator System;166;100;154.8;430",
+            //      //"1330;Alternate Inflation Regulator;47;43;85.8;260",
+            //      //"1364;Second Stage Regulator;128;135;99.9;270",
+            //      //"1390;First Stage Regulator;146;140;64.6;170",
+            //      //"1946;Second Stage Regulator;13;10;95.79;309",
+            //      //"1986;Depth/Pressure Gauge Console;25;24;73.32;188",
+            //      //"2314;Electronic Console;13;12;120.9;390",
+            //      //"2341;Depth/Pressure Gauge;226;225;48.3;105",
+            //      //"2343;Personal Dive Sonar;46;45;72.85;235",
+            //      //"2350;Compass Console Mount;211;300;10.15;29"
+            //      };
+            //   MessageBox.Show(data.Length.ToString());
+
+            //   String[][] dataSource
+            //       = new String[data.Length][];
+
+            //   for (int i = 0; i < data.Length; i++)
+            //   {
+            //       dataSource[i] = data[i].Split(';');
+            //   }
+            //   dataSource[1][3] = "yyy";
+            //   MessageBox.Show(dataSource[1][3].ToString());
+
+            String[this.cTRL_VERSAO_cadastrodbDataSet.CTRL_VERSAO.Count()] data;
+
+            String[][] dataSource = new String[this.cTRL_VERSAO_cadastrodbDataSet.CTRL_VERSAO.Count][];
+            for (int i = 0; i < this.cTRL_VERSAO_cadastrodbDataSet.CTRL_VERSAO.Count; i++)
             {
-                dataSource[i] = data[i].Split(';');
+                string strNOME_ENTIDADE = this.cTRL_VERSAO_cadastrodbDataSet.CTRL_VERSAO.Rows[i].Field<string>("SISTEMA").Trim();
+                data[i] = strNOME_ENTIDADE;
             }
 
+           
             PdfTable table = new PdfTable();
             table.Style.CellPadding = 2;
             table.Style.BorderPen = new PdfPen(brush1, 0.75f);
