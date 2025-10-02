@@ -158,7 +158,7 @@ WHERE ID = @ID
               <xs:element name="CONSIDERACOES_GERAIS" msprop:Generator_ColumnPropNameInTable="CONSIDERACOES_GERAISColumn" msprop:Generator_ColumnPropNameInRow="CONSIDERACOES_GERAIS" msprop:Generator_UserColumnName="CONSIDERACOES_GERAIS" msprop:Generator_ColumnVarNameInTable="columnCONSIDERACOES_GERAIS" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
+                    <xs:maxLength value="1073741823" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>

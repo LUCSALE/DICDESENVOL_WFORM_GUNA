@@ -550,7 +550,7 @@ namespace dicdesenvol {
                 this.columnID.Unique = true;
                 this.columnUSABILIDADE_OBJETIVO.MaxLength = 50;
                 this.columnEXEMPLO_USO.MaxLength = 1073741823;
-                this.columnCONSIDERACOES_GERAIS.MaxLength = 50;
+                this.columnCONSIDERACOES_GERAIS.MaxLength = 1073741823;
                 this.columnLOCAL.MaxLength = 10;
                 this.columnSISTEMA.MaxLength = 50;
                 this.columnCAMINHO_FOTO.MaxLength = 200;

@@ -37,6 +37,7 @@ namespace dicdesenvol
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            var contador = 0;
             //declarando a variavel do tipo StreamWriter
             StreamReader x;
 
@@ -90,7 +91,7 @@ namespace dicdesenvol
             //    dataSource[i] = data[i].Split(';');
             //}
 
-            int i = 0;
+            
             String[][] dataSource
                    = new String[2][];
             //enquanto nao retornar valor booleano true
@@ -100,8 +101,8 @@ namespace dicdesenvol
                 //le conteúdo da linha
                 string linha = x.ReadLine();
                 //escreve na tela o conteúdo da linha
-                dataSource[i] = linha.Split(';');
-                i = i + 1;
+                dataSource[contador] = linha.Split(';');
+                contador++;
             }
             //após sair do while, é porque leu todo o conteúdo, então
             //temos que fechar o arquivo texto que está aberto
