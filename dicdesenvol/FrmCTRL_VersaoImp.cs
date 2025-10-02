@@ -15,6 +15,7 @@ using Spire.Pdf.Graphics;
 using Spire.Pdf;
 using Spire.Pdf.Tables;
 using Spire.Pdf.Grid;
+using System.IO;
 
 
 
@@ -36,94 +37,190 @@ namespace dicdesenvol
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            try
-            {
-                // TODO: esta linha de código carrega dados na tabela 'cTRL_VERSAO_cadastrodbDataSet.CTRL_VERSAO'. Você pode movê-la ou removê-la conforme necessário.
-                this.cTRL_VERSAOTableAdapter.Fill(this.cTRL_VERSAO_cadastrodbDataSet.CTRL_VERSAO);
+            //declarando a variavel do tipo StreamWriter
+            StreamReader x;
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro ao Consultar tabela: Padrao - " + ex.Message);
-            }
+            //Colocando o caminho fisico
+            string Caminho = "C:\\Windows\\Temp\\impTeste.txt";
 
-            DataTableReader dtr = this.cTRL_VERSAO_cadastrodbDataSet.CreateDataReader();
+            //abrindo um arquivo texto
+            x = File.OpenText(Caminho);
 
-            //Exemplo: pdf em "TABLE"
-            //Create a PdfDocument object
+            
+            //Exemplo: pdf em "TABLET"
+            //Create a pdf document.
             PdfDocument doc = new PdfDocument();
+            PdfSection sec = doc.Sections.Add();
+            sec.PageSettings.Width = PdfPageSize.A4.Width;
+            PdfPageBase page = sec.Pages.Add();
+            float y = 10;
+            //title
+            PdfBrush brush1 = PdfBrushes.Black;
+            PdfTrueTypeFont font1 = new PdfTrueTypeFont(new Font("Arial", 16f, FontStyle.Bold));
+            PdfStringFormat format1 = new PdfStringFormat(PdfTextAlignment.Center);
+            page.Canvas.DrawString("Part Sales Information", font1, brush1, page.Canvas.ClientSize.Width / 2, y, format1);
+            y = y + font1.MeasureString("Country List", format1).Height;
+            y = y + 5;
 
-            //Add a page
-            PdfPageBase page = doc.Pages.Add(PdfPageSize.A4, new PdfMargins(40));
+            //   String[] data
+            //= {
+            //         "PartNo;Description;OnHand;OnOrder;Cost;ListPrice",
+            //         "900;Dive kayak;24;16;1356.75;3999.95",
+            //         "912;Underwater Diver Vehicle;5;3;504;1680",
+            //         "1313;Regulator System;165;216;117.5;250",
+            //         "1314;Second Stage Regulator;98;88;124.1;365",
+            //         "1316;Regulator System;75;70;119.35;341",
+            //         "1320;Second Stage Regulator;37;35;73.53;171",
+            //         "1328;Regulator System;166;100;154.8;430",
+            //         "1330;Alternate Inflation Regulator;47;43;85.8;260",
+            //         "1364;Second Stage Regulator;128;135;99.9;270",
+            //         "1390;First Stage Regulator;146;140;64.6;170",
+            //         "1946;Second Stage Regulator;13;10;95.79;309",
+            //         "1986;Depth/Pressure Gauge Console;25;24;73.32;188",
+            //         "2314;Electronic Console;13;12;120.9;390",
+            //         "2341;Depth/Pressure Gauge;226;225;48.3;105",
+            //         "2343;Personal Dive Sonar;46;45;72.85;235",
+            //         "2350;Compass Console Mount;211;300;10.15;29"
+            //         };
+            //   String[][] dataSource
+            //       = new String[data.Length][];
 
-            //Create a PdfTable object
+            //for (int i = 0; i < data.Length; i++)
+            //{
+            //    dataSource[i] = data[i].Split(';');
+            //}
+
+            int i = 0;
+            String[][] dataSource
+                   = new String[2][];
+            //enquanto nao retornar valor booleano true
+            while (x.EndOfStream != true)//quer dizer que não chegou no fim do
+                                         //arquivo
+            {
+                //le conteúdo da linha
+                string linha = x.ReadLine();
+                //escreve na tela o conteúdo da linha
+                dataSource[i] = linha.Split(';');
+                i = i + 1;
+            }
+            //após sair do while, é porque leu todo o conteúdo, então
+            //temos que fechar o arquivo texto que está aberto
+            x.Close();
+
             PdfTable table = new PdfTable();
-
-            //Set font for header and the rest cells
-            table.Style.DefaultStyle.Font = new PdfTrueTypeFont(new Font("Times New Roman", 12f, FontStyle.Regular), true);
-            table.Style.HeaderStyle.Font = new PdfTrueTypeFont(new Font("Times New Roman", 12f, FontStyle.Bold), true);
-
-            // Create a new DataTable
-            DataTable myDataTable = new DataTable("MyTable");
-
-            // Add columns to the DataTable
-            myDataTable.Columns.Add("ID");
-            myDataTable.Columns.Add("Data");
-            myDataTable.Columns.Add("Hora");
-            myDataTable.Columns.Add("Sistema");
-            myDataTable.Columns.Add("Versao");
-
-            // Populate the DataRow
-            if (dtr.HasRows)
-            {
-                while (dtr.Read())
-                {
-                    // Create a new DataRow
-                    DataRow newRow = myDataTable.NewRow();
-                    
-                    newRow["ID"] = dtr["ID"].ToString();
-                    newRow["Data"] = dtr["Data"].ToString();
-                    newRow["Hora"] = dtr["Hora"].ToString();
-                    newRow["Sistema"] = dtr["Sistema"].ToString();
-                    newRow["Versao"] = dtr["Versao"].ToString();
-                    myDataTable.Rows.Add(newRow);
-
-                }
-            }
-            else
-            {
-                MessageBox.Show("Não há dados");
-            }
-
-            //Set the datatable as the data source of table
-            table.DataSource = myDataTable;
-
-            //Show header(the header is hidden by default)
+            table.Style.CellPadding = 2;
+            table.Style.BorderPen = new PdfPen(brush1, 0.75f);
+            table.Style.HeaderStyle.StringFormat = new PdfStringFormat(PdfTextAlignment.Center);
+            table.Style.HeaderSource = PdfHeaderSource.Rows;
+            table.Style.HeaderRowCount = 1;
             table.Style.ShowHeader = true;
-
-            //Set font color and backgroud color of header row
-            table.Style.HeaderStyle.BackgroundBrush = PdfBrushes.AliceBlue;
-            table.Style.HeaderStyle.TextBrush = PdfBrushes.Black;
-
-            //Set text alignment in header row
-            table.Style.HeaderStyle.StringFormat = new PdfStringFormat(PdfTextAlignment.Center, PdfVerticalAlignment.Middle);
-
-            //Set text alignment in other cells
-            for (int i = 0; i < table.Columns.Count; i++)
+            table.Style.HeaderStyle.BackgroundBrush = PdfBrushes.CadetBlue;
+            table.DataSource = dataSource;
+            foreach (PdfColumn column in table.Columns)
             {
-                table.Columns[i].StringFormat = new PdfStringFormat(PdfTextAlignment.Center, PdfVerticalAlignment.Middle);
+                column.StringFormat = new PdfStringFormat(PdfTextAlignment.Center, PdfVerticalAlignment.Middle);
             }
+            table.Draw(page, new PointF(0, y));
 
-            //Register with BeginRowLayout event
-            //table.BeginRowLayout += Table_BeginRowLayout;
-
-            //Draw table on the page
-            table.Draw(page, new PointF(0, 30));
-
-            //Save the document to a PDF file 
+            ////Save the document to a PDF file 
             doc.SaveToFile("c:/temp/PdfTable.pdf");
-
             this.pdfViewer1.LoadFromFile("c:/temp/PdfTable.pdf");
+
+
+
+
+
+
+
+
+            //try
+            //{
+            //    // TODO: esta linha de código carrega dados na tabela 'cTRL_VERSAO_cadastrodbDataSet.CTRL_VERSAO'. Você pode movê-la ou removê-la conforme necessário.
+            //    this.cTRL_VERSAOTableAdapter.Fill(this.cTRL_VERSAO_cadastrodbDataSet.CTRL_VERSAO);
+
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("Erro ao Consultar tabela: Padrao - " + ex.Message);
+            //}
+
+            //DataTableReader dtr = this.cTRL_VERSAO_cadastrodbDataSet.CreateDataReader();
+
+            ////Exemplo: pdf em "TABLE"
+            ////Create a PdfDocument object
+            //PdfDocument doc = new PdfDocument();
+
+            ////Add a page
+            //PdfPageBase page = doc.Pages.Add(PdfPageSize.A4, new PdfMargins(40));
+
+            ////Create a PdfTable object
+            //PdfTable table = new PdfTable();
+
+            ////Set font for header and the rest cells
+            //table.Style.DefaultStyle.Font = new PdfTrueTypeFont(new Font("Times New Roman", 12f, FontStyle.Regular), true);
+            //table.Style.HeaderStyle.Font = new PdfTrueTypeFont(new Font("Times New Roman", 12f, FontStyle.Bold), true);
+
+            //// Create a new DataTable
+            //DataTable myDataTable = new DataTable("MyTable");
+
+            //// Add columns to the DataTable
+            //myDataTable.Columns.Add("ID");
+            //myDataTable.Columns.Add("Data");
+            //myDataTable.Columns.Add("Hora");
+            //myDataTable.Columns.Add("Sistema");
+            //myDataTable.Columns.Add("Versao");
+
+            //// Populate the DataRow
+            //if (dtr.HasRows)
+            //{
+            //    while (dtr.Read())
+            //    {
+            //        // Create a new DataRow
+            //        DataRow newRow = myDataTable.NewRow();
+
+            //        newRow["ID"] = dtr["ID"].ToString();
+            //        newRow["Data"] = dtr["Data"].ToString();
+            //        newRow["Hora"] = dtr["Hora"].ToString();
+            //        newRow["Sistema"] = dtr["Sistema"].ToString();
+            //        newRow["Versao"] = dtr["Versao"].ToString();
+            //        myDataTable.Rows.Add(newRow);
+
+            //    }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Não há dados");
+            //}
+
+            ////Set the datatable as the data source of table
+            //table.DataSource = myDataTable;
+
+            ////Show header(the header is hidden by default)
+            //table.Style.ShowHeader = true;
+
+            ////Set font color and backgroud color of header row
+            //table.Style.HeaderStyle.BackgroundBrush = PdfBrushes.AliceBlue;
+            //table.Style.HeaderStyle.TextBrush = PdfBrushes.Black;
+
+            ////Set text alignment in header row
+            //table.Style.HeaderStyle.StringFormat = new PdfStringFormat(PdfTextAlignment.Center, PdfVerticalAlignment.Middle);
+
+            ////Set text alignment in other cells
+            //for (int i = 0; i < table.Columns.Count; i++)
+            //{
+            //    table.Columns[i].StringFormat = new PdfStringFormat(PdfTextAlignment.Center, PdfVerticalAlignment.Middle);
+            //}
+
+            ////Register with BeginRowLayout event
+            ////table.BeginRowLayout += Table_BeginRowLayout;
+
+            ////Draw table on the page
+            //table.Draw(page, new PointF(0, 30));
+
+            ////Save the document to a PDF file 
+            //doc.SaveToFile("c:/temp/PdfTable.pdf");
+
+            //this.pdfViewer1.LoadFromFile("c:/temp/PdfTable.pdf");
 
             //Exemplo: HEADER
             //create a PDF document
