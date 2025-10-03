@@ -22,9 +22,9 @@ using System.IO;
 
 namespace dicdesenvol
 {
-    public partial class FrmCTRL_VersaoImp : Form
+    public partial class FrmUsabilidadeImp : Form
     {
-        public FrmCTRL_VersaoImp()
+        public FrmUsabilidadeImp()
         {
             InitializeComponent();
         }
@@ -42,7 +42,7 @@ namespace dicdesenvol
             StreamReader x;
 
             //Colocando o caminho fisico
-            string Caminho = "C:\\Windows\\Temp\\impTeste.txt";
+            string Caminho = "C:\\Windows\\Temp\\impUsabilidade.txt";
 
             //abrindo um arquivo texto
             x = File.OpenText(Caminho);
@@ -98,8 +98,8 @@ namespace dicdesenvol
             table.Draw(page, new PointF(0, y));
 
             ////Save the document to a PDF file 
-            doc.SaveToFile("c:/temp/PdfTable.pdf");
-            this.pdfViewer1.LoadFromFile("c:/temp/PdfTable.pdf");
+            doc.SaveToFile("C:/Windows/Temp/impUsabilidade.pdf");
+            this.pdfViewer1.LoadFromFile("C:/Windows/Temp/impUsabilidade.pdf");
 
 
 

@@ -47,6 +47,14 @@ namespace dicdesenvol
             get { return m_nome_entidade; }
             set { m_nome_entidade = value; }
         }
+
+        private static int m_LinhasImp = 0;
+        public static int LinhasImp
+        {
+            get { return m_LinhasImp; }
+            set { m_LinhasImp = value; }
+        }   
+        
     }
 
     public static class InfoSenha

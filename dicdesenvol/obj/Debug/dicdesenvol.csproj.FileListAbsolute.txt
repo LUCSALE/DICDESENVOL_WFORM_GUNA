@@ -101,3 +101,4 @@ C:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\bin\Debug\System.Runtime.Comp
 E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.FrmCTRL_VersaoImp.resources
 C:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.FrmCTRL_VersaoImp.resources
 C:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.exe.config
+E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.FrmUsabilidadeImp.resources

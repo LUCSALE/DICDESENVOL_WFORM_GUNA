@@ -193,6 +193,12 @@
     <Compile Include="FrmCTRL_Versao.Designer.cs">
       <DependentUpon>FrmCTRL_Versao.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmUsabilidadeImp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsabilidadeImp.Designer.cs">
+      <DependentUpon>FrmUsabilidadeImp.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -241,6 +247,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCTRL_Versao.resx">
       <DependentUpon>FrmCTRL_Versao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsabilidadeImp.resx">
+      <DependentUpon>FrmUsabilidadeImp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUsuarios.resx">
       <DependentUpon>FrmUsuarios.cs</DependentUpon>

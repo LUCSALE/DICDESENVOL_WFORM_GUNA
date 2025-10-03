@@ -14,6 +14,7 @@ using Spire.Pdf.Graphics;
 using Spire.Pdf;
 using Spire.Pdf.Tables;
 using Spire.Pdf.Grid;
+using System.IO;
 
 
 namespace dicdesenvol
@@ -153,9 +154,49 @@ namespace dicdesenvol
 
         private void imprimirToolStripButton_Click(object sender, EventArgs e)
         {
+            var intContador = 0;
+            ////declarando a variavel do tipo StreamWriter para
+            //abrir ou criar um arquivo para escrita
+            StreamWriter x;
+
+            ////Colocando o caminho fisico e o nome do arquivo a ser criado
+            //finalizando com .txt
+            string CaminhoNome = "C:\\Windows\\Temp\\impTeste.txt";
+
+            //utilizando o metodo para criar um arquivo texto
+            //e associando o caminho e nome ao metodo
+            x = File.CreateText(CaminhoNome);
+
+            //escrevendo o HEADER
+            x.WriteLine("ID;Data;Hora;Sistema;Versão");
+
+            //aqui, exemplo de escrever no arquivo texto
+            //como se fossemos criar um recibo de pagamento
+
+            DataTableReader dtr = this.cTRL_VERSAO_cadastrodbDataSet.CreateDataReader();
+            while (dtr.Read())
+            {
+
+                x.WriteLine(dtr["ID"].ToString() +";" +
+                            dtr["Data"].ToString() + ";" +
+                            dtr["Hora"].ToString() + ";" +
+                            dtr["Sistema"].ToString() + ";" +
+                            dtr["Versao"].ToString()
+                            );
+                intContador ++;
+
+
+
+            }
+            
+            
+            //fechando o arquivo texto com o método .Close()
+            x.Close();
+            InfoApp.LinhasImp = intContador + 1;
+
+
             FrmCTRL_VersaoImp CTRL_VersaoImp = new FrmCTRL_VersaoImp();
             CTRL_VersaoImp.ShowDialog();
-
 
 
         }
