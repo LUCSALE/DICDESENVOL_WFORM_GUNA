@@ -38,6 +38,7 @@
             this.pnlDados = new Guna.UI2.WinForms.Guna2Panel();
             this.pdfViewer1 = new Spire.PdfViewer.Forms.PdfViewer();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.guna2MessageDialog1 = new Guna.UI2.WinForms.Guna2MessageDialog();
             ((System.ComponentModel.ISupportInitialize)(this.hTML_CSS_RADZENBindingNavigator)).BeginInit();
             this.hTML_CSS_RADZENBindingNavigator.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
@@ -166,6 +167,15 @@
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
+            // guna2MessageDialog1
+            // 
+            this.guna2MessageDialog1.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
+            this.guna2MessageDialog1.Caption = null;
+            this.guna2MessageDialog1.Icon = Guna.UI2.WinForms.MessageDialogIcon.None;
+            this.guna2MessageDialog1.Parent = null;
+            this.guna2MessageDialog1.Style = Guna.UI2.WinForms.MessageDialogStyle.Default;
+            this.guna2MessageDialog1.Text = null;
+            // 
             // FrmUsabilidadeImp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -200,5 +210,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTitulo;
         private Spire.PdfViewer.Forms.PdfViewer pdfViewer1;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private Guna.UI2.WinForms.Guna2MessageDialog guna2MessageDialog1;
     }
 }

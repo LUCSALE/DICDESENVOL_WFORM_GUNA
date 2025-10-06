@@ -89,7 +89,7 @@ namespace dicdesenvol
             table.Style.HeaderSource = PdfHeaderSource.Rows;
             table.Style.HeaderRowCount = 1;
             table.Style.ShowHeader = true;
-            table.Style.HeaderStyle.BackgroundBrush = PdfBrushes.CadetBlue;
+            table.Style.HeaderStyle.BackgroundBrush = PdfBrushes.DodgerBlue;
             table.DataSource = dataSource;
             foreach (PdfColumn column in table.Columns)
             {
