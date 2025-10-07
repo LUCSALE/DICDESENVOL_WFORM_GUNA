@@ -139,50 +139,47 @@ namespace dicdesenvol
 
         private void imprimirToolStripButton_Click(object sender, EventArgs e)
         {
-            //GeraArquivoImpressao(1);
 
+            var intContador = 0;
+            ////declarando a variavel do tipo StreamWriter para
+            //abrir ou criar um arquivo para escrita
+            StreamWriter x;
 
-       
-        //var intContador = 0;
-        //////declarando a variavel do tipo StreamWriter para
-        ////abrir ou criar um arquivo para escrita
-        //StreamWriter x;
+            ////Colocando o caminho fisico e o nome do arquivo a ser criado
+            //finalizando com .txt
+            string CaminhoNome = "C:\\Windows\\Temp\\impUsabilidade.txt";
 
-        //////Colocando o caminho fisico e o nome do arquivo a ser criado
-        ////finalizando com .txt
-        //string CaminhoNome = "C:\\Windows\\Temp\\impUsabilidade.txt";
+            //utilizando o metodo para criar um arquivo texto
+            //e associando o caminho e nome ao metodo
+            x = File.CreateText(CaminhoNome);
 
-        ////utilizando o metodo para criar um arquivo texto
-        ////e associando o caminho e nome ao metodo
-        //x = File.CreateText(CaminhoNome);
+            //escrevendo o HEADER
+            x.WriteLine("ID;Data;Hora;Usabilidade / Objetivo");
 
-        ////escrevendo o HEADER
-        //x.WriteLine("ID;Data;Hora;Usabilidade / Objetivo");
+            //aqui, exemplo de escrever no arquivo texto
+            //como se fossemos criar um recibo de pagamento
 
-        ////aqui, exemplo de escrever no arquivo texto
-        ////como se fossemos criar um recibo de pagamento
+            DataTableReader dtr = this.db_ab2460_Usabilidade_DataSet.CreateDataReader();
+            while (dtr.Read())
+            {
 
-        //DataTableReader dtr = this.db_ab2460_Usabilidade_DataSet.CreateDataReader();
-        //while (dtr.Read())
-        //{
-
-        //    x.WriteLine(dtr["ID"].ToString() + ";" +
-        //                dtr["Data"].ToString() + ";" +
-        //                dtr["Hora"].ToString() + ";" +
-        //                dtr["USABILIDADE_OBJETIV0"].ToString()
-        //                );
-        //    intContador++;
+                x.WriteLine(dtr["ID"].ToString() + ";" +
+                            dtr["Data"].ToString() + ";" +
+                            dtr["Hora"].ToString() + ";" +
+                            dtr["USABILIDADE_OBJETIV0"].ToString()
+                            );
+                intContador++;
 
 
 
-        //}
+            }
 
 
-        ////fechando o arquivo texto com o método .Close()
-        //x.Close();
-        //InfoApp.LinhasImp = intContador + 1;
-        //FrmUsabilidadeImp UsabilidadeImp = new FrmUsabilidadeImp();
-        //UsabilidadeImp.ShowDialog(); ;
+            //fechando o arquivo texto com o método .Close()
+            x.Close();
+            InfoApp.LinhasImp = intContador + 1;
+            FrmUsabilidadeImp UsabilidadeImp = new FrmUsabilidadeImp();
+            UsabilidadeImp.ShowDialog(); ;
 
         }
     }

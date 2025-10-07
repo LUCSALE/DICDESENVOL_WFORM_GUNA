@@ -130,7 +130,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApoioImp.cs" />
     <Compile Include="ApoioClass.cs" />
     <Compile Include="CTRL_VERSAO_cadastrodbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
