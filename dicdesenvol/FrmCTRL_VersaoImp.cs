@@ -16,6 +16,7 @@ using Spire.Pdf;
 using Spire.Pdf.Tables;
 using Spire.Pdf.Grid;
 using System.IO;
+using System.Drawing.Printing;
 
 
 
@@ -61,13 +62,20 @@ namespace dicdesenvol
             PdfBrush brush1 = PdfBrushes.DodgerBlue;
             PdfTrueTypeFont font1 = new PdfTrueTypeFont(new Font("Arial", 24f, FontStyle.Bold));
             PdfStringFormat format1 = new PdfStringFormat(PdfTextAlignment.Center);
+            
             page.Canvas.DrawString("CTRL_Versão", font1, brush1, page.Canvas.ClientSize.Width / 2, y, format1);
+
+            y = y + font1.MeasureString("CTRL_Versão", format1).Height;     
+            page.Canvas.DrawString("(impressão)", font1, brush1, page.Canvas.ClientSize.Width / 2, y, format1);
+            page.Canvas.DrawImage(PdfImage.FromFile("c:/temp/LUCSALE_Icone.png"), 10, 10, 50, 50);
+            
             y = y + font1.MeasureString("Country List", format1).Height;
             y = y + 9;
-
             
+            PdfPen pen = new PdfPen(PdfBrushes.Black, 1);
+            page.Canvas.DrawLine(pen, 000, y, page.Canvas.ClientSize.Width, y);
+            y = y + 2;
 
-            
             String[][] dataSource
                    = new String[InfoApp.LinhasImp][];
             //enquanto nao retornar valor booleano true
