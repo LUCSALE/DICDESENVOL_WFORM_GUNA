@@ -36,7 +36,7 @@ namespace dicdesenvol
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e, PdfTextAlignment pdfTextAlignment)
         {
             var contador = 0;
             //declarando a variavel do tipo StreamWriter
@@ -67,9 +67,15 @@ namespace dicdesenvol
 
             y = y + font1.MeasureString("CTRL_Versão", format1).Height;     
             page.Canvas.DrawString("(impressão)", font1, brush1, page.Canvas.ClientSize.Width / 2, y, format1);
+            
+
+            PdfStringFormat format2 = new PdfStringFormat(PdfTextAlignment.Left);
+            page.Canvas.DrawString("Data: ", font1, brush1, page.Canvas.ClientSize.Width / 2, y, format2);
+
             page.Canvas.DrawImage(PdfImage.FromFile("c:/temp/LUCSALE_Icone.png"), 10, 10, 50, 50);
             
             y = y + font1.MeasureString("Country List", format1).Height;
+
             y = y + 9;
             
             PdfPen pen = new PdfPen(PdfBrushes.Black, 1);
