@@ -36,7 +36,36 @@ namespace dicdesenvol
 
         }
 
-        private void Form1_Load(object sender, EventArgs e, PdfTextAlignment pdfTextAlignment)
+        
+
+        private void hTML_CSS_RADZENBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
+        {
+            
+
+
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void guna2CircleButton2_Click(object sender, EventArgs e)
+        {
+        
+        }
+
+        
+        private void FrmCTRL_VersaoImp_Load(object sender, EventArgs e)
         {
             var contador = 0;
             //declarando a variavel do tipo StreamWriter
@@ -48,7 +77,7 @@ namespace dicdesenvol
             //abrindo um arquivo texto
             x = File.OpenText(Caminho);
 
-            
+
             //Exemplo: pdf em "TABLET"
 
             //Create a pdf document.
@@ -62,22 +91,22 @@ namespace dicdesenvol
             PdfBrush brush1 = PdfBrushes.DodgerBlue;
             PdfTrueTypeFont font1 = new PdfTrueTypeFont(new Font("Arial", 24f, FontStyle.Bold));
             PdfStringFormat format1 = new PdfStringFormat(PdfTextAlignment.Center);
-            
+
             page.Canvas.DrawString("CTRL_Versão", font1, brush1, page.Canvas.ClientSize.Width / 2, y, format1);
 
-            y = y + font1.MeasureString("CTRL_Versão", format1).Height;     
+            y = y + font1.MeasureString("CTRL_Versão", format1).Height;
             page.Canvas.DrawString("(impressão)", font1, brush1, page.Canvas.ClientSize.Width / 2, y, format1);
-            
+
 
             PdfStringFormat format2 = new PdfStringFormat(PdfTextAlignment.Left);
             page.Canvas.DrawString("Data: ", font1, brush1, page.Canvas.ClientSize.Width / 2, y, format2);
 
             page.Canvas.DrawImage(PdfImage.FromFile("c:/temp/LUCSALE_Icone.png"), 10, 10, 50, 50);
-            
+
             y = y + font1.MeasureString("Country List", format1).Height;
 
             y = y + 9;
-            
+
             PdfPen pen = new PdfPen(PdfBrushes.Black, 1);
             page.Canvas.DrawLine(pen, 000, y, page.Canvas.ClientSize.Width, y);
             y = y + 2;
@@ -116,67 +145,6 @@ namespace dicdesenvol
             ////Save the document to a PDF file 
             doc.SaveToFile("c:/temp/PdfTable.pdf");
             this.pdfViewer1.LoadFromFile("c:/temp/PdfTable.pdf");
-
-        }
-
-        private void hTML_CSS_RADZENBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
-        {
-            
-
-
-        }
-
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void guna2CircleButton1_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void guna2CircleButton2_Click(object sender, EventArgs e)
-        {
-        
-        }
-
-        static PdfPageTemplateElement CreateHeaderTemplate(PdfDocument doc, PdfMargins margins)
-        {
-            //get page size
-            SizeF pageSize = doc.PageSettings.Size;
-
-            //create a PdfPageTemplateElement object as header space
-            PdfPageTemplateElement headerSpace = new PdfPageTemplateElement(pageSize.Width, margins.Top);
-            headerSpace.Foreground = false;
-
-            //declare two float variables
-            float x = margins.Left;
-            float y = 0;
-
-            //draw image in header space 
-            PdfImage headerImage = PdfImage.FromFile("c:/temp/LUCSALE_Icone.png");
-            float width = headerImage.Width / 3;
-            float height = headerImage.Height / 3;
-            headerSpace.Graphics.DrawImage(headerImage, x, margins.Top - height - 2, width, height);
-
-            //draw line in header space
-            PdfPen pen = new PdfPen(PdfBrushes.Gray, 1);
-            headerSpace.Graphics.DrawLine(pen, x, y + margins.Top - 2, pageSize.Width - x, y + margins.Top - 2);
-
-            //draw text in header space
-            PdfTrueTypeFont font = new PdfTrueTypeFont(new Font("Impact", 25f, FontStyle.Bold));
-            PdfStringFormat format = new PdfStringFormat(PdfTextAlignment.Left);
-            String headerText = "HEADER TEXT";
-            SizeF size = font.MeasureString(headerText, format);
-            headerSpace.Graphics.DrawString(headerText, font, PdfBrushes.Gray, pageSize.Width - x - size.Width - 2, margins.Top - (size.Height + 5), format);
-
-            //return headerSpace
-            return headerSpace;
         }
     }
 }
