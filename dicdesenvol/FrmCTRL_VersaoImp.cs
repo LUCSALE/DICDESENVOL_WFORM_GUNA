@@ -67,7 +67,13 @@ namespace dicdesenvol
         
         private void FrmCTRL_VersaoImp_Load(object sender, EventArgs e)
         {
+            ImpImpressao();
+        }
+
+        private void ImpImpressao()
+        {
             var contador = 0;
+
             //declarando a variavel do tipo StreamWriter
             StreamReader x;
 
@@ -146,5 +152,7 @@ namespace dicdesenvol
             doc.SaveToFile("c:/temp/PdfTable.pdf");
             this.pdfViewer1.LoadFromFile("c:/temp/PdfTable.pdf");
         }
+
     }
 }
+ 

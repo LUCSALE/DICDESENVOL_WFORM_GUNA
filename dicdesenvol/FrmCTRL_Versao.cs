@@ -154,7 +154,21 @@ namespace dicdesenvol
 
         private void imprimirToolStripButton_Click(object sender, EventArgs e)
         {
+            ImpGeracaoArquivo();
+
+            FrmCTRL_VersaoImp CTRL_VersaoImp = new FrmCTRL_VersaoImp();
+            CTRL_VersaoImp.ShowDialog();
+
+
+        }
+
+        
+
+        
+        private void ImpGeracaoArquivo()
+        {
             var intContador = 0;
+
             ////declarando a variavel do tipo StreamWriter para
             //abrir ou criar um arquivo para escrita
             StreamWriter x;
@@ -177,66 +191,27 @@ namespace dicdesenvol
             while (dtr.Read())
             {
 
-                x.WriteLine(dtr["ID"].ToString() +";" +
+                x.WriteLine(dtr["ID"].ToString() + ";" +
                             dtr["Data"].ToString() + ";" +
                             dtr["Hora"].ToString() + ";" +
                             dtr["Sistema"].ToString() + ";" +
                             dtr["Versao"].ToString()
                             );
-                intContador ++;
+                intContador++;
 
 
 
             }
-            
-            
+
+
             //fechando o arquivo texto com o método .Close()
             x.Close();
             InfoApp.LinhasImp = intContador + 1;
 
-
-            FrmCTRL_VersaoImp CTRL_VersaoImp = new FrmCTRL_VersaoImp();
-            CTRL_VersaoImp.ShowDialog();
-
-
         }
 
-        static PdfPageTemplateElement CreateHeaderTemplate(PdfDocument doc, PdfMargins margins)
-        {
-            //get page size
-            SizeF pageSize = doc.PageSettings.Size;
 
-            //create a PdfPageTemplateElement object as header space
-            PdfPageTemplateElement headerSpace = new PdfPageTemplateElement(pageSize.Width, margins.Top);
-            headerSpace.Foreground = false;
 
-            //declare two float variables
-            float x = margins.Left;
-            float y = 0;
-
-            //draw image in header space 
-            PdfImage headerImage = PdfImage.FromFile("c:/temp/LUCSALE_Icone.png");
-            float width = headerImage.Width / 3;
-            float height = headerImage.Height / 3;
-            headerSpace.Graphics.DrawImage(headerImage, x, margins.Top - height - 2, width, height);
-
-            //draw line in header space
-            PdfPen pen = new PdfPen(PdfBrushes.Gray, 1);
-            headerSpace.Graphics.DrawLine(pen, x, y + margins.Top - 2, pageSize.Width - x, y + margins.Top - 2);
-
-            //draw text in header space
-            PdfTrueTypeFont font = new PdfTrueTypeFont(new Font("Impact", 25f, FontStyle.Bold));
-            PdfStringFormat format = new PdfStringFormat(PdfTextAlignment.Left);
-            String headerText = "HEADER TEXT";
-            SizeF size = font.MeasureString(headerText, format);
-            headerSpace.Graphics.DrawString(headerText, font, PdfBrushes.Gray, pageSize.Width - x - size.Width - 2, margins.Top - (size.Height + 5), format);
-
-            //return headerSpace
-            return headerSpace;
-        }
     }
-
-
-
 
 }
