@@ -102,3 +102,6 @@ E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.FrmCTRL
 C:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.FrmCTRL_VersaoImp.resources
 C:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.exe.config
 E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\obj\Debug\dicdesenvol.FrmUsabilidadeImp.resources
+E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\bin\Debug\CircularProgressBar.dll
+E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\bin\Debug\WinFormAnimation.dll
+E:\DESENVOL_WEB\DICDESENVOL_WFORM_GUNA\dicdesenvol\bin\Debug\CircularProgressBar.xml

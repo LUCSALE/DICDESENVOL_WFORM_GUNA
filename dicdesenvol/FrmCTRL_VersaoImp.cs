@@ -67,7 +67,8 @@ namespace dicdesenvol
         
         private void FrmCTRL_VersaoImp_Load(object sender, EventArgs e)
         {
-            ImpImpressao();
+            timer1.Start(); 
+            
         }
 
         private void ImpImpressao()
@@ -153,6 +154,22 @@ namespace dicdesenvol
             this.pdfViewer1.LoadFromFile("c:/temp/PdfTable.pdf");
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            guna2ProgressBar1.Increment(1);
+            if (guna2ProgressBar1.Value == 70)
+            {
+                ImpImpressao();
+
+            }
+
+            if (guna2ProgressBar1.Value == 100)
+            {
+                timer1.Stop();
+                guna2ProgressBar1.Visible = false;
+
+            }
+        }
     }
 }
  
