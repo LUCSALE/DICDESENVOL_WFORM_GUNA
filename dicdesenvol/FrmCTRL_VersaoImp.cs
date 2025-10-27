@@ -17,6 +17,7 @@ using Spire.Pdf.Tables;
 using Spire.Pdf.Grid;
 using System.IO;
 using System.Drawing.Printing;
+using MetroFramework.Forms;
 
 
 
@@ -28,6 +29,7 @@ namespace dicdesenvol
         public FrmCTRL_VersaoImp()
         {
             InitializeComponent();
+
         }
 
         private void uSUARIOSBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -67,6 +69,7 @@ namespace dicdesenvol
         
         private void FrmCTRL_VersaoImp_Load(object sender, EventArgs e)
         {
+            
             timer1.Start(); 
             
         }
@@ -157,15 +160,10 @@ namespace dicdesenvol
         private void timer1_Tick(object sender, EventArgs e)
         {
             guna2ProgressBar1.Increment(1);
-            if (guna2ProgressBar1.Value == 70)
-            {
-                ImpImpressao();
-
-            }
-
             if (guna2ProgressBar1.Value == 100)
             {
                 timer1.Stop();
+                ImpImpressao();
                 guna2ProgressBar1.Visible = false;
 
             }

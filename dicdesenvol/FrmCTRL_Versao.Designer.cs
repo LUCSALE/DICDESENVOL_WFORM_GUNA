@@ -58,8 +58,8 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.salvarToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.imprimirToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.imprimirToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.pnlDados = new Guna.UI2.WinForms.Guna2Panel();
             this.txtSistema = new MetroFramework.Controls.MetroTextBox();
@@ -74,6 +74,7 @@
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cTRL_VERSAOTableAdapter = new dicdesenvol.CTRL_VERSAO_cadastrodbDataSetTableAdapters.CTRL_VERSAOTableAdapter();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.pnlHeader.SuspendLayout();
             this.pnlGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
@@ -376,6 +377,11 @@
             this.salvarToolStripButton.Text = "&Salvar";
             this.salvarToolStripButton.Click += new System.EventHandler(this.salvarToolStripButton_Click_1);
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 23);
+            // 
             // imprimirToolStripButton
             // 
             this.imprimirToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -385,11 +391,6 @@
             this.imprimirToolStripButton.Size = new System.Drawing.Size(23, 20);
             this.imprimirToolStripButton.Text = "&Imprimir";
             this.imprimirToolStripButton.Click += new System.EventHandler(this.imprimirToolStripButton_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 23);
             // 
             // toolStripButton1
             // 
@@ -408,6 +409,7 @@
             this.pnlDados.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.pnlDados.BorderRadius = 10;
             this.pnlDados.BorderThickness = 1;
+            this.pnlDados.Controls.Add(this.guna2TextBox1);
             this.pnlDados.Controls.Add(this.txtSistema);
             this.pnlDados.Controls.Add(this.guna2HtmlLabel3);
             this.pnlDados.Controls.Add(this.txtVersao);
@@ -666,6 +668,26 @@
             // 
             this.cTRL_VERSAOTableAdapter.ClearBeforeFill = true;
             // 
+            // guna2TextBox1
+            // 
+            this.guna2TextBox1.Animated = true;
+            this.guna2TextBox1.BorderRadius = 10;
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Location = new System.Drawing.Point(387, 27);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.Size = new System.Drawing.Size(200, 36);
+            this.guna2TextBox1.TabIndex = 15;
+            // 
             // FrmCTRL_Versao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -727,12 +749,10 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTitulo;
-        private MetroFramework.Controls.MetroTextBox txtSistema;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private MetroFramework.Controls.MetroTextBox txtVersao;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private CTRL_VERSAO_cadastrodbDataSet cTRL_VERSAO_cadastrodbDataSet;
         private System.Windows.Forms.BindingSource cTRLVERSAOBindingSource;
         private CTRL_VERSAO_cadastrodbDataSetTableAdapters.CTRL_VERSAOTableAdapter cTRL_VERSAOTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
@@ -741,5 +761,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn sISTEMADataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn vERSAODataGridViewTextBoxColumn;
         private System.Windows.Forms.ToolStripButton imprimirToolStripButton;
+        public MetroFramework.Controls.MetroTextBox txtSistema;
+        public CTRL_VERSAO_cadastrodbDataSet cTRL_VERSAO_cadastrodbDataSet;
+        public Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
     }
 }
