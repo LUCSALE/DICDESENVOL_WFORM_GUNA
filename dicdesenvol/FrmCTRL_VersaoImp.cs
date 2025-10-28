@@ -26,9 +26,10 @@ namespace dicdesenvol
 {
     public partial class FrmCTRL_VersaoImp : Form
     {
-        public FrmCTRL_VersaoImp()
+        public FrmCTRL_VersaoImp(DataSet DstWork)
         {
             InitializeComponent();
+            ImpGeracaoArquivo(DstWork);
 
         }
 
@@ -76,6 +77,11 @@ namespace dicdesenvol
 
         private void ImpImpressao()
         {
+            //pegar data e hora atual do sistema
+            DateTime DataAtual = DateTime.Now;
+            string DataFormat = DataAtual.ToString("dd/MM/yyyy");
+            string HoraFormat = DataAtual.ToString("HH:mm:ss");
+
             var contador = 0;
 
             //declarando a variavel do tipo StreamWriter
@@ -101,6 +107,7 @@ namespace dicdesenvol
             PdfBrush brush1 = PdfBrushes.DodgerBlue;
             PdfTrueTypeFont font1 = new PdfTrueTypeFont(new Font("Arial", 24f, FontStyle.Bold));
             PdfStringFormat format1 = new PdfStringFormat(PdfTextAlignment.Center);
+            
 
             page.Canvas.DrawString("CTRL_Versão", font1, brush1, page.Canvas.ClientSize.Width / 2, y, format1);
 
@@ -153,8 +160,12 @@ namespace dicdesenvol
             table.Draw(page, new PointF(0, y));
 
             ////Save the document to a PDF file 
-            doc.SaveToFile("c:/temp/PdfTable.pdf");
-            this.pdfViewer1.LoadFromFile("c:/temp/PdfTable.pdf");
+            if(File.Exists("C:\\Windows\\Temp\\PdfTable.pdf"))
+            {
+                File.Delete("C:\\Windows\\Temp\\PdfTable.pdf");
+            }
+            doc.SaveToFile("c:/Windows/temp/PdfTable.pdf");
+            this.pdfViewer1.LoadFromFile("c:/Windows/temp/PdfTable.pdf");
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -167,6 +178,55 @@ namespace dicdesenvol
                 guna2ProgressBar1.Visible = false;
 
             }
+        }
+
+        private void ImpGeracaoArquivo(DataSet DstWork)
+        {
+            var intContador = 0;
+
+            ////declarando a variavel do tipo StreamWriter para
+            //abrir ou criar um arquivo para escrita
+            StreamWriter x;
+
+            ////Colocando o caminho fisico e o nome do arquivo a ser criado
+            //finalizando com .txt
+            if(File.Exists("C:\\Windows\\Temp\\impTeste.txt"))
+            {
+                File.Delete("C:\\Windows\\Temp\\impTeste.txt");
+            }       
+            string CaminhoNome = "C:\\Windows\\Temp\\impTeste.txt";
+
+            //utilizando o metodo para criar um arquivo texto
+            //e associando o caminho e nome ao metodo
+            x = File.CreateText(CaminhoNome);
+
+            //escrevendo o HEADER
+            x.WriteLine("ID;Data;Hora;Sistema;Versão");
+
+            //aqui, exemplo de escrever no arquivo texto
+            //como se fossemos criar um recibo de pagamento
+
+            DataTableReader dtr = DstWork.CreateDataReader();
+            while (dtr.Read())
+            {
+
+                x.WriteLine(dtr["ID"].ToString() + ";" +
+                            dtr["Data"].ToString() + ";" +
+                            dtr["Hora"].ToString() + ";" +
+                            dtr["Sistema"].ToString() + ";" +
+                            dtr["Versao"].ToString()
+                            );
+                intContador++;
+
+
+
+            }
+
+
+            //fechando o arquivo texto com o método .Close()
+            x.Close();
+            InfoApp.LinhasImp = intContador + 1;
+
         }
     }
 }

@@ -15,7 +15,7 @@ namespace dicdesenvol
         static void Main()
         {
 
-            InfoApp.versao = "1.01.029";
+            InfoApp.versao = "1.01.031";
             InfoApp.opcao = "";
             InfoSenha.Logado = false;
             Application.EnableVisualStyles();

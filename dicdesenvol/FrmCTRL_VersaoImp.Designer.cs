@@ -168,11 +168,11 @@
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(591, 23);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(320, 66);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(113, 26);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(211, 44);
             this.guna2HtmlLabel1.TabIndex = 4;
             this.guna2HtmlLabel1.TabStop = false;
             this.guna2HtmlLabel1.Text = "(Impressão)";
