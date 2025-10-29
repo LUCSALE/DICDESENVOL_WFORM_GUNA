@@ -83,7 +83,7 @@ namespace dicdesenvol
             string HoraFormat = DataAtual.ToString("HH:mm:ss");
 
             var contador = 0;
-
+            24
             //declarando a variavel do tipo StreamWriter
             StreamReader x;
 
@@ -114,9 +114,11 @@ namespace dicdesenvol
             y = y + font1.MeasureString("CTRL_Versão", format1).Height;
             page.Canvas.DrawString("(impressão)", font1, brush1, page.Canvas.ClientSize.Width / 2, y, format1);
 
-
-            PdfStringFormat format2 = new PdfStringFormat(PdfTextAlignment.Left);
-            page.Canvas.DrawString("Data: ", font1, brush1, page.Canvas.ClientSize.Width / 2, y, format2);
+            //Data e Hora
+            PdfBrush brush2 = PdfBrushes.Black;
+            PdfTrueTypeFont font2 = new PdfTrueTypeFont(new Font("Arial", 8f, FontStyle.Bold));
+            PdfStringFormat format2 = new PdfStringFormat(PdfTextAlignment.Right);  
+            page.Canvas.DrawString("Data: ", font2, brush2, page.Canvas.ClientSize.Width / 2, y, format2);
 
             page.Canvas.DrawImage(PdfImage.FromFile("c:/temp/LUCSALE_Icone.png"), 10, 10, 50, 50);
 
