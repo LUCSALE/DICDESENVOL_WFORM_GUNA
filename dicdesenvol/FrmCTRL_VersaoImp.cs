@@ -83,12 +83,12 @@ namespace dicdesenvol
             string HoraFormat = DataAtual.ToString("HH:mm:ss");
 
             var contador = 0;
-            24
+            
             //declarando a variavel do tipo StreamWriter
             StreamReader x;
 
             //Colocando o caminho fisico
-            string Caminho = "C:\\Windows\\Temp\\impTeste.txt";
+            string Caminho = "C:\\Windows\\Temp\\impWORK.txt";
 
             //abrindo um arquivo texto
             x = File.OpenText(Caminho);
@@ -107,18 +107,20 @@ namespace dicdesenvol
             PdfBrush brush1 = PdfBrushes.DodgerBlue;
             PdfTrueTypeFont font1 = new PdfTrueTypeFont(new Font("Arial", 24f, FontStyle.Bold));
             PdfStringFormat format1 = new PdfStringFormat(PdfTextAlignment.Center);
-            
-
             page.Canvas.DrawString("CTRL_Versão", font1, brush1, page.Canvas.ClientSize.Width / 2, y, format1);
 
             y = y + font1.MeasureString("CTRL_Versão", format1).Height;
             page.Canvas.DrawString("(impressão)", font1, brush1, page.Canvas.ClientSize.Width / 2, y, format1);
 
-            //Data e Hora
-            PdfBrush brush2 = PdfBrushes.Black;
-            PdfTrueTypeFont font2 = new PdfTrueTypeFont(new Font("Arial", 8f, FontStyle.Bold));
-            PdfStringFormat format2 = new PdfStringFormat(PdfTextAlignment.Right);  
-            page.Canvas.DrawString("Data: ", font2, brush2, page.Canvas.ClientSize.Width / 2, y, format2);
+            
+            
+            page.Canvas.DrawString("Data: " + DataFormat + " - " + HoraFormat,
+                                   new PdfFont(PdfFontFamily.Helvetica, 08f),
+                                   new PdfSolidBrush(Color.Black),
+                                   000, 60);
+
+            
+
 
             page.Canvas.DrawImage(PdfImage.FromFile("c:/temp/LUCSALE_Icone.png"), 10, 10, 50, 50);
 
@@ -130,6 +132,7 @@ namespace dicdesenvol
             page.Canvas.DrawLine(pen, 000, y, page.Canvas.ClientSize.Width, y);
             y = y + 2;
 
+            
             String[][] dataSource
                    = new String[InfoApp.LinhasImp][];
             //enquanto nao retornar valor booleano true
@@ -162,12 +165,12 @@ namespace dicdesenvol
             table.Draw(page, new PointF(0, y));
 
             ////Save the document to a PDF file 
-            if(File.Exists("C:\\Windows\\Temp\\PdfTable.pdf"))
+            if(File.Exists("C:\\Windows\\Temp\\impWORK.pdf"))
             {
-                File.Delete("C:\\Windows\\Temp\\PdfTable.pdf");
+                File.Delete("C:\\Windows\\Temp\\impWORK.pdf");
             }
-            doc.SaveToFile("c:/Windows/temp/PdfTable.pdf");
-            this.pdfViewer1.LoadFromFile("c:/Windows/temp/PdfTable.pdf");
+            doc.SaveToFile("c:/Windows/temp/impWORK.pdf");
+            this.pdfViewer1.LoadFromFile("c:/Windows/temp/impWORK.pdf");
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -192,11 +195,11 @@ namespace dicdesenvol
 
             ////Colocando o caminho fisico e o nome do arquivo a ser criado
             //finalizando com .txt
-            if(File.Exists("C:\\Windows\\Temp\\impTeste.txt"))
+            if(File.Exists("C:\\Windows\\Temp\\impWORK.txt"))
             {
-                File.Delete("C:\\Windows\\Temp\\impTeste.txt");
+                File.Delete("C:\\Windows\\Temp\\impWORK.txt");
             }       
-            string CaminhoNome = "C:\\Windows\\Temp\\impTeste.txt";
+            string CaminhoNome = "C:\\Windows\\Temp\\impWORK.txt";
 
             //utilizando o metodo para criar um arquivo texto
             //e associando o caminho e nome ao metodo
