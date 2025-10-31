@@ -15,6 +15,7 @@ using Spire.Pdf;
 using Spire.Pdf.Tables;
 using Spire.Pdf.Grid;
 using System.IO;
+using Guna.UI2.WinForms;
 
 
 namespace dicdesenvol
@@ -156,8 +157,7 @@ namespace dicdesenvol
         {
             
 
-            FrmCTRL_VersaoImp CTRL_VersaoImp = new FrmCTRL_VersaoImp(cTRL_VERSAO_cadastrodbDataSet);
-            
+            FrmCTRL_VersaoImp CTRL_VersaoImp = new FrmCTRL_VersaoImp(guna2DataGridView1);
             CTRL_VersaoImp.ShowDialog();
 
 

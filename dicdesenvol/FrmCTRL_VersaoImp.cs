@@ -18,6 +18,7 @@ using Spire.Pdf.Grid;
 using System.IO;
 using System.Drawing.Printing;
 using MetroFramework.Forms;
+using Guna.UI2.WinForms;
 
 
 
@@ -26,7 +27,7 @@ namespace dicdesenvol
 {
     public partial class FrmCTRL_VersaoImp : Form
     {
-        public FrmCTRL_VersaoImp(DataSet DstWork)
+        public FrmCTRL_VersaoImp(Guna2DataGridView DstWork)
         {
             InitializeComponent();
             ImpGeracaoArquivo(DstWork);
@@ -185,7 +186,7 @@ namespace dicdesenvol
             }
         }
 
-        private void ImpGeracaoArquivo(DataSet DstWork)
+        private void ImpGeracaoArquivo(Guna2DataGridView DstWork)
         {
             var intContador = 0;
 
@@ -208,24 +209,24 @@ namespace dicdesenvol
             //escrevendo o HEADER
             x.WriteLine("ID;Data;Hora;Sistema;Versão");
 
-            //aqui, exemplo de escrever no arquivo texto
-            //como se fossemos criar um recibo de pagamento
+            ////aqui, exemplo de escrever no arquivo texto
+            ////como se fossemos criar um recibo de pagamento
 
-            DataTableReader dtr = DstWork.CreateDataReader();
-            while (dtr.Read())
-            {
+            //DataTableReader dtr = DstWork.CreateController().DataSource as DataTable).CreateDataReader();   
+            //while (dtr.Read())
+            //{
 
-                x.WriteLine(dtr["ID"].ToString() + ";" +
-                            dtr["Data"].ToString() + ";" +
-                            dtr["Hora"].ToString() + ";" +
-                            dtr["Sistema"].ToString() + ";" +
-                            dtr["Versao"].ToString()
-                            );
-                intContador++;
+            //    x.WriteLine(dtr["ID"].ToString() + ";" +
+            //                dtr["Data"].ToString() + ";" +
+            //                dtr["Hora"].ToString() + ";" +
+            //                dtr["Sistema"].ToString() + ";" +
+            //                dtr["Versao"].ToString()
+            //                );
+            //    intContador++;
 
 
 
-            }
+            //}
 
 
             //fechando o arquivo texto com o método .Close()
