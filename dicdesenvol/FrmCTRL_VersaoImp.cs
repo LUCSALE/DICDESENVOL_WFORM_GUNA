@@ -208,26 +208,27 @@ namespace dicdesenvol
 
             //escrevendo o HEADER
             x.WriteLine("ID;Data;Hora;Sistema;Versão");
+            for (int i = 0; i < DstWork.Rows.Count; i++)
+            {
+                // Verificar se a linha não é a linha de novos registros
+                if (!DstWork.Rows[i].IsNewRow)
+                {
+                    // Acessar os dados de cada célula
+                    // ... (código similar ao exemplo do foreach para acessar cells[índice].Value)
+                    if (DstWork.Rows[i].Cells[0].Value != null)
+                    {
 
-            ////aqui, exemplo de escrever no arquivo texto
-            ////como se fossemos criar um recibo de pagamento
+                        x.WriteLine(DstWork.Rows[i].Cells[0].Value.ToString() + ";" +
+                                    DstWork.Rows[i].Cells[1].Value.ToString() + ";" +
+                                    DstWork.Rows[i].Cells[2].Value.ToString() + ";" +
+                                    DstWork.Rows[i].Cells[3].Value.ToString() + ";" +
+                                    DstWork.Rows[i].Cells[4].Value.ToString()
+                                    );
+                        intContador++;
 
-            //DataTableReader dtr = DstWork.CreateController().DataSource as DataTable).CreateDataReader();   
-            //while (dtr.Read())
-            //{
-
-            //    x.WriteLine(dtr["ID"].ToString() + ";" +
-            //                dtr["Data"].ToString() + ";" +
-            //                dtr["Hora"].ToString() + ";" +
-            //                dtr["Sistema"].ToString() + ";" +
-            //                dtr["Versao"].ToString()
-            //                );
-            //    intContador++;
-
-
-
-            //}
-
+                    }
+                }
+            }
 
             //fechando o arquivo texto com o método .Close()
             x.Close();
