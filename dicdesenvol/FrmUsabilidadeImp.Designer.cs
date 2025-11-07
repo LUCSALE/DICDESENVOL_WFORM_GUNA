@@ -31,18 +31,19 @@
             this.components = new System.ComponentModel.Container();
             this.hTML_CSS_RADZENBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblTitulo = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlDados = new Guna.UI2.WinForms.Guna2Panel();
             this.pdfViewer1 = new Spire.PdfViewer.Forms.PdfViewer();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.guna2MessageDialog1 = new Guna.UI2.WinForms.Guna2MessageDialog();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2ProgressBar1 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTitulo = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.hTML_CSS_RADZENBindingNavigator)).BeginInit();
             this.hTML_CSS_RADZENBindingNavigator.SuspendLayout();
-            this.guna2GradientPanel1.SuspendLayout();
             this.pnlDados.SuspendLayout();
+            this.guna2GradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // hTML_CSS_RADZENBindingNavigator
@@ -75,59 +76,6 @@
             this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton1.Text = "toolStripButton1";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
-            // 
-            // guna2ControlBox1
-            // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.Animated = true;
-            this.guna2ControlBox1.AutoRoundedCorners = true;
-            this.guna2ControlBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.guna2ControlBox1.BorderRadius = 9;
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.MidnightBlue;
-            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.SystemColors.Highlight;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(819, 12);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.PressedColor = System.Drawing.Color.DarkGray;
-            this.guna2ControlBox1.Size = new System.Drawing.Size(27, 21);
-            this.guna2ControlBox1.TabIndex = 2;
-            // 
-            // guna2GradientPanel1
-            // 
-            this.guna2GradientPanel1.Controls.Add(this.guna2HtmlLabel1);
-            this.guna2GradientPanel1.Controls.Add(this.lblTitulo);
-            this.guna2GradientPanel1.Controls.Add(this.guna2ControlBox1);
-            this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2GradientPanel1.FillColor = System.Drawing.Color.MidnightBlue;
-            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.DodgerBlue;
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(858, 143);
-            this.guna2GradientPanel1.TabIndex = 28;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(290, 66);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(271, 57);
-            this.guna2HtmlLabel1.TabIndex = 4;
-            this.guna2HtmlLabel1.TabStop = false;
-            this.guna2HtmlLabel1.Text = "(Impressão)";
-            // 
-            // lblTitulo
-            // 
-            this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblTitulo.Location = new System.Drawing.Point(180, 10);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(490, 57);
-            this.lblTitulo.TabIndex = 3;
-            this.lblTitulo.TabStop = false;
-            this.lblTitulo.Text = "Usabilidade / Objetivo";
             // 
             // pnlDados
             // 
@@ -167,14 +115,84 @@
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
-            // guna2MessageDialog1
+            // guna2ControlBox1
             // 
-            this.guna2MessageDialog1.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
-            this.guna2MessageDialog1.Caption = null;
-            this.guna2MessageDialog1.Icon = Guna.UI2.WinForms.MessageDialogIcon.None;
-            this.guna2MessageDialog1.Parent = null;
-            this.guna2MessageDialog1.Style = Guna.UI2.WinForms.MessageDialogStyle.Default;
-            this.guna2MessageDialog1.Text = null;
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.Animated = true;
+            this.guna2ControlBox1.AutoRoundedCorners = true;
+            this.guna2ControlBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.guna2ControlBox1.BorderRadius = 9;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.MidnightBlue;
+            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.SystemColors.Highlight;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(819, 12);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.PressedColor = System.Drawing.Color.DarkGray;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(27, 21);
+            this.guna2ControlBox1.TabIndex = 2;
+            // 
+            // guna2GradientPanel1
+            // 
+            this.guna2GradientPanel1.Controls.Add(this.guna2ProgressBar1);
+            this.guna2GradientPanel1.Controls.Add(this.guna2HtmlLabel1);
+            this.guna2GradientPanel1.Controls.Add(this.lblTitulo);
+            this.guna2GradientPanel1.Controls.Add(this.guna2ControlBox1);
+            this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2GradientPanel1.FillColor = System.Drawing.Color.MidnightBlue;
+            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.DodgerBlue;
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(858, 143);
+            this.guna2GradientPanel1.TabIndex = 28;
+            // 
+            // guna2ProgressBar1
+            // 
+            this.guna2ProgressBar1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.guna2ProgressBar1.BorderRadius = 5;
+            this.guna2ProgressBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2ProgressBar1.FillColor = System.Drawing.Color.MidnightBlue;
+            this.guna2ProgressBar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ProgressBar1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.guna2ProgressBar1.Location = new System.Drawing.Point(0, 119);
+            this.guna2ProgressBar1.Name = "guna2ProgressBar1";
+            this.guna2ProgressBar1.ProgressColor = System.Drawing.Color.DodgerBlue;
+            this.guna2ProgressBar1.ProgressColor2 = System.Drawing.Color.DodgerBlue;
+            this.guna2ProgressBar1.ShowText = true;
+            this.guna2ProgressBar1.Size = new System.Drawing.Size(858, 24);
+            this.guna2ProgressBar1.TabIndex = 6;
+            this.guna2ProgressBar1.TabStop = false;
+            this.guna2ProgressBar1.Text = "Por Favor Aguarde - Gerando Impressão ...";
+            this.guna2ProgressBar1.TextMode = Guna.UI2.WinForms.Enums.ProgressBarTextMode.Custom;
+            this.guna2ProgressBar1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(320, 66);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(211, 44);
+            this.guna2HtmlLabel1.TabIndex = 4;
+            this.guna2HtmlLabel1.TabStop = false;
+            this.guna2HtmlLabel1.Text = "(Impressão)";
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.lblTitulo.Location = new System.Drawing.Point(297, 3);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(265, 57);
+            this.lblTitulo.TabIndex = 3;
+            this.lblTitulo.TabStop = false;
+            this.lblTitulo.Text = "Usabilidade";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // FrmUsabilidadeImp
             // 
@@ -188,13 +206,13 @@
             this.Name = "FrmUsabilidadeImp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.FrmCTRL_VersaoImp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hTML_CSS_RADZENBindingNavigator)).EndInit();
             this.hTML_CSS_RADZENBindingNavigator.ResumeLayout(false);
             this.hTML_CSS_RADZENBindingNavigator.PerformLayout();
+            this.pnlDados.ResumeLayout(false);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
-            this.pnlDados.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,14 +220,15 @@
 
         #endregion
         private System.Windows.Forms.BindingNavigator hTML_CSS_RADZENBindingNavigator;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private Guna.UI2.WinForms.Guna2Panel pnlDados;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblTitulo;
         private Spire.PdfViewer.Forms.PdfViewer pdfViewer1;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private Guna.UI2.WinForms.Guna2MessageDialog guna2MessageDialog1;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
+        private Guna.UI2.WinForms.Guna2ProgressBar guna2ProgressBar1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTitulo;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

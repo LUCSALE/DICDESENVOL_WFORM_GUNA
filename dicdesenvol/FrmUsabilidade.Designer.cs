@@ -58,6 +58,7 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.salvarToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.imprimirToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.hTML_CSS_USABILIDADETableAdapter = new dicdesenvol.db_ab2460_Usabilidade_DataSetTableAdapters.HTML_CSS_USABILIDADETableAdapter();
@@ -73,7 +74,6 @@
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.imprimirToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.pnlHeader.SuspendLayout();
             this.pnlGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
@@ -269,8 +269,8 @@
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
             this.salvarToolStripButton,
-            this.imprimirToolStripButton,
             this.toolStripSeparator1,
+            this.imprimirToolStripButton,
             this.toolStripButton1});
             this.bindingNavigator1.Location = new System.Drawing.Point(0, 1);
             this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
@@ -379,6 +379,16 @@
             this.salvarToolStripButton.Text = "&Salvar";
             this.salvarToolStripButton.Click += new System.EventHandler(this.salvarToolStripButton_Click_1);
             // 
+            // imprimirToolStripButton
+            // 
+            this.imprimirToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.imprimirToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("imprimirToolStripButton.Image")));
+            this.imprimirToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.imprimirToolStripButton.Name = "imprimirToolStripButton";
+            this.imprimirToolStripButton.Size = new System.Drawing.Size(23, 20);
+            this.imprimirToolStripButton.Text = "&Imprimir";
+            this.imprimirToolStripButton.Click += new System.EventHandler(this.imprimirToolStripButton_Click);
+            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
@@ -386,6 +396,8 @@
             // 
             // toolStripButton1
             // 
+            this.toolStripButton1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButton1.Image = global::dicdesenvol.Properties.Resources._4213475_arrow_back_left_return_icon;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -657,16 +669,6 @@
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(18, 18);
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "ID";
-            // 
-            // imprimirToolStripButton
-            // 
-            this.imprimirToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.imprimirToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("imprimirToolStripButton.Image")));
-            this.imprimirToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.imprimirToolStripButton.Name = "imprimirToolStripButton";
-            this.imprimirToolStripButton.Size = new System.Drawing.Size(23, 20);
-            this.imprimirToolStripButton.Text = "&Imprimir";
-            this.imprimirToolStripButton.Click += new System.EventHandler(this.imprimirToolStripButton_Click);
             // 
             // FrmUsabilidade
             // 
